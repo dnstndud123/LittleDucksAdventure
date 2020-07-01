@@ -8,6 +8,8 @@ TagManager:
   - ground
   - enemy
   - IV
+  - trap
+  - fall
   layers:
   - Default
   - TransparentFX

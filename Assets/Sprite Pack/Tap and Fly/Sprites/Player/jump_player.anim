@@ -21,7 +21,23 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 63b476e5751afe343851dd7957be5bd6, type: 3}
-    - time: 0.5
+    - time: 0.05
+      value: {fileID: 21300000, guid: 2d960f7c818834a428fed4e198e98c4f, type: 3}
+    - time: 0.1
+      value: {fileID: 21300000, guid: 4b55b0ef15bd740558c9edcea4ce6e2c, type: 3}
+    - time: 0.15
+      value: {fileID: 21300000, guid: 2d960f7c818834a428fed4e198e98c4f, type: 3}
+    - time: 0.2
+      value: {fileID: 21300000, guid: 63b476e5751afe343851dd7957be5bd6, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: 2d960f7c818834a428fed4e198e98c4f, type: 3}
+    - time: 0.3
+      value: {fileID: 21300000, guid: 4b55b0ef15bd740558c9edcea4ce6e2c, type: 3}
+    - time: 0.35
+      value: {fileID: 21300000, guid: 2d960f7c818834a428fed4e198e98c4f, type: 3}
+    - time: 0.4
+      value: {fileID: 21300000, guid: 63b476e5751afe343851dd7957be5bd6, type: 3}
+    - time: 0.6666667
       value: {fileID: 21300000, guid: 2d960f7c818834a428fed4e198e98c4f, type: 3}
     - time: 1
       value: {fileID: 21300000, guid: 4b55b0ef15bd740558c9edcea4ce6e2c, type: 3}
@@ -44,6 +60,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
+    - {fileID: 21300000, guid: 63b476e5751afe343851dd7957be5bd6, type: 3}
+    - {fileID: 21300000, guid: 2d960f7c818834a428fed4e198e98c4f, type: 3}
+    - {fileID: 21300000, guid: 4b55b0ef15bd740558c9edcea4ce6e2c, type: 3}
+    - {fileID: 21300000, guid: 2d960f7c818834a428fed4e198e98c4f, type: 3}
+    - {fileID: 21300000, guid: 63b476e5751afe343851dd7957be5bd6, type: 3}
+    - {fileID: 21300000, guid: 2d960f7c818834a428fed4e198e98c4f, type: 3}
+    - {fileID: 21300000, guid: 4b55b0ef15bd740558c9edcea4ce6e2c, type: 3}
+    - {fileID: 21300000, guid: 2d960f7c818834a428fed4e198e98c4f, type: 3}
     - {fileID: 21300000, guid: 63b476e5751afe343851dd7957be5bd6, type: 3}
     - {fileID: 21300000, guid: 2d960f7c818834a428fed4e198e98c4f, type: 3}
     - {fileID: 21300000, guid: 4b55b0ef15bd740558c9edcea4ce6e2c, type: 3}

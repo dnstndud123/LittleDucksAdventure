@@ -4,22 +4,64 @@ using UnityEngine;
 
 public class Character2D : MonoBehaviour
 {
+    public int hp;
+    public int maxHp = 3;
     protected Rigidbody2D rigid;
     protected Animator anim;
     public float forceY;
     public float maxForce;
+    protected SoundManager sM;
+    PlayerControl PC;
 
     // Start is called before the first frame update
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        sM = FindObjectOfType<SoundManager>();
+        PC = GetComponent<PlayerControl>();
+        hp = maxHp;
+        anim.SetInteger("hp", hp);
+
+    }
+    public void OnDamage(int dmg)
+    {
+        
+        hp -= dmg;
+        hp = Mathf.Max(0, hp);
+
+        anim.SetBool("hurt", true);
+        anim.SetInteger("hp", hp);
+        sM.Play("Hit");
+        if (hp == 0)
+        {
+            sM.Play("Fall");
+            rigid.simulated = false;
+        }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "ground")
+        {
+            anim.SetBool("jump", false);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "ground")
+        {
+            anim.SetBool("jump", true);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
         anim.SetFloat("velocity", Mathf.Abs(rigid.velocity.x));
+
+        
+
     }
 
     public void Flip(bool right)
@@ -39,6 +81,7 @@ public class Character2D : MonoBehaviour
     }
     public void Jump()
     {
+        
         bool isJump = anim.GetBool("jump");
 
         if (isJump == true)
@@ -48,12 +91,13 @@ public class Character2D : MonoBehaviour
         rigid.AddForce(new Vector2(0, forceY));
 
 
-            
+        sM.Play("jump");
 
             Vector2 velY = rigid.velocity;
             float limitY = Mathf.Min(maxForce, velY.y);
 
             rigid.velocity = new Vector2(velY.x, limitY);
+        
 
 
 
@@ -64,7 +108,7 @@ public class Character2D : MonoBehaviour
         if (isCrouch == true)
         {
             anim.SetBool("crouch", true);
-            rigid.velocity = new Vector2(rigid.velocity.x, 0);
+            rigid.velocity = new Vector2((rigid.velocity.x / 2.0f), 0);
         }
         else
         {
@@ -72,11 +116,5 @@ public class Character2D : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "ground")
-        {
-            anim.SetBool("jump", false);
-        }
-    }
+    
 }
