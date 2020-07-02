@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         HideAll();
-        show("UIStart", uiList[0]);
+        Show("UIStart", uiList[0]);
     }
 
     public void HideAll()
@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
             ui.SetActive(false);
         }
     }
-    public void show(string name, bool show)
+    public void Show(string name, bool show)
     {
         GameObject ui = null;
         for (int i = 0; i < uiList.Length; i++)
@@ -36,8 +36,8 @@ public class UIManager : MonoBehaviour
     public void OnStart()
     {
         HideAll();
-        show("UISelect", uiList[1]);
+        Show("UISelect", uiList[1]);
     }
-    // Update is called once per frame
+    
 
 }

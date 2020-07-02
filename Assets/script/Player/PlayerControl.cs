@@ -7,19 +7,15 @@ public class PlayerControl : MonoBehaviour
     
     public float speedX;
     public float maxSpeed;
-    bool isJump = false;
+    
 
     public Character2D char2D;
     public Rigidbody2D rigid;
-    Animator anim;
-    SoundManager sM;
+ 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
-        
-        isJump = anim.GetBool("jump");
-        sM = FindObjectOfType<SoundManager>();
+
         
     }
     
@@ -27,29 +23,29 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (char2D.hp == 0)
+            return;
         
         
         if(Input.GetKey(KeyCode.DownArrow))
         {
+            
             char2D.Crouch(true);
-            if (isJump == true)
-            {
-                if (Input.GetKey(KeyCode.LeftArrow))
-                {
-                    rigid.AddForce(new Vector2(-speedX/2, 0));
-                    char2D.Flip(false);
-                }
-                if (Input.GetKey(KeyCode.RightArrow))
-                {
-                    rigid.AddForce(new Vector2(speedX/2, 0));
-                    char2D.Flip(true);
-                }
-            }
+            
             if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                
                 char2D.Flip(false);
+            }
             if (Input.GetKey(KeyCode.RightArrow))
+            {
+                
                 char2D.Flip(true);
-            return;
+            }
+            
+
+                return;
+
         }
         if(Input.GetKeyUp(KeyCode.DownArrow))
         {

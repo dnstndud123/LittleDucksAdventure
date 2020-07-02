@@ -12,6 +12,7 @@ public class Character2D : MonoBehaviour
     public float maxForce;
     protected SoundManager sM;
     PlayerControl PC;
+    UIManager UM;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class Character2D : MonoBehaviour
         anim = GetComponent<Animator>();
         sM = FindObjectOfType<SoundManager>();
         PC = GetComponent<PlayerControl>();
+        UM = FindObjectOfType<UIManager>();
         hp = maxHp;
         anim.SetInteger("hp", hp);
 
@@ -35,8 +37,10 @@ public class Character2D : MonoBehaviour
         sM.Play("Hit");
         if (hp == 0)
         {
+            anim.SetBool("die", true);
             sM.Play("Fall");
-            rigid.simulated = false;
+            UM.HideAll();
+            UM.Show("UIGameOver", UM.uiList[3]);
         }
     }
 

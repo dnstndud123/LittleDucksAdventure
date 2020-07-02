@@ -2,32 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class trap : MonoBehaviour
+public class Trap : MonoBehaviour
 {
-    
-    
-    
-    
+    protected Character2D player;
+
+
+
     // Start is called before the first frame update
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected void Start()
+    {
+        player = player = FindObjectOfType<Character2D>();
+    }
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Character2D player = FindObjectOfType<Character2D>();
+            
             player.OnDamage(1);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            Character2D player = FindObjectOfType<Character2D>();
-            player.OnDamage(1);
-        }
-    }
+    
     
     // Update is called once per frame
 

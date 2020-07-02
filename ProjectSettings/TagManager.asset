@@ -10,6 +10,8 @@ TagManager:
   - IV
   - trap
   - fall
+  - clear
+  - trapC
   layers:
   - Default
   - TransparentFX

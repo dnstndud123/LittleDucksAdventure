@@ -5,18 +5,30 @@ using UnityEngine;
 public class Fall : MonoBehaviour
 {
 
-    
-    
-    
-    // Start is called before the first frame update
-  
 
+    public Character2D player;
+
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+
+        player = FindObjectOfType<Character2D>();
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            player.OnDamage(999);
+
+
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
         if (collision.gameObject.tag == "Player")
-        {
-            Character2D player = FindObjectOfType<Character2D>();
+        { 
             player.OnDamage(999);
             
 
