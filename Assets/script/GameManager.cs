@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     {
         camFollow = FindObjectOfType<Camera2DFollow>();
         
+        Vector3 charPosition = player.transform.position;
+        player.transform.position = new Vector3(charPosition.x, charPosition.y, charPosition.z);
     }
     public  void NextStage(int stageNumber)
     {
