@@ -23,6 +23,7 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (char2D.hp == 0)
             return;
         

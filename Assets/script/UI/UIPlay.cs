@@ -2,17 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIPlay : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class UIPlay : UIBase
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+{
+
 }
+

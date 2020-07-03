@@ -2,17 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIStart : MonoBehaviour
+public class UIStart : UIBase
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnButtonClick(GameObject btn)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.OnButtonClick(btn);
+        sM.Play("Select");
     }
 }

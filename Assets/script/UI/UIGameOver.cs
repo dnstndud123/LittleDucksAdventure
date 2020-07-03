@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIGameOver : MonoBehaviour
+public class UIGameOver : UIBase
 {
     UIManager uM;
     // Start is called before the first frame update

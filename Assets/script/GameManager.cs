@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     Camera2DFollow camFollow;
     public GameObject[] clearList;
     public GameObject clear;
-     
+    [SerializeField] private int currentPoint;
 
 
     private void Start()
@@ -23,7 +23,8 @@ public class GameManager : MonoBehaviour
         GameObject startPoint = startList[stageNumber - 1];
         
         Vector2 startPosition = startPoint.transform.position;
-        player.transform.position = new Vector2(startPosition.x, startPosition.y);
+        Vector3 charPosition = player.transform.position;
+        player.transform.position = new Vector3(startPosition.x, startPosition.y,charPosition.z);
 
        
 

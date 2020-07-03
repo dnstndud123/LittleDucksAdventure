@@ -41,6 +41,7 @@ public class Character2D : MonoBehaviour
             sM.Play("Fall");
             UM.HideAll();
             UM.Show("UIGameOver", UM.uiList[3]);
+            
         }
     }
 

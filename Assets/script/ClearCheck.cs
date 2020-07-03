@@ -7,12 +7,12 @@ public class ClearCheck : MonoBehaviour
     public int stageNumber;
     public Character2D char2D;
     public UIManager uM;
-    
-    
+    SoundManager sM;
+    GameObject clearCheck;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sM = FindObjectOfType<SoundManager>();
         char2D = FindObjectOfType<Character2D>();
         uM = FindObjectOfType<UIManager>();
     }
@@ -21,9 +21,12 @@ public class ClearCheck : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            sM.Play("Score");
             uM.HideAll();
             uM.Show("UISelect", uM.uiList[1]);
-            char2D.hp = char2D.maxHp;
+            
+            clearCheck.SetActive(false);
+            
             
             
             

@@ -12,6 +12,7 @@ TagManager:
   - fall
   - clear
   - trapC
+  - Camera
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - 
   - 
   - IV
-  - 
+  - Object
   - 
   - 
   - 

@@ -4,25 +4,16 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UISelect : MonoBehaviour
+public class UISelect : UIBase
 {
 
-    public GameManager gM;
-    public UIManager uM;
-    public Rigidbody2D rigid;
-    public Character2D player;
-    public Animator anim;
-    // Start is called before the first frame update
-    void Start()
-    {
-        player = FindObjectOfType<Character2D>();
-        gM = FindObjectOfType<GameManager>();
-        uM = FindObjectOfType<UIManager>();
-    }
+    
+  
 
     
     public void OnStart(int number)
     {
+        
         player.hp = player.maxHp;
         anim.SetBool("die", false);
         uM.HideAll();
@@ -30,8 +21,11 @@ public class UISelect : MonoBehaviour
         gM.NextStage(number);
         rigid.simulated = true;
         gM.ClearRespawn(number);
-        
-        
-
+        player.tag = "Player";
+    }
+    public override void OnButtonClick(GameObject btn)
+    {
+        base.OnButtonClick(btn);
+        sM.Play("Select");
     }
 }
