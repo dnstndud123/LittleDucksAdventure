@@ -28,9 +28,9 @@ public class GameManager : MonoBehaviour
         Vector3 charPosition = player.transform.position;
         player.transform.position = new Vector3(startPosition.x, startPosition.y,charPosition.z);
         player.tag = "Player";
-       
 
 
+        camFollow.transform.position = new Vector3(player.transform.position.x, player.transform.position.y,-10);
         camFollow.target = player.transform;
     }
     public void ClearRespawn(int stageNumber)

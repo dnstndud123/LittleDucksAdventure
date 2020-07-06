@@ -6,7 +6,7 @@ public class UIStart : UIBase
 {
     public override void OnButtonClick(GameObject btn)
     {
-        base.OnButtonClick(btn);
+        
         sM.Play("Select");
     }
 }

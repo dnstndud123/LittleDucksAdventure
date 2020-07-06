@@ -4,6 +4,7 @@
 Library
 Logs
 obj
+Temp
 *.sln
 *.csporj
 

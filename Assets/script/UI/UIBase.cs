@@ -5,10 +5,10 @@ using UnityEngine;
 public class UIBase : MonoBehaviour
 {
     protected SoundManager sM;
-    public GameManager gM;
-    public UIManager uM;
+    protected GameManager gM;
+    protected UIManager uM;
     public Rigidbody2D rigid;
-    public Character2D player;
+    protected Character2D player;
     public Animator anim;
     // Start is called before the first frame update
     void Start()
