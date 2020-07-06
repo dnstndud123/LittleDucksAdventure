@@ -78,13 +78,13 @@
     <Compile Include="Assets\script\IV\IVMove.cs" />
     <Compile Include="Assets\script\Player\Character2D.cs" />
     <Compile Include="Assets\script\Player\PlayerControl.cs" />
+    <Compile Include="Assets\script\Player\UIHp1.cs" />
+    <Compile Include="Assets\script\Player\UIHp2.cs" />
+    <Compile Include="Assets\script\Player\UIHp3.cs" />
     <Compile Include="Assets\script\Trap.cs" />
     <Compile Include="Assets\script\TrapClone.cs" />
     <Compile Include="Assets\script\UI\UIBase.cs" />
     <Compile Include="Assets\script\UI\UIGameOver.cs" />
-    <Compile Include="Assets\script\UI\UIHp1.cs" />
-    <Compile Include="Assets\script\UI\UIHp2.cs" />
-    <Compile Include="Assets\script\UI\UIHp3.cs" />
     <Compile Include="Assets\script\UI\UIManager.cs" />
     <Compile Include="Assets\script\UI\UIPlay.cs" />
     <Compile Include="Assets\script\UI\UISelect.cs" />
