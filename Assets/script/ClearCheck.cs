@@ -8,13 +8,15 @@ public class ClearCheck : MonoBehaviour
     public Character2D char2D;
     public UIManager uM;
     SoundManager sM;
-    GameObject clearCheck;
+     GameObject clearCheck;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
         sM = FindObjectOfType<SoundManager>();
         char2D = FindObjectOfType<Character2D>();
         uM = FindObjectOfType<UIManager>();
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,7 +26,7 @@ public class ClearCheck : MonoBehaviour
             sM.Play("Score");
             uM.HideAll();
             uM.Show("UISelect", uM.uiList[1]);
-            
+            player.tag = "ClearPlayer";
             clearCheck.SetActive(false);
             
             

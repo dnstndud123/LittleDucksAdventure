@@ -22,6 +22,11 @@ public class Trap : MonoBehaviour
             
             player.OnDamage(1);
         }
+        if (collision.gameObject.tag == "ClearPlayer")
+        {
+
+            player.OnDamage(0);
+        }
     }
 
     

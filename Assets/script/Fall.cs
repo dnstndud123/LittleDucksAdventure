@@ -23,6 +23,12 @@ public class Fall : MonoBehaviour
 
 
         }
+        if (collision.tag == "ClearPlayer")
+        {
+            player.OnDamage(0);
+
+
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -31,6 +37,12 @@ public class Fall : MonoBehaviour
         { 
             player.OnDamage(999);
             
+
+        }
+        if (collision.gameObject.tag == "ClearPlayer")
+        {
+            player.OnDamage(0);
+
 
         }
 

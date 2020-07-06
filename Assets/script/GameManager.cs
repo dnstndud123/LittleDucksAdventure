@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         Vector2 startPosition = startPoint.transform.position;
         Vector3 charPosition = player.transform.position;
         player.transform.position = new Vector3(startPosition.x, startPosition.y,charPosition.z);
-
+        player.tag = "Player";
        
 
 

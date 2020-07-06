@@ -22818,6 +22818,7 @@ MonoBehaviour:
   stageNumber: 1
   char2D: {fileID: 0}
   uM: {fileID: 0}
+  player: {fileID: 1491361911}
 --- !u!1 &1745239239
 GameObject:
   m_ObjectHideFlags: 0

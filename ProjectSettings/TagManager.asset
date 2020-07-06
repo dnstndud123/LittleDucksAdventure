@@ -13,6 +13,7 @@ TagManager:
   - clear
   - trapC
   - Camera
+  - ClearPlayer
   layers:
   - Default
   - TransparentFX
