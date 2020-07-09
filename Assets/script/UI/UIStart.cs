@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class UIStart : UIBase
 {
+
+   
+    
+       
+    
     public override void OnButtonClick(GameObject btn)
     {
         

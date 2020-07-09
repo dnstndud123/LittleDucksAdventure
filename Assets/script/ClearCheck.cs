@@ -29,10 +29,12 @@ public class ClearCheck : MonoBehaviour
             player.tag = "ClearPlayer";
             clearCheck.SetActive(false);
             
-            
-            
-            
+                
+
+
+
         }
+
     }
 
 }

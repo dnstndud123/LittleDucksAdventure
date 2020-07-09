@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
@@ -35,8 +36,10 @@ public class UIManager : MonoBehaviour
     }
     public void OnStart()
     {
+        //SceneManager.LoadScene(1);
         HideAll();
         Show("UISelect", uiList[1]);
+
     }
     
 

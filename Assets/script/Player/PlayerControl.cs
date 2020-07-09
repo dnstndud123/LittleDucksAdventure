@@ -69,7 +69,7 @@ public class PlayerControl : MonoBehaviour
         rigid.velocity = new Vector2(limitX, velX.y);
 
         
-        if(Input.GetKeyDown(KeyCode.UpArrow))
+        if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
         {
             char2D.Jump();
             

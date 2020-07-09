@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class UIBase : MonoBehaviour
 {
-    protected SoundManager sM;
-    protected GameManager gM;
-    protected UIManager uM;
+    [SerializeField] protected SoundManager sM;
+    [SerializeField] protected GameManager gM;
+    [SerializeField] protected UIManager uM;
     public Rigidbody2D rigid;
     protected Character2D player;
     public Animator anim;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UISelect : UIBase
 {
@@ -13,7 +14,7 @@ public class UISelect : UIBase
     
     public void OnStart(int number)
     {
-        
+       // SceneManager.LoadScene(number+1);
         player.hp = player.maxHp;
         anim.SetBool("die", false);
         uM.HideAll();

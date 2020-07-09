@@ -21,6 +21,8 @@ public class Trap : MonoBehaviour
         {
             
             player.OnDamage(1);
+            if (player.hp == 0)
+                player.tag = "DiePlayer";
         }
         if (collision.gameObject.tag == "ClearPlayer")
         {

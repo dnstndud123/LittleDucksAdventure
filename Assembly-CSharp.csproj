@@ -75,12 +75,15 @@
     <Compile Include="Assets\script\ClearCheck.cs" />
     <Compile Include="Assets\script\Fall.cs" />
     <Compile Include="Assets\script\GameManager.cs" />
+    <Compile Include="Assets\script\HideTrap.cs" />
     <Compile Include="Assets\script\IV\IVMove.cs" />
     <Compile Include="Assets\script\Player\Character2D.cs" />
     <Compile Include="Assets\script\Player\PlayerControl.cs" />
     <Compile Include="Assets\script\Player\UIHp1.cs" />
     <Compile Include="Assets\script\Player\UIHp2.cs" />
     <Compile Include="Assets\script\Player\UIHp3.cs" />
+    <Compile Include="Assets\script\Rotation.cs" />
+    <Compile Include="Assets\script\Rotation_F.cs" />
     <Compile Include="Assets\script\Trap.cs" />
     <Compile Include="Assets\script\TrapClone.cs" />
     <Compile Include="Assets\script\UI\UIBase.cs" />

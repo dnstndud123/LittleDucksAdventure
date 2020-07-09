@@ -20,7 +20,8 @@ public class Fall : MonoBehaviour
         if (collision.tag == "Player")
         {
             player.OnDamage(999);
-
+            if (player.hp == 0)
+                player.tag = "DiePlayer";
 
         }
         if (collision.tag == "ClearPlayer")
@@ -36,7 +37,8 @@ public class Fall : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         { 
             player.OnDamage(999);
-            
+            if (player.hp == 0)
+                player.tag = "DiePlayer";
 
         }
         if (collision.gameObject.tag == "ClearPlayer")
