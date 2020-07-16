@@ -15,6 +15,7 @@ TagManager:
   - Camera
   - ClearPlayer
   - DiePlayer
+  - JumpCheck
   layers:
   - Default
   - TransparentFX

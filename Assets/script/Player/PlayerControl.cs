@@ -8,14 +8,19 @@ public class PlayerControl : MonoBehaviour
     public float speedX;
     public float maxSpeed;
     
+    
 
     public Character2D char2D;
     public Rigidbody2D rigid;
- 
+    Animator anim;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
-
+        anim = GetComponent<Animator>();
+        
         
     }
     
@@ -30,7 +35,7 @@ public class PlayerControl : MonoBehaviour
             return;
         
         
-        if(Input.GetKey(KeyCode.DownArrow))
+      /*  if(Input.GetKey(KeyCode.DownArrow))
         {
             
             char2D.Crouch(true);
@@ -54,6 +59,7 @@ public class PlayerControl : MonoBehaviour
         {
             char2D.Crouch(false);
         }
+      */
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             rigid.AddForce(new Vector2(-speedX, 0));
@@ -75,6 +81,7 @@ public class PlayerControl : MonoBehaviour
         {
             char2D.Jump();
             
+
         }
 
         

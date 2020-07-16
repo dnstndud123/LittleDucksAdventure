@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Character2D : MonoBehaviour
 {
+    
     public int hp;
     public int maxHp = 1;
     protected Rigidbody2D rigid;
@@ -13,10 +14,12 @@ public class Character2D : MonoBehaviour
     protected SoundManager sM;
     PlayerControl PC;
     UIManager UM;
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sM = FindObjectOfType<SoundManager>();
@@ -24,6 +27,7 @@ public class Character2D : MonoBehaviour
         UM = FindObjectOfType<UIManager>();
         hp = maxHp;
         anim.SetInteger("hp", hp);
+        
 
     }
     public void OnDamage(int dmg)
@@ -94,6 +98,7 @@ public class Character2D : MonoBehaviour
 
         anim.SetBool("jump", true);
         rigid.AddForce(new Vector2(0, forceY));
+        
 
 
         sM.Play("jump");
