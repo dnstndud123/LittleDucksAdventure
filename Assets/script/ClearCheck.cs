@@ -21,6 +21,7 @@ public class ClearCheck : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.tag == "Player")
         {
             sM.Play("Score");
@@ -35,6 +36,8 @@ public class ClearCheck : MonoBehaviour
 
         }
 
+#if UNITY_ANDROID||UNITY_IOS
+#endif
     }
 
 }

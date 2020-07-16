@@ -5,7 +5,7 @@ using UnityEngine;
 public class Character2D : MonoBehaviour
 {
     public int hp;
-    public int maxHp = 3;
+    public int maxHp = 1;
     protected Rigidbody2D rigid;
     protected Animator anim;
     public float forceY;
