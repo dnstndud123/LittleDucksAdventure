@@ -105,6 +105,10 @@
     <Compile Include="Assets\script\Player\UIHp3.cs" />
     <Compile Include="Assets\script\Rotation.cs" />
     <Compile Include="Assets\script\Rotation_F.cs" />
+    <Compile Include="Assets\script\Scene\Common.cs" />
+    <Compile Include="Assets\script\Scene\Level1Scene.cs" />
+    <Compile Include="Assets\script\Scene\SelectScene.cs" />
+    <Compile Include="Assets\script\Scene\StartScene.cs" />
     <Compile Include="Assets\script\TrapClone.cs" />
     <Compile Include="Assets\script\UI\UIBase.cs" />
     <Compile Include="Assets\script\UI\UIGameOver.cs" />

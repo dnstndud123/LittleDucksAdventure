@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         HideAll();
-        Show("UIStart", uiList[0]);
+        Show("UIPlay", uiList[0]);
     }
 
     public void HideAll()
