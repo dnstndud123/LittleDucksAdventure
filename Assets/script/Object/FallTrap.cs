@@ -23,9 +23,5 @@ public class FallTrap : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

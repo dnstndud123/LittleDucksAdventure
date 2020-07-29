@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIStart : UIBase
 {
@@ -13,5 +14,6 @@ public class UIStart : UIBase
     {
         
         sM.Play("Select");
+        SceneManager.LoadScene(1);
     }
 }

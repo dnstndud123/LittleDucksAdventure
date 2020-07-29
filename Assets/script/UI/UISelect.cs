@@ -24,11 +24,11 @@ public class UISelect : UIBase
           gM.ClearRespawn(number);
           player.tag = "Player";
         */
-        SceneManager.LoadScene(number);
+        SceneManager.LoadScene(number + 1);
     }
     public override void OnButtonClick(GameObject btn)
     {
-       
-        sM.Play("Button");
+
+        base.OnButtonClick(btn);
     }
 }

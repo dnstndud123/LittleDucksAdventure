@@ -11,10 +11,12 @@ public class GameManager : MonoBehaviour
     public GameObject[] clearList;
     public GameObject clear;
     [SerializeField] private int currentPoint;
+    
 
 
     private void Start()
     {
+        
         camFollow = FindObjectOfType<Camera2DFollow>();
         
         Vector3 charPosition = player.transform.position;

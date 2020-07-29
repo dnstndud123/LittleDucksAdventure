@@ -5,6 +5,7 @@ namespace UnityStandardAssets._2D
 {
     public class Camera2DFollow : MonoBehaviour
     {
+        GameObject player;
         public Transform target;
         public float damping = 1;
         public float lookAheadFactor = 3;
@@ -17,11 +18,13 @@ namespace UnityStandardAssets._2D
         private Vector3 m_LookAheadPos;
 
         // Use this for initialization
-        private void Start()
+        public void Init()
         {
+            player = GameObject.Find("Player");
+            target = player.GetComponent<Transform>();
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
-            transform.parent = null;
+            //transform.parent = null;
         }
 
 

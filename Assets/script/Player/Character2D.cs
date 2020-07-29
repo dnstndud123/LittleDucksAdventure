@@ -17,7 +17,7 @@ public class Character2D : MonoBehaviour
     
 
     // Start is called before the first frame update
-    void Start()
+    public void Init()
     {
         
         rigid = GetComponent<Rigidbody2D>();

@@ -6,27 +6,27 @@ public class Fall : MonoBehaviour
 {
 
 
-    public Character2D player;
-
+    public Character2D chr;
+    public GameObject player;
 
     // Start is called before the first frame update
-    private void Start()
+    public void Init()
     {
-
-        player = FindObjectOfType<Character2D>();
+        player = GameObject.Find("Player");
+        chr = player.GetComponent<Character2D>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            player.OnDamage(999);
-            if (player.hp == 0)
-                player.tag = "DiePlayer";
+            chr.OnDamage(999);
+            if (chr.hp == 0)
+                chr.tag = "DiePlayer";
 
         }
         if (collision.tag == "ClearPlayer")
         {
-            player.OnDamage(0);
+            chr.OnDamage(0);
 
 
         }
@@ -36,14 +36,14 @@ public class Fall : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         { 
-            player.OnDamage(999);
-            if (player.hp == 0)
-                player.tag = "DiePlayer";
+            chr.OnDamage(999);
+            if (chr.hp == 0)
+                chr.tag = "DiePlayer";
 
         }
         if (collision.gameObject.tag == "ClearPlayer")
         {
-            player.OnDamage(0);
+            chr.OnDamage(0);
 
 
         }

@@ -19,11 +19,7 @@ public class UIBase : MonoBehaviour
         uM = FindObjectOfType<UIManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public virtual void OnButtonClick(GameObject btn)
     {
         sM.Play("Button");

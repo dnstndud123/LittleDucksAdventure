@@ -8,7 +8,7 @@ public class TrapClone : Trap
     {
         if (collision.tag == "Player")
         {
-            player.OnDamage(0);
+            chr.OnDamage(0);
         }
     }
 }

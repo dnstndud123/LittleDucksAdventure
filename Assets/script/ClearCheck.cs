@@ -11,10 +11,11 @@ public class ClearCheck : MonoBehaviour
      GameObject clearCheck;
     public GameObject player;
     // Start is called before the first frame update
-    void Start()
+    public void Init()
     {
+        player = GameObject.Find("Player");
         sM = FindObjectOfType<SoundManager>();
-        char2D = FindObjectOfType<Character2D>();
+        char2D = player.GetComponent<Character2D>();
         uM = FindObjectOfType<UIManager>();
         
     }

@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour
 {
-    protected Character2D player;
+    [SerializeField] protected GameObject player;
+    public GameObject gO;
+    [SerializeField] protected Character2D chr;
+
+
     
-
-
-    // Start is called before the first frame update
-    protected void Start()
+    public void Init()
     {
-        player = player = FindObjectOfType<Character2D>();
+        player = GameObject.Find("Player");
+        chr = player.GetComponent<Character2D>();
         
     }
     protected virtual void OnTriggerEnter2D(Collider2D collision)
@@ -20,15 +22,17 @@ public class Trap : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             
-            player.OnDamage(1);
-            if (player.hp == 0)
+            chr.OnDamage(1);
+            gO.SetActive(true);
+            if (chr.hp == 0)
                 player.tag = "DiePlayer";
         }
-        if (collision.gameObject.tag == "ClearPlayer")
-        {
+        //if (collision.gameObject.tag == "ClearPlayer")
+        //{
 
-            player.OnDamage(0);
-        }
+            //chr.OnDamage(0);
+            
+        //}
     }
 
     

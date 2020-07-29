@@ -63,14 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.6.0\Cinemachine Example Scenes\Scenes\3rdPersonWithAimMode\ActivateOnKeypress.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.6.0\Cinemachine Example Scenes\Scenes\CameraMagnets\CameraMagnetProperty.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.6.0\Cinemachine Example Scenes\Scenes\CameraMagnets\CameraMagnetTargetController.cs" />
@@ -96,7 +88,6 @@
     <Compile Include="Assets\script\GameManager.cs" />
     <Compile Include="Assets\script\IV\IVMove.cs" />
     <Compile Include="Assets\script\Object\FallTrap.cs" />
-    <Compile Include="Assets\script\Object\HideTrap.cs" />
     <Compile Include="Assets\script\Object\Trap.cs" />
     <Compile Include="Assets\script\Player\Character2D.cs" />
     <Compile Include="Assets\script\Player\PlayerControl.cs" />
@@ -105,8 +96,9 @@
     <Compile Include="Assets\script\Player\UIHp3.cs" />
     <Compile Include="Assets\script\Rotation.cs" />
     <Compile Include="Assets\script\Rotation_F.cs" />
+    <Compile Include="Assets\script\Scene\BaseScene.cs" />
     <Compile Include="Assets\script\Scene\Common.cs" />
-    <Compile Include="Assets\script\Scene\Level1Scene.cs" />
+    <Compile Include="Assets\script\Scene\GameScene.cs" />
     <Compile Include="Assets\script\Scene\SelectScene.cs" />
     <Compile Include="Assets\script\Scene\StartScene.cs" />
     <Compile Include="Assets\script\TrapClone.cs" />
@@ -117,7 +109,6 @@
     <Compile Include="Assets\script\UI\UISelect.cs" />
     <Compile Include="Assets\script\UI\UIStart.cs" />
     <Compile Include="Assets\script\sound\SoundManager.cs" />
-    <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <None Include="Assets\Sprite Pack\Tap and Fly\Readme.txt" />
     <None Include="Assets\Nature_pixel_art_assets\pixel_snapping_README.txt" />
     <Reference Include="UnityEngine">
@@ -743,6 +734,33 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Yun/Git/LittleDucksAdventure/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>D:/Yun/Git/LittleDucksAdventure/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>D:/Yun/Git/LittleDucksAdventure/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>D:/Yun/Git/LittleDucksAdventure/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>D:/Yun/Git/LittleDucksAdventure/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>D:/Yun/Git/LittleDucksAdventure/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>D:/Yun/Git/LittleDucksAdventure/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>D:/Yun/Git/LittleDucksAdventure/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>D:/Yun/Git/LittleDucksAdventure/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>D:/Yun/Git/LittleDucksAdventure/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
