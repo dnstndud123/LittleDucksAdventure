@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  gO: {fileID: 0}
+  gO: {fileID: 7828916791887179765}
   chr: {fileID: 0}
 --- !u!1 &7828916791887179765
 GameObject:

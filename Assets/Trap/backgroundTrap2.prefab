@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 8883771424464081318}
   - component: {fileID: 8883771424464081319}
   - component: {fileID: 1334713985898688540}
+  - component: {fileID: 4776883963545187606}
   m_Layer: 0
   m_Name: backgroundTrap2
   m_TagString: Untagged
@@ -179,3 +180,34 @@ MonoBehaviour:
   player: {fileID: 0}
   gO: {fileID: 8883771423640874625}
   chr: {fileID: 0}
+--- !u!60 &4776883963545187606
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883771424464081336}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.4, y: 0.7}
+    newSize: {x: 0.4, y: 0.7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.017436981, y: 0.13205354}
+      - {x: -0.1923078, y: -0.042818867}
+      - {x: -0.19999999, y: -0.35}
+      - {x: 0.19999999, y: -0.35}
+      - {x: 0.19487254, y: -0.047946453}
+      - {x: 0.017436981, y: 0.13205354}

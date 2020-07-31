@@ -7,11 +7,16 @@ using UnityEngine.SceneManagement;
 
 public class UISelect : UIBase
 {
-
     
-  
-
     
+    public void Init()
+    {
+        
+    }
+
+
+
+
     public void OnStart(int number)
     {
         // SceneManager.LoadScene(number+1);

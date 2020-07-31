@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UIPlay : UIBase
 {
-    public GameObject gObject;
+    public GameObject gObj;
     public GameObject level;
 
 
@@ -17,31 +17,33 @@ public class UIPlay : UIBase
     public override void OnButtonClick(GameObject btn)
     {
         base.OnButtonClick(btn);
-        if (btn.name == "option")
-        {
-            
-            gObject.SetActive(true);
-            //일시 정지
-            
-        }
-        if (btn.name == "resume")
-        {
-            gObject.SetActive(false);
-            //일시 정지 풀기
-        }
-        if (btn.name == "restart")
-        {
-            gObject.SetActive(false);
-            //현재 스테이지 다시 시작
-            OnRestart(level);
-            
-            
-        }
-        if (btn.name == "select")
-        {
-            
-            SceneManager.LoadScene(1);
-        }
+                    
+            if (btn.name == "option")
+            {
+
+                gObj.SetActive(true);
+                //일시 정지
+
+            }
+            if (btn.name == "resume")
+            {
+                gObj.SetActive(false);
+                //일시 정지 풀기
+            }
+            if (btn.name == "restart")
+            {
+                gObj.SetActive(false);
+                //현재 스테이지 다시 시작
+                OnRestart(level);
+
+
+            }
+            if (btn.name == "select")
+            {
+
+                SceneManager.LoadScene((int)SCENE.LEVEL_SELECT);
+            }
+        
     }
     public void OnRestart(GameObject level)
     {

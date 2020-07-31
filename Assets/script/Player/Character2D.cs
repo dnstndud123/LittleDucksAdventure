@@ -10,7 +10,7 @@ public class Character2D : MonoBehaviour
     protected Rigidbody2D rigid;
     protected Animator anim;
     public float forceY;
-    public float maxForce;
+    
     protected SoundManager sM;
     PlayerControl PC;
     UIManager UM;
@@ -103,10 +103,10 @@ public class Character2D : MonoBehaviour
 
         sM.Play("jump");
 
-            Vector2 velY = rigid.velocity;
-            float limitY = Mathf.Min(maxForce, velY.y);
+            
+            
 
-            rigid.velocity = new Vector2(velY.x, limitY);
+            
         
 
 

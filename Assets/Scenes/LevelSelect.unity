@@ -600,6 +600,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &111477117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 111477119}
+  - component: {fileID: 111477118}
+  m_Layer: 0
+  m_Name: SelcetScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &111477118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111477117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ea0065ce12b14088286a6dd44a356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  startP: {fileID: 0}
+  soundMgr: {fileID: 0}
+  clear: {fileID: 0}
+  select: {fileID: 0}
+--- !u!4 &111477119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111477117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 120.908516, y: -13.692898, z: -0.39160156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &122476705
 GameObject:
   m_ObjectHideFlags: 0
@@ -10461,13 +10509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7c8060a7339dd439b2d41978eb6362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startList:
-  - {fileID: 0}
-  - {fileID: 0}
   player: {fileID: 0}
-  clearList:
-  - {fileID: 0}
-  - {fileID: 0}
+  clearSpawn: {fileID: 0}
   clear: {fileID: 0}
   currentPoint: 0
 --- !u!4 &1297973941
@@ -11277,6 +11320,17 @@ MonoBehaviour:
   uM: {fileID: 0}
   rigid: {fileID: 0}
   anim: {fileID: 0}
+  btn:
+  - {fileID: 1214165672}
+  - {fileID: 1253291913}
+  - {fileID: 21153497}
+  - {fileID: 1910571631}
+  - {fileID: 1516557339}
+  - {fileID: 302796949}
+  - {fileID: 2049270272}
+  - {fileID: 830287227}
+  - {fileID: 935670854}
+  - {fileID: 843502145}
 --- !u!1 &1510670483
 GameObject:
   m_ObjectHideFlags: 0
@@ -13023,7 +13077,6 @@ GameObject:
   - component: {fileID: 1652506318}
   - component: {fileID: 1652506317}
   - component: {fileID: 1652506316}
-  - component: {fileID: 1652506315}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -13031,23 +13084,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1652506315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652506314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  damping: 1
-  lookAheadFactor: 2
-  lookAheadReturnSpeed: 0.5
-  lookAheadMoveThreshold: 0.1
 --- !u!81 &1652506316
 AudioListener:
   m_ObjectHideFlags: 0

@@ -6,5 +6,6 @@ public enum SCENE
 {
     MAIN = 0,
     LEVEL_SELECT,
-    LEVEL1
+    LEVEL1,
+    LEVEL2
 }

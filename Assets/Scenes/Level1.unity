@@ -4430,7 +4430,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: f9d742c59fcf4f446be1d6633df7ae86, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.2272968}
@@ -5310,13 +5310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7c8060a7339dd439b2d41978eb6362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startList:
-  - {fileID: 0}
-  - {fileID: 0}
-  player: {fileID: 0}
-  clearList:
-  - {fileID: 0}
-  - {fileID: 0}
+  player: {fileID: 5897402326703881409, guid: 7848a17c09fc61c42b37229fdde55e47, type: 3}
+  clearSpawn: {fileID: 0}
   clear: {fileID: 0}
   currentPoint: 0
 --- !u!4 &590317723
@@ -5855,7 +5850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683434545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 93.71, y: 0.52, z: 0}
+  m_LocalPosition: {x: 93, y: 0.52, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 1544430349}
@@ -5871,7 +5866,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: f9d742c59fcf4f446be1d6633df7ae86, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.2272968}
@@ -7786,13 +7781,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 541a0ace4e5745149a625a8b51cfd6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5897402326703881409, guid: 7848a17c09fc61c42b37229fdde55e47, type: 3}
   startP: {fileID: 0}
+  soundMgr: {fileID: 0}
+  player: {fileID: 5897402326703881409, guid: 7848a17c09fc61c42b37229fdde55e47, type: 3}
   CamFollow: {fileID: 0}
   fall: {fileID: 0}
   traps:
   - {fileID: 1697351479}
   - {fileID: 152779371}
+  clear: {fileID: 0}
 --- !u!4 &807293972
 Transform:
   m_ObjectHideFlags: 0
@@ -8076,7 +8073,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: f9d742c59fcf4f446be1d6633df7ae86, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.2272968}
@@ -11795,7 +11792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231486209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 101.06, y: 0.41, z: 0}
+  m_LocalPosition: {x: 101.06, y: 0.05, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 1544430349}
@@ -14465,7 +14462,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: f9d742c59fcf4f446be1d6633df7ae86, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.2272968}
@@ -14591,7 +14588,7 @@ MonoBehaviour:
   uM: {fileID: 0}
   rigid: {fileID: 0}
   anim: {fileID: 0}
-  gObject: {fileID: 1704773674}
+  gObj: {fileID: 1704773674}
   level: {fileID: 32199409}
 --- !u!224 &1615702950
 RectTransform:
@@ -18266,7 +18263,7 @@ MonoBehaviour:
   uM: {fileID: 0}
   rigid: {fileID: 0}
   anim: {fileID: 0}
-  gObject: {fileID: 0}
+  gObj: {fileID: 0}
   level: {fileID: 0}
 --- !u!95 &1962919749
 Animator:
@@ -18752,10 +18749,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4104413ced9e11948a01f8e2306b9e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speedX: 70
+  _speedY: 0
+  desPointX: 128
+  oriPointX: 126
+  desPointY: 0
+  oriPointY: 0
+  span: 0
+  span2: 0
+  delta: 0
+  delta2: 0
   stageNumber: 1
   char2D: {fileID: 0}
   uM: {fileID: 0}
+  jumpForce: 200
+  clearCheck: {fileID: 0}
   player: {fileID: 0}
+  anim: {fileID: 0}
+  btn: {fileID: 1569003137}
+  btnActive: btnActive
 --- !u!70 &1993117431
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -18788,7 +18800,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 34d921d8e00d20f4e930d9dd1ca37d60, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0

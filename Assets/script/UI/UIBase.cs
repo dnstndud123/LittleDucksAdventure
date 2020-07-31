@@ -10,6 +10,7 @@ public class UIBase : MonoBehaviour
     public Rigidbody2D rigid;
     protected Character2D player;
     public Animator anim;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,8 @@ public class UIBase : MonoBehaviour
         player = FindObjectOfType<Character2D>();
         gM = FindObjectOfType<GameManager>();
         uM = FindObjectOfType<UIManager>();
+        
+        
     }
 
     

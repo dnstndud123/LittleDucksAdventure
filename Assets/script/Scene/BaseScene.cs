@@ -6,8 +6,11 @@ public class BaseScene : MonoBehaviour
 {
     public GameObject player;
     public GameObject startP;
+    public GameObject soundMgr;
     
-    // Start is called before the first frame update
+    
+    
+    
 
     private void Start()
     {
@@ -17,7 +20,7 @@ public class BaseScene : MonoBehaviour
     {
         GameObject player = GameObject.Find("Player");
         startP = GameObject.Find("StartPoint");
-
+        soundMgr = GameObject.Find("SoundManager");
         if (player == null)
         {
             GameObject p = Instantiate(this.player);
@@ -29,6 +32,8 @@ public class BaseScene : MonoBehaviour
 
         Vector3 startPos = startP.transform.position;
         player.transform.position = new Vector3(startPos.x, startPos.y, startPos.z);
+
+
     }
 
     
