@@ -268,7 +268,7 @@ Animator:
   m_GameObject: {fileID: 21153497}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7bc6b2e11e49a6848b6217ed19a0c279, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -319,7 +319,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 21153501}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487648260}
+        m_MethodName: OnButtonClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21153497}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1487648260}
+        m_MethodName: OnStart
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &21153501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,8 +654,6 @@ MonoBehaviour:
   player: {fileID: 0}
   startP: {fileID: 0}
   soundMgr: {fileID: 0}
-  clear: {fileID: 0}
-  select: {fileID: 0}
 --- !u!4 &111477119
 Transform:
   m_ObjectHideFlags: 0
@@ -5434,7 +5454,7 @@ GameObject:
   - component: {fileID: 683793533}
   - component: {fileID: 683793532}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UISelect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11320,17 +11340,6 @@ MonoBehaviour:
   uM: {fileID: 0}
   rigid: {fileID: 0}
   anim: {fileID: 0}
-  btn:
-  - {fileID: 1214165672}
-  - {fileID: 1253291913}
-  - {fileID: 21153497}
-  - {fileID: 1910571631}
-  - {fileID: 1516557339}
-  - {fileID: 302796949}
-  - {fileID: 2049270272}
-  - {fileID: 830287227}
-  - {fileID: 935670854}
-  - {fileID: 843502145}
 --- !u!1 &1510670483
 GameObject:
   m_ObjectHideFlags: 0

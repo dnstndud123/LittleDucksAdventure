@@ -158,7 +158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   maxHp: 1
-  forceY: 300
+  forceY: 330
+  jumpCheck: {fileID: 5897402327717066310}
 --- !u!114 &5897402326703881419
 MonoBehaviour:
   m_ObjectHideFlags: 0

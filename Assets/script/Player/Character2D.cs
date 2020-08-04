@@ -14,7 +14,7 @@ public class Character2D : MonoBehaviour
     protected SoundManager sM;
     PlayerControl PC;
     UIManager UM;
-    
+    public GameObject jumpCheck;
 
     // Start is called before the first frame update
     public void Init()
@@ -27,6 +27,7 @@ public class Character2D : MonoBehaviour
         UM = FindObjectOfType<UIManager>();
         hp = maxHp;
         anim.SetInteger("hp", hp);
+        
         
 
     }
@@ -53,6 +54,7 @@ public class Character2D : MonoBehaviour
     {
         if (collision.tag == "ground" || collision.tag == "fall")
         {
+            
             anim.SetBool("jump", false);
         }
     }
@@ -62,16 +64,21 @@ public class Character2D : MonoBehaviour
         if (collision.tag == "ground" || collision.tag == "fall")
         {
             anim.SetBool("jump", true);
+         
+                
+    
         }
+        // Update is called once per frame
     }
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
+
+
         anim.SetFloat("velocity", Mathf.Abs(rigid.velocity.x));
-
-        
-
+    
     }
+
+
 
     public void Flip(bool right)
     {
@@ -98,12 +105,12 @@ public class Character2D : MonoBehaviour
 
         anim.SetBool("jump", true);
         rigid.AddForce(new Vector2(0, forceY));
-        
 
+        
 
         sM.Play("jump");
 
-            
+        
             
 
             
