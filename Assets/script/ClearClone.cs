@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClearCheck : MonoBehaviour
+public class ClearClone : MonoBehaviour
 {
+
     public float _speedX;
     public float _speedY;
     private bool right = true;
@@ -18,25 +19,17 @@ public class ClearCheck : MonoBehaviour
     public float delta;
     public float delta2;
 
-    public int stageNumber;
-    public Character2D char2D;
-    public UIManager uM;
     SoundManager sM;
     [SerializeField] Rigidbody2D rigid;
     public float jumpForce = 10;
-    public GameObject clearCheck;
-    public GameObject player;
     public Animator anim;
     //public GameObject btn;
     public string btnActive = "btnActive";
     // Start is called before the first frame update
-    public void Init()
+    void Start()
     {
-        
-        player = GameObject.Find("Player");
+
         sM = FindObjectOfType<SoundManager>();
-        char2D = player.GetComponent<Character2D>();
-        uM = FindObjectOfType<UIManager>();
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         span = Random.Range(2.0f, 20.0f);
@@ -67,8 +60,8 @@ public class ClearCheck : MonoBehaviour
             {
                 moveY = moveY * -1;
             }
-            
-            
+
+
 
 
             pos = rigid.transform.localPosition;
@@ -101,14 +94,14 @@ public class ClearCheck : MonoBehaviour
         if (delta2 > span2)
         {
             anim.SetFloat("velocity", 0);
-            
+
         }
         if (delta2 > span2 + 5.0f)
             delta2 = 0;
 
         //랜덤 점프
         delta += Time.deltaTime;
-        if( delta > span )
+        if (delta > span)
         {
             //점프
             rigid.AddForce(new Vector2(0, jumpForce));
@@ -138,25 +131,10 @@ public class ClearCheck : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.tag == "Player")
-        {
-            sM.Play("Score");
-            uM.HideAll();
-            uM.Show("UISelect", uM.uiList[1]);
-            player.tag = "ClearPlayer";
-            //btn.SetActive(true);
-            
-            clearCheck.SetActive(false);
-
-
-            
-
-
-
-        }
+       
         if (collision.tag == "ground" || collision.tag == "fall")
         {
-                anim.SetBool("jump", false);
+            anim.SetBool("jump", false);
         }
 
 #if UNITY_ANDROID||UNITY_IOS

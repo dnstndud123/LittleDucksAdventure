@@ -9,10 +9,7 @@ public class UISelect : UIBase
 {
     
     
-    public void Init()
-    {
-        
-    }
+    
 
 
 

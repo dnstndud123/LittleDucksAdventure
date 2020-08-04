@@ -106,7 +106,7 @@ public class Character2D : MonoBehaviour
         anim.SetBool("jump", true);
         rigid.AddForce(new Vector2(0, forceY));
 
-        
+        jumpCheck.SetActive(true);
 
         sM.Play("jump");
 

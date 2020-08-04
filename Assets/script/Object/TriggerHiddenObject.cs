@@ -12,6 +12,7 @@ public class TriggerHiddenObject : MonoBehaviour
         if (collision.tag == "Player")
         {
             obj.SetActive(true);
+            rigid.gravityScale = 0;
         }
          if (obj.activeSelf)
         {

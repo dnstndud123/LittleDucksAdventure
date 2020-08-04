@@ -16,6 +16,9 @@ TagManager:
   - ClearPlayer
   - DiePlayer
   - JumpCheck
+  - fallen1
+  - fallen2
+  - fallen3
   layers:
   - Default
   - TransparentFX

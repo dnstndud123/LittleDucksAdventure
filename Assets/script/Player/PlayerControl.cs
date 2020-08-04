@@ -6,7 +6,7 @@ public class PlayerControl : MonoBehaviour
 {
     
     public float speedX;
-    public float maxSpeed;
+    public float maxSpeed = 4;
     
     
 

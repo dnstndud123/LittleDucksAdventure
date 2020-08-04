@@ -84,12 +84,15 @@
     <Compile Include="Assets\Samples\Cinemachine\2.6.0\Cinemachine Example Scenes\Shared\Scripts\SpawnInCircle.cs" />
     <Compile Include="Assets\hurt.cs" />
     <Compile Include="Assets\script\ClearCheck.cs" />
+    <Compile Include="Assets\script\ClearClone.cs" />
     <Compile Include="Assets\script\Fall.cs" />
     <Compile Include="Assets\script\GameManager.cs" />
     <Compile Include="Assets\script\IV\IVMove.cs" />
     <Compile Include="Assets\script\Object\FallTrap.cs" />
+    <Compile Include="Assets\script\Object\FallenTrap.cs" />
     <Compile Include="Assets\script\Object\HiddenObject.cs" />
     <Compile Include="Assets\script\Object\HiddenTrapFall.cs" />
+    <Compile Include="Assets\script\Object\JumpTrap.cs" />
     <Compile Include="Assets\script\Object\Trap.cs" />
     <Compile Include="Assets\script\Object\TriggerHiddenObject.cs" />
     <Compile Include="Assets\script\Object\TriggerTrapUp.cs" />

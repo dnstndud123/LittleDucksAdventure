@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class SelectScene : BaseScene
 {
-    
-    
-    
+
+    public void Init()
+    {
+        
+    }
+
 }

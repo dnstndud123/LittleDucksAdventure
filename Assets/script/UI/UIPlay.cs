@@ -10,10 +10,7 @@ public class UIPlay : UIBase
     public GameObject level;
 
 
-    public void Init()
-    {
-        
-    }
+    
     public override void OnButtonClick(GameObject btn)
     {
         base.OnButtonClick(btn);
@@ -22,13 +19,15 @@ public class UIPlay : UIBase
             {
 
                 gObj.SetActive(true);
-                //일시 정지
+            //일시 정지
+                Time.timeScale = 0.0f;
 
             }
             if (btn.name == "resume")
             {
                 gObj.SetActive(false);
-                //일시 정지 풀기
+                Time.timeScale = 1.0f;
+            //일시 정지 풀기
             }
             if (btn.name == "restart")
             {
