@@ -8,6 +8,7 @@ public class UIPlay : UIBase
 {
     public GameObject gObj;
     public GameObject level;
+    
 
 
     
@@ -21,6 +22,7 @@ public class UIPlay : UIBase
                 gObj.SetActive(true);
             //일시 정지
                 Time.timeScale = 0.0f;
+                
 
             }
             if (btn.name == "resume")
@@ -32,6 +34,7 @@ public class UIPlay : UIBase
             if (btn.name == "restart")
             {
                 gObj.SetActive(false);
+                Time.timeScale = 1.0f;
                 //현재 스테이지 다시 시작
                 OnRestart(level);
 
@@ -39,13 +42,14 @@ public class UIPlay : UIBase
             }
             if (btn.name == "select")
             {
-
+                Time.timeScale = 1.0f;
                 SceneManager.LoadScene((int)SCENE.LEVEL_SELECT);
             }
         
     }
     public void OnRestart(GameObject level)
     {
+        
         SceneManager.LoadScene(level.name);
     }
 

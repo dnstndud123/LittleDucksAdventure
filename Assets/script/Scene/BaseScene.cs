@@ -15,6 +15,7 @@ public class BaseScene : MonoBehaviour
     private void Start()
     {
         Init();
+        
     }
     public virtual void Init()
     {

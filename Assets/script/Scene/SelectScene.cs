@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SelectScene : BaseScene
 {
 
-    public void Init()
+    public override void Init()
     {
+        base.Init();
         
     }
 

@@ -111,6 +111,7 @@
     <Compile Include="Assets\script\TrapClone.cs" />
     <Compile Include="Assets\script\UI\UIBase.cs" />
     <Compile Include="Assets\script\UI\UIGameOver.cs" />
+    <Compile Include="Assets\script\UI\UILoading.cs" />
     <Compile Include="Assets\script\UI\UIManager.cs" />
     <Compile Include="Assets\script\UI\UIPlay.cs" />
     <Compile Include="Assets\script\UI\UISelect.cs" />

@@ -15,10 +15,10 @@ public class UIBase : MonoBehaviour
     void Start()
     {
         sM = FindObjectOfType<SoundManager>();
-        player = FindObjectOfType<Character2D>();
+        
         gM = FindObjectOfType<GameManager>();
         uM = FindObjectOfType<UIManager>();
-        
+        player = FindObjectOfType<Character2D>();
         
     }
 

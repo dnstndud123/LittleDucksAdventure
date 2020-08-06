@@ -7,15 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class UISelect : UIBase
 {
+   
     
-    
-    
-
-
 
 
     public void OnStart(int number)
     {
+        SceneManager.LoadScene(number + 1);
+        
+         
         // SceneManager.LoadScene(number+1);
         /*  player.hp = player.maxHp;
           anim.SetBool("die", false);
@@ -26,8 +26,30 @@ public class UISelect : UIBase
           gM.ClearRespawn(number);
           player.tag = "Player";
         */
-        SceneManager.LoadScene(number + 1);
+        
+        
     }
+  /*  private void Update()
+    {
+        if (number > 0)
+        {
+            delta += Time.deltaTime;
+            uL.SetActive(true);
+
+            if (delta > waitTime)
+            {
+                
+                delta = 0;
+                uL.SetActive(false);
+                
+                number = 0;
+            }
+        
+        }
+       
+    }
+  */
+
     public override void OnButtonClick(GameObject btn)
     {
 
