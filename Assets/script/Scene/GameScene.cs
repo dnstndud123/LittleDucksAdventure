@@ -11,6 +11,7 @@ public class GameScene : BaseScene
     public GameObject[] traps;
     public GameObject clear;
     
+    
     public override void Init()
     {
 
@@ -43,5 +44,9 @@ public class GameScene : BaseScene
             Trap trap = traps[i].GetComponent<Trap>();
             trap.Init();
         }
-    } 
+    }
+    private void Update()
+    {
+        
+    }
 }

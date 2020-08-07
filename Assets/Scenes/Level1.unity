@@ -820,17 +820,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 960433061}
-        m_MethodName: OnStart
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &61761623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2866,7 +2855,7 @@ GameObject:
   - component: {fileID: 212559423}
   - component: {fileID: 212559422}
   m_Layer: 5
-  m_Name: select
+  m_Name: LevelSelect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3237,17 +3226,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 960433061}
-        m_MethodName: OnStart
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: level1
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 960433061}
         m_MethodName: OnButtonClick
         m_Mode: 2
@@ -3761,7 +3739,6 @@ GameObject:
   m_Component:
   - component: {fileID: 357514723}
   - component: {fileID: 357514725}
-  - component: {fileID: 357514724}
   m_Layer: 9
   m_Name: ground check
   m_TagString: Untagged
@@ -3783,18 +3760,6 @@ Transform:
   m_Father: {fileID: 1993117435}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &357514724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357514722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfcc4b8b00398b544a7a99527baa416d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &357514725
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5054,8 +5019,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1615702949}
-        m_MethodName: OnRestart
+      - m_Target: {fileID: 1273265223}
+        m_MethodName: OnButtonClick
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 228123109}
@@ -5644,7 +5609,7 @@ Animator:
   m_GameObject: {fileID: 589202677}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7bc6b2e11e49a6848b6217ed19a0c279, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5703,17 +5668,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 589202677}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 960433061}
-        m_MethodName: OnStart
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7024,7 +6978,7 @@ Animator:
   m_GameObject: {fileID: 746316152}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7bc6b2e11e49a6848b6217ed19a0c279, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7075,7 +7029,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 746316156}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 960433061}
+        m_MethodName: OnButtonClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 746316152}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &746316156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9220,6 +9185,8 @@ GameObject:
   m_Component:
   - component: {fileID: 960433060}
   - component: {fileID: 960433061}
+  - component: {fileID: 960433063}
+  - component: {fileID: 960433062}
   m_Layer: 5
   m_Name: UISelect
   m_TagString: Untagged
@@ -9236,7 +9203,7 @@ RectTransform:
   m_GameObject: {fileID: 960433059}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1858974217}
   - {fileID: 228123110}
@@ -9274,6 +9241,43 @@ MonoBehaviour:
   uM: {fileID: 0}
   rigid: {fileID: 0}
   anim: {fileID: 0}
+--- !u!114 &960433062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960433059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &960433063
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960433059}
+  m_CullTransparentMesh: 0
 --- !u!1 &973043916
 GameObject:
   m_ObjectHideFlags: 0
@@ -9796,7 +9800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12132,7 +12136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1273265223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14361,17 +14365,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1589159766}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 960433061}
-        m_MethodName: OnStart
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 

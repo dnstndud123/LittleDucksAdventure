@@ -14,44 +14,44 @@ public class UIPlay : UIBase
     
     public override void OnButtonClick(GameObject btn)
     {
-        base.OnButtonClick(btn);
-                    
-            if (btn.name == "option")
-            {
+        sM.Play("Select");
 
-                gObj.SetActive(true);
+        if (btn.name == "option")
+        {
+
+            gObj.SetActive(true);
             //일시 정지
-                Time.timeScale = 0.0f;
-                
+            Time.timeScale = 0.0f;
 
-            }
-            if (btn.name == "resume")
-            {
-                gObj.SetActive(false);
-                Time.timeScale = 1.0f;
+
+        }
+        if (btn.name == "resume")
+        {
+
+            gObj.SetActive(false);
+            Time.timeScale = 1.0f;
             //일시 정지 풀기
-            }
-            if (btn.name == "restart")
-            {
-                gObj.SetActive(false);
-                Time.timeScale = 1.0f;
-                //현재 스테이지 다시 시작
-                OnRestart(level);
+        }
+        if (btn.name == "restart")
+        {
+            gObj.SetActive(false);
+            Time.timeScale = 1.0f;
+
+            //현재 스테이지 다시 시작
+            OnRestart(level);
 
 
-            }
-            if (btn.name == "select")
-            {
-                Time.timeScale = 1.0f;
-                SceneManager.LoadScene((int)SCENE.LEVEL_SELECT);
-            }
+        }
+        if (btn.name == "LevelSelect")
+        {
+            Time.timeScale = 1.0f;
+
+            StartCoroutine(OnPlay(btn.name));
+            //SceneManager.LoadScene((int)SCENE.LEVEL_SELECT);
+        }
         
     }
-    public void OnRestart(GameObject level)
-    {
-        
-        SceneManager.LoadScene(level.name);
-    }
+    
 
 }
 

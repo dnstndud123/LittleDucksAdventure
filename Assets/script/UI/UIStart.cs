@@ -12,8 +12,8 @@ public class UIStart : UIBase
     
     public override void OnButtonClick(GameObject btn)
     {
-        
         sM.Play("Select");
-        SceneManager.LoadScene(1);
+        StartCoroutine(OnPlay(btn.name));
+            
     }
 }

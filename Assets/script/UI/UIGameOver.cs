@@ -9,6 +9,7 @@ public class UIGameOver : UIBase
     public void OnSelect()
     {
         uM.HideAll();
+        sM.Play("Select");
         uM.Show("UISelect", uM.uiList[1]);
     }
 }

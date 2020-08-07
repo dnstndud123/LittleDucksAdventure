@@ -4,16 +4,18 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Cinemachine.Examples;
 
 public class UISelect : UIBase
 {
    
     
+    
 
-
-    public void OnStart(int number)
-    {
-        SceneManager.LoadScene(number + 1);
+    //public void OnStart(int number)
+    //{
+    //    StartCoroutine(OnPlay());
+    //    SceneManager.LoadScene(number + 1);
         
          
         // SceneManager.LoadScene(number+1);
@@ -28,7 +30,7 @@ public class UISelect : UIBase
         */
         
         
-    }
+    //}
   /*  private void Update()
     {
         if (number > 0)

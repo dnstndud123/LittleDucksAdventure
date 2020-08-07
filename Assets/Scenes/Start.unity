@@ -8768,7 +8768,7 @@ GameObject:
   - component: {fileID: 1260922751}
   - component: {fileID: 1260922750}
   m_Layer: 5
-  m_Name: Button
+  m_Name: LevelSelect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12795,7 +12795,7 @@ GameObject:
   - component: {fileID: 1806279185}
   - component: {fileID: 1806279184}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

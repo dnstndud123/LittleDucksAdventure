@@ -15,6 +15,7 @@ public class Character2D : MonoBehaviour
     PlayerControl PC;
     UIManager UM;
     public GameObject jumpCheck;
+    public float delta;
 
     // Start is called before the first frame update
     public void Init()
@@ -27,6 +28,7 @@ public class Character2D : MonoBehaviour
         UM = FindObjectOfType<UIManager>();
         hp = maxHp;
         anim.SetInteger("hp", hp);
+        rigid.simulated = false;
         
         
 
@@ -72,10 +74,14 @@ public class Character2D : MonoBehaviour
     }
     private void Update()
     {
-
-
+        delta += Time.deltaTime;
         anim.SetFloat("velocity", Mathf.Abs(rigid.velocity.x));
-    
+        
+        if (delta > 3.5f)
+        {
+            rigid.simulated = true;
+            delta = 4;
+        }
     }
 
 

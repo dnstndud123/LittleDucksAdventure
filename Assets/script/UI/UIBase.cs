@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIBase : MonoBehaviour
 {
@@ -21,10 +22,20 @@ public class UIBase : MonoBehaviour
         player = FindObjectOfType<Character2D>();
         
     }
+    protected IEnumerator OnPlay(string name)
+    {
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(name);
+    }
+    public void OnRestart(GameObject level)
+    {
+        sM.Play("Select");
+        StartCoroutine(OnPlay(level.name));
 
-    
+    }
     public virtual void OnButtonClick(GameObject btn)
     {
-        sM.Play("Button");
+        sM.Play("Select");
+        StartCoroutine(OnPlay(btn.name));
     }
 }

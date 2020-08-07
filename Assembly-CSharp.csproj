@@ -93,6 +93,7 @@
     <Compile Include="Assets\script\Object\HiddenObject.cs" />
     <Compile Include="Assets\script\Object\HiddenTrapFall.cs" />
     <Compile Include="Assets\script\Object\JumpTrap.cs" />
+    <Compile Include="Assets\script\Object\Teleport\Teleport.cs" />
     <Compile Include="Assets\script\Object\Trap.cs" />
     <Compile Include="Assets\script\Object\TriggerHiddenObject.cs" />
     <Compile Include="Assets\script\Object\TriggerTrapUp.cs" />
