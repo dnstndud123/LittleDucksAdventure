@@ -7,7 +7,7 @@ public class BaseScene : MonoBehaviour
     public GameObject player;
     public GameObject startP;
     public GameObject soundMgr;
-
+    
 
 
     

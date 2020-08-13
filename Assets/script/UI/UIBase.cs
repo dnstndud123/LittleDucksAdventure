@@ -15,12 +15,22 @@ public class UIBase : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sM = FindObjectOfType<SoundManager>();
+        Init();
         
-        gM = FindObjectOfType<GameManager>();
-        uM = FindObjectOfType<UIManager>();
+    }
+    public virtual void Init()
+    {
+        GameObject sMObj = GameObject.Find("SoundManager");
+        sM = sMObj.GetComponent<SoundManager>();
+
+        GameObject gMObj = GameObject.Find("GameManager");
+        gM = gMObj.GetComponent<GameManager>();
+
+        GameObject uMObj = GameObject.Find("UIManager");
+        uM = uMObj.GetComponent<UIManager>();
+
+
         player = FindObjectOfType<Character2D>();
-        
     }
     protected IEnumerator OnPlay(string name)
     {

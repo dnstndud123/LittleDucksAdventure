@@ -14,6 +14,8 @@ public class Teleport : MonoBehaviour
         {
 
             collision.transform.position = telp.transform.position;
+            Vector3 plPos = collision.transform.position;
+            Camera.main.transform.position = new Vector3(plPos.x, plPos.y, Camera.main.transform.position.z);
         }
     }
 }

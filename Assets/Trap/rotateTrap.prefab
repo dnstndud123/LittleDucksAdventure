@@ -42,7 +42,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3042894174911900941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a2f385a21a36d547a63280aace5f690, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b00d68d151b20b458deacaf891035e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotate: 0
@@ -61,6 +61,7 @@ MonoBehaviour:
   player: {fileID: 0}
   gO: {fileID: 0}
   chr: {fileID: 0}
+  rigid: {fileID: 0}
 --- !u!1 &3042894175156570424
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +90,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3042894175156570424}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.22, y: -0.8, z: 0}
+  m_LocalPosition: {x: 0.05, y: -0.8, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 3042894174911900978}
@@ -160,6 +161,7 @@ MonoBehaviour:
   player: {fileID: 0}
   gO: {fileID: 0}
   chr: {fileID: 0}
+  rigid: {fileID: 0}
 --- !u!58 &3042894175156570429
 CircleCollider2D:
   m_ObjectHideFlags: 0

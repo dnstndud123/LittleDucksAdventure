@@ -93,8 +93,13 @@
     <Compile Include="Assets\script\Object\HiddenObject.cs" />
     <Compile Include="Assets\script\Object\HiddenTrapFall.cs" />
     <Compile Include="Assets\script\Object\JumpTrap.cs" />
+    <Compile Include="Assets\script\Object\Rotation.cs" />
+    <Compile Include="Assets\script\Object\Rotation_F.cs" />
+    <Compile Include="Assets\script\Object\Switch.cs" />
     <Compile Include="Assets\script\Object\Teleport\Teleport.cs" />
+    <Compile Include="Assets\script\Object\Teleport\TrapTeleport.cs" />
     <Compile Include="Assets\script\Object\Trap.cs" />
+    <Compile Include="Assets\script\Object\TrapSummon.cs" />
     <Compile Include="Assets\script\Object\TriggerHiddenObject.cs" />
     <Compile Include="Assets\script\Object\TriggerTrapUp.cs" />
     <Compile Include="Assets\script\Player\Character2D.cs" />
@@ -102,8 +107,6 @@
     <Compile Include="Assets\script\Player\UIHp1.cs" />
     <Compile Include="Assets\script\Player\UIHp2.cs" />
     <Compile Include="Assets\script\Player\UIHp3.cs" />
-    <Compile Include="Assets\script\Rotation.cs" />
-    <Compile Include="Assets\script\Rotation_F.cs" />
     <Compile Include="Assets\script\Scene\BaseScene.cs" />
     <Compile Include="Assets\script\Scene\Common.cs" />
     <Compile Include="Assets\script\Scene\GameScene.cs" />

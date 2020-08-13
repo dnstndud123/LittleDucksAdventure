@@ -19,6 +19,7 @@ TagManager:
   - fallen1
   - fallen2
   - fallen3
+  - GroundCheck
   layers:
   - Default
   - TransparentFX

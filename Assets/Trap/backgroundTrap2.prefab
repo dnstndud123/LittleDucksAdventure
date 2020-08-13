@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8883771423640874624}
   - component: {fileID: 8883771423640874639}
+  - component: {fileID: 4529281602199917679}
   m_Layer: 0
   m_Name: Off
   m_TagString: Untagged
@@ -81,6 +82,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4529281602199917679
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883771423640874625}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d08e5aebb5eddaa4c905419f8dba3a81, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8883771424464081336
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,6 +200,7 @@ MonoBehaviour:
   player: {fileID: 0}
   gO: {fileID: 8883771423640874625}
   chr: {fileID: 0}
+  rigid: {fileID: 0}
 --- !u!60 &4776883963545187606
 PolygonCollider2D:
   m_ObjectHideFlags: 0

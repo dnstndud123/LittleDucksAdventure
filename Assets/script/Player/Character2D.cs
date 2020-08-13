@@ -28,6 +28,7 @@ public class Character2D : MonoBehaviour
         UM = FindObjectOfType<UIManager>();
         hp = maxHp;
         anim.SetInteger("hp", hp);
+
         rigid.simulated = false;
         
         

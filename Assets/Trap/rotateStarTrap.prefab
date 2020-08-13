@@ -42,7 +42,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6954675931429060549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a2f385a21a36d547a63280aace5f690, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b00d68d151b20b458deacaf891035e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotate: 0
@@ -61,6 +61,7 @@ MonoBehaviour:
   player: {fileID: 0}
   gO: {fileID: 0}
   chr: {fileID: 0}
+  rigid: {fileID: 0}
 --- !u!1 &6954675933398634767
 GameObject:
   m_ObjectHideFlags: 0
