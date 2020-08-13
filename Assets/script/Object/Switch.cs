@@ -8,6 +8,8 @@ public class Switch : MonoBehaviour
     public SoundManager sM;
     public GameObject floor;
     public GameObject trigger;
+    public GameObject hideObj;
+    public BoxCollider2D col;
 
     bool turn = false;
     private void OnTriggerEnter2D(Collider2D collision)
@@ -20,19 +22,24 @@ public class Switch : MonoBehaviour
             anim.SetBool("TurnOn", true);
             sM.Play("SwitchOn");
             StartCoroutine(TurnOn(true));
+            hideObj.SetActive(false);
 
             floor.transform.position = new Vector3(floorPos.x, -22.4f, 0);
+            col.enabled = false;
             trigger.SetActive(true);
             
         }
         if (collision.tag == "JumpCheck" && turn == true)
-            {
-                anim.SetBool("TurnOn", false);
-                sM.Play("Select2");
-                StartCoroutine(TurnOn(false));
-                floor.transform.position = new Vector3(floorPos.x, -34.72f, 0);
-                trigger.SetActive(false);
-            }
+        {
+            anim.SetBool("TurnOn", false);
+            sM.Play("Select2");
+            StartCoroutine(TurnOn(false));
+            hideObj.SetActive(true);
+
+            floor.transform.position = new Vector3(floorPos.x, -34.72f, 0);
+            col.enabled = true;
+            trigger.SetActive(false);
+        }
     }
     public IEnumerator TurnOn(bool turn)
     {

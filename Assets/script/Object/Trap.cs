@@ -26,8 +26,10 @@ public class Trap : MonoBehaviour
             chr.OnDamage(1);
             if (chr.hp == 0)
                 player.tag = "DiePlayer";
-            gO.SetActive(true);
-            
+            if (gO != null)
+            {
+                gO.SetActive(true);
+            }
         }
         //if (collision.gameObject.tag == "ClearPlayer")
         //{
