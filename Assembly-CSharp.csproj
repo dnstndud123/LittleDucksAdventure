@@ -120,6 +120,7 @@
     <Compile Include="Assets\script\UI\UIPlay.cs" />
     <Compile Include="Assets\script\UI\UISelect.cs" />
     <Compile Include="Assets\script\UI\UIStart.cs" />
+    <Compile Include="Assets\script\sound\GameGlobal.cs" />
     <Compile Include="Assets\script\sound\SoundManager.cs" />
     <None Include="Assets\Sprite Pack\Tap and Fly\Readme.txt" />
     <None Include="Assets\Nature_pixel_art_assets\pixel_snapping_README.txt" />

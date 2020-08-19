@@ -5,9 +5,9 @@ using UnityEngine;
 public class StartScene : BaseScene
 {
     // Start is called before the first frame update
-    public void Init()
+    public override void Init()
     {
-        
+        base.Init();
     }
 
     

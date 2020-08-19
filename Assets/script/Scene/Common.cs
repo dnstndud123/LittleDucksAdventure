@@ -4,8 +4,12 @@ using UnityEngine;
 
 public enum SCENE
 {
-    MAIN = 0,
-    LEVEL_SELECT,
+    START = 0,
+    SELECT,
     LEVEL1,
-    LEVEL2
+    LEVEL2,
+    LEVEL3,
+    LEVEL4,
+    LEVEL5,
+    LEVEL6
 }
