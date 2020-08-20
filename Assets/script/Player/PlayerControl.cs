@@ -12,18 +12,12 @@ public class PlayerControl : MonoBehaviour
 
     public Character2D char2D;
     public Rigidbody2D rigid;
-    Animator anim;
+    
 
     
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-        
-        
-    }
     
+
     
     // Update is called once per frame
     void Update()
@@ -70,6 +64,10 @@ public class PlayerControl : MonoBehaviour
             rigid.AddForce(new Vector2(speedX, 0));
             char2D.Flip(true);
         }
+       //if (speedX > 0)
+       //    char2D.Flip(true);
+       // if (speedX < 0)
+       //     char2D.Flip(false);
 
         Vector2 velX = rigid.velocity;
         float limitX = Mathf.Min(maxSpeed, velX.x);

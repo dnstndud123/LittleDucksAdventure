@@ -219,4 +219,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 6581806483081299203}
+  rigid: {fileID: 0}
   forceX: 0.01
+  col: {fileID: 0}

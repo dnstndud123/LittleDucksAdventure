@@ -88,6 +88,7 @@
     <Compile Include="Assets\script\Fall.cs" />
     <Compile Include="Assets\script\GameManager.cs" />
     <Compile Include="Assets\script\IV\IVMove.cs" />
+    <Compile Include="Assets\script\Object\ControlFlip.cs" />
     <Compile Include="Assets\script\Object\FallTrap.cs" />
     <Compile Include="Assets\script\Object\FallenTrap.cs" />
     <Compile Include="Assets\script\Object\HiddenObject.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Assets\script\Object\JumpTrap.cs" />
     <Compile Include="Assets\script\Object\Rotation.cs" />
     <Compile Include="Assets\script\Object\Rotation_F.cs" />
+    <Compile Include="Assets\script\Object\Spring.cs" />
     <Compile Include="Assets\script\Object\Switch.cs" />
     <Compile Include="Assets\script\Object\Teleport\Teleport.cs" />
     <Compile Include="Assets\script\Object\Teleport\TrapTeleport.cs" />

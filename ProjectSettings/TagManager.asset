@@ -20,6 +20,7 @@ TagManager:
   - fallen2
   - fallen3
   - GroundCheck
+  - Flip
   layers:
   - Default
   - TransparentFX

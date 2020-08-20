@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
 public class GameGlobal : MonoBehaviour
 {
     public AudioSource[] bgmArray;
@@ -46,7 +48,7 @@ public class GameGlobal : MonoBehaviour
             {
                 bgmArray[(int)SCENE.LEVEL4].Play();
             }*/
-            if (scene.name == "Level5" || scene.name == "Level6")
+            if (scene.name == "Level5" || scene.name == "Level6" || scene.name == "Level7" || scene.name == "Level8")
             {
 
                 bgmArray[(int)SCENE.LEVEL5].Play();
