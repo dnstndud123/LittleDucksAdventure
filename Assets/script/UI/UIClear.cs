@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class SelectScene : BaseScene
+public class UIClear : UIBase
 {
+
+
 
     
 
