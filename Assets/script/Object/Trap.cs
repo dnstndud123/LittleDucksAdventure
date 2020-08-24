@@ -16,7 +16,6 @@ public class Trap : MonoBehaviour
         player = GameObject.Find("Player");
         chr = player.GetComponent<Character2D>();
         rigid = GetComponent<Rigidbody2D>();
-        gO.SetActive(false);
         
     }
     protected virtual void OnTriggerEnter2D(Collider2D collision)

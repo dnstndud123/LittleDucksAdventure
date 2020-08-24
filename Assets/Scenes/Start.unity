@@ -2973,7 +2973,6 @@ MonoBehaviour:
   player: {fileID: 0}
   startP: {fileID: 0}
   soundMgr: {fileID: 703664923}
-  select: {fileID: 0}
 --- !u!4 &456227922
 Transform:
   m_ObjectHideFlags: 0
@@ -12900,7 +12899,7 @@ GameObject:
   - component: {fileID: 1806279185}
   - component: {fileID: 1806279184}
   m_Layer: 5
-  m_Name: UIManager
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

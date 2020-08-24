@@ -6,6 +6,10 @@ using UnityEngine.EventSystems;
 public class SelectScene : BaseScene
 {
 
-    
+    public override void Init()
+    {
+        base.Init();
+        
+    }
 
 }

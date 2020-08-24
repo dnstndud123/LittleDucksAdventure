@@ -134,22 +134,7 @@ public class ClearCheck : MonoBehaviour
             transform.localScale = new Vector3(-newScaleX, scale.y, scale.z);
         }
     }
-    
-    const string level_data = "LEVEL_DATA";
-    
-    public void LevelDataSave()
-    
-    {
 
-        int lastLevel = 0;
-        if (PlayerPrefs.HasKey(level_data))
-        {
-            lastLevel = stageNumber;   
-        }        
-        lastLevel += 1;
-
-        PlayerPrefs.SetInt(level_data, lastLevel);    
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -157,13 +142,13 @@ public class ClearCheck : MonoBehaviour
         {
             sM.Play("Score");
             uM.HideAll();
-            uM.Show("UIClear", uM.uiList[3]);
+            uM.Show("UISelect", uM.uiList[1]);
             player.tag = "ClearPlayer";
             //btn.SetActive(true);
             
             clearCheck.SetActive(false);
 
-            LevelDataSave();
+
             
 
 
@@ -174,7 +159,6 @@ public class ClearCheck : MonoBehaviour
                 anim.SetBool("jump", false);
         }
 
-        
 #if UNITY_ANDROID||UNITY_IOS
 #endif
     }

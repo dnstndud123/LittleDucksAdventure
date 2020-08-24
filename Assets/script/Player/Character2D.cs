@@ -10,7 +10,6 @@ public class Character2D : MonoBehaviour
     protected Rigidbody2D rigid;
     protected Animator anim;
     public float forceY;
-    public float multiple = 1;
     
     protected SoundManager sM;
     PlayerControl PC;
@@ -112,7 +111,7 @@ public class Character2D : MonoBehaviour
             return;
 
         anim.SetBool("jump", true);
-        rigid.AddForce(new Vector2(0, forceY * multiple));
+        rigid.AddForce(new Vector2(0, forceY));
 
         jumpCheck.SetActive(true);
 

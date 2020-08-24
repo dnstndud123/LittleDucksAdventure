@@ -24,7 +24,7 @@ public class GameGlobal : MonoBehaviour
         {
 
             a.Stop();
-            
+
             if (scene.name == "LevelSelect")
             {
                 
