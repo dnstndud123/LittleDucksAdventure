@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BaseScene : MonoBehaviour
 {
@@ -21,18 +22,23 @@ public class BaseScene : MonoBehaviour
     {
         InitGameGlobal();
 
-        if (this is StartScene || this is SelectScene)
+        if (this is StartScene)
         {
             //InitPlayer 스킵
         }
+        
         else
         {
             InitPlayer();
+            
+            
         }
         Time.timeScale = 1.0f;
-
+        
 
     }
+    
+
     public void InitGameGlobal()
     {
         GameObject global = GameObject.Find("GameGlobal");

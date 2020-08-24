@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2283805201367541589
 Transform:
   m_ObjectHideFlags: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  gO: {fileID: 0}
+  gO: {fileID: 2283805201367541588}
   chr: {fileID: 0}
   rigid: {fileID: 0}
 --- !u!1 &2283805202139191915
@@ -232,3 +232,4 @@ MonoBehaviour:
   obj: {fileID: 2283805201367541588}
   rigid: {fileID: 2283805201367541545}
   forceX: 500
+  col: {fileID: 0}

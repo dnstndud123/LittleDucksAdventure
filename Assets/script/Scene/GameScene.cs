@@ -52,8 +52,6 @@ public class GameScene : BaseScene
         }
         */
     }
-    private void Update()
-    {
-        
-    }
+   
+
 }
