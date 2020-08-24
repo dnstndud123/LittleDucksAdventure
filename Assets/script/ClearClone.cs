@@ -6,13 +6,13 @@ public class ClearClone : MonoBehaviour
 {
 
     public float _speedX;
-    public float _speedY;
+
     private bool right = true;
-    private bool up = true;
+
     public float desPointX; //des 목적지
     public float oriPointX; //ori 시작점
-    public float desPointY;
-    public float oriPointY;
+   
+   
 
     public float span;
     public float span2;
@@ -43,7 +43,7 @@ public class ClearClone : MonoBehaviour
         if (delta2 < span2)
         {
             float moveX = Time.deltaTime * _speedX;
-            float moveY = Time.deltaTime * _speedY;
+           
             if (right == true)
             {
                 moveX = moveX * 1;
@@ -52,14 +52,7 @@ public class ClearClone : MonoBehaviour
             {
                 moveX = moveX * -1;
             }
-            if (up == true)
-            {
-                moveY = moveY * 1;
-            }
-            else
-            {
-                moveY = moveY * -1;
-            }
+            
 
 
 
@@ -80,15 +73,8 @@ public class ClearClone : MonoBehaviour
                 Flip(right);
             }
 
-            if (pos.y > desPointY)
-            {
-                up = false;
-            }
-            if (pos.y < oriPointY)
-            {
-                up = true;
-            }
-            rigid.AddForce(new Vector2(moveX, moveY));
+            
+            rigid.AddForce(new Vector2(moveX, 0));
             anim.SetFloat("velocity", Mathf.Abs(moveX));
         }
         if (delta2 > span2)

@@ -11,7 +11,7 @@ public class Switch : MonoBehaviour
     public GameObject hideObj;
     public BoxCollider2D col;
 
-    bool turn = false;
+    public bool turn = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Vector3 floorPos = floor.transform.position;
@@ -22,10 +22,15 @@ public class Switch : MonoBehaviour
             anim.SetBool("TurnOn", true);
             sM.Play("SwitchOn");
             StartCoroutine(TurnOn(true));
-            hideObj.SetActive(false);
 
-            floor.transform.position = new Vector3(floorPos.x, -22.4f, 0);
-            col.enabled = false;
+            if (hideObj != null)
+                hideObj.SetActive(false);
+
+            if (floor != null)
+            {
+                floor.transform.position = new Vector3(floorPos.x, -22.4f, 0);
+                col.enabled = false;
+            }
             trigger.SetActive(true);
             
         }
@@ -34,10 +39,15 @@ public class Switch : MonoBehaviour
             anim.SetBool("TurnOn", false);
             sM.Play("Select2");
             StartCoroutine(TurnOn(false));
-            hideObj.SetActive(true);
 
-            floor.transform.position = new Vector3(floorPos.x, -34.72f, 0);
-            col.enabled = true;
+            if (hideObj != null)
+                hideObj.SetActive(true);
+
+            if (floor != null)
+            {
+                floor.transform.position = new Vector3(floorPos.x, -34.72f, 0);
+                col.enabled = true;
+            }
             trigger.SetActive(false);
         }
     }

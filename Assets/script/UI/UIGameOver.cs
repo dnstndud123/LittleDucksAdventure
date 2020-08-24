@@ -5,11 +5,5 @@ using UnityEngine;
 public class UIGameOver : UIBase
 {
 
-    public void OnSelect()
-    {
-        
-        sM.Play("Select");
-        StartCoroutine(OnPlay("LevelSelect"));
-        
-    }
+    
 }

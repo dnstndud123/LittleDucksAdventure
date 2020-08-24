@@ -10,15 +10,14 @@ public class UISelect : UIBase
 {
 
     public GameObject[] btn;
-    ClearCheck c;
+    
     [SerializeField] int stageNumber = 0;
     
     public override void Init()
     {
         base.Init();
-        GameObject clear = GameObject.Find("clear");
-        c = clear.GetComponent<ClearCheck>();
-
+        
+        
         foreach (GameObject b in btn)
         {
             b.SetActive(false);
@@ -46,6 +45,7 @@ public class UISelect : UIBase
         }
         btn[0].gameObject.SetActive(true);
         PlayerPrefs.SetInt("LEVEL_DATA", 0);
+        
     }
     
 

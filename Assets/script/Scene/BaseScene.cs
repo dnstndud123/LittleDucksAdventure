@@ -22,7 +22,7 @@ public class BaseScene : MonoBehaviour
     {
         InitGameGlobal();
 
-        if (this is StartScene)
+        if (this is StartScene || this is SelectScene)
         {
             //InitPlayer 스킵
         }

@@ -5,13 +5,12 @@ using UnityEngine;
 public class ClearCheck : MonoBehaviour
 {
     public float _speedX;
-    public float _speedY;
+ 
     private bool right = true;
-    private bool up = true;
+
     public float desPointX; //des 목적지
     public float oriPointX; //ori 시작점
-    public float desPointY;
-    public float oriPointY;
+
 
     public float span;
     public float span2;
@@ -32,25 +31,25 @@ public class ClearCheck : MonoBehaviour
     // Start is called before the first frame update
     public void Init()
     {
-        
+        rigid = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
         sM = FindObjectOfType<SoundManager>();
         char2D = player.GetComponent<Character2D>();
         uM = FindObjectOfType<UIManager>();
-        rigid = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        
         span = Random.Range(2.0f, 20.0f);
         span2 = Random.Range(5.0f, 20.0f);
     }
 
     private void Update()
     {
-        Vector2 pos = rigid.transform.localPosition;
+        //Vector2 pos = rigid.transform.localPosition;
         delta2 += Time.deltaTime;
         if (delta2 < span2)
         {
             float moveX = Time.deltaTime * _speedX;
-            float moveY = Time.deltaTime * _speedY;
+            
             if (right == true)
             {
                 moveX = moveX * 1;
@@ -59,19 +58,12 @@ public class ClearCheck : MonoBehaviour
             {
                 moveX = moveX * -1;
             }
-            if (up == true)
-            {
-                moveY = moveY * 1;
-            }
-            else
-            {
-                moveY = moveY * -1;
-            }
+            
             
             
 
 
-            pos = rigid.transform.localPosition;
+            Vector2 pos = rigid.transform.localPosition;
 
 
 
@@ -87,15 +79,8 @@ public class ClearCheck : MonoBehaviour
                 Flip(right);
             }
 
-            if (pos.y > desPointY)
-            {
-                up = false;
-            }
-            if (pos.y < oriPointY)
-            {
-                up = true;
-            }
-            rigid.AddForce(new Vector2(moveX, moveY));
+            
+            rigid.AddForce(new Vector2(moveX, 0));
             anim.SetFloat("velocity", Mathf.Abs(moveX));
         }
         if (delta2 > span2)

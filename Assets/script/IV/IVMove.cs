@@ -7,12 +7,8 @@ public class IVMove : MonoBehaviour
     public float speed;
     public float desPoint;
     public float oriPoint;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    
+   
     // Update is called once per frame
     void Update()
     {
