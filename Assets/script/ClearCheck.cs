@@ -33,9 +33,11 @@ public class ClearCheck : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        player = GameObject.Find("Player");
+        
         sM = FindObjectOfType<SoundManager>();
+
         char2D = player.GetComponent<Character2D>();
+        player = GameObject.Find("Player");
         uM = FindObjectOfType<UIManager>();
         
         span = Random.Range(2.0f, 20.0f);

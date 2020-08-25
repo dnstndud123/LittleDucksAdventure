@@ -103,6 +103,7 @@
     <Compile Include="Assets\script\Object\Teleport\TrapTeleport.cs" />
     <Compile Include="Assets\script\Object\Trap.cs" />
     <Compile Include="Assets\script\Object\TrapSummon.cs" />
+    <Compile Include="Assets\script\Object\TriggerAppear.cs" />
     <Compile Include="Assets\script\Object\TriggerHiddenObject.cs" />
     <Compile Include="Assets\script\Object\TriggerTrapUp.cs" />
     <Compile Include="Assets\script\Player\Character2D.cs" />

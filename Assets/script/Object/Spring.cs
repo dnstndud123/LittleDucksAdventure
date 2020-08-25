@@ -16,7 +16,7 @@ public class Spring : MonoBehaviour
         spring.Play();
         StartCoroutine(Boing());
         Rigidbody2D rigid = collision.gameObject.GetComponent<Rigidbody2D>();
-        rigid.AddForce(new Vector2(0, 3000));
+        rigid.AddForce(new Vector2(0, 4000));
         
         if (collision.gameObject.tag == "Player")
         {
