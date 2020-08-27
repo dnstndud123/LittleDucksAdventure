@@ -36,18 +36,20 @@ public class ClearCheck : MonoBehaviour
         
         sM = FindObjectOfType<SoundManager>();
 
-        char2D = player.GetComponent<Character2D>();
         player = GameObject.Find("Player");
+        char2D = player.GetComponent<Character2D>();
+        
         uM = FindObjectOfType<UIManager>();
         
         span = Random.Range(2.0f, 20.0f);
-        span2 = Random.Range(5.0f, 20.0f);
+        span2 = Random.Range(2.0f, 20.0f);
     }
 
     private void Update()
     {
         //Vector2 pos = rigid.transform.localPosition;
         delta2 += Time.deltaTime;
+        anim.SetFloat("velocity", Mathf.Abs(rigid.velocity.x));
         if (delta2 < span2)
         {
             float moveX = Time.deltaTime * _speedX;
@@ -83,11 +85,11 @@ public class ClearCheck : MonoBehaviour
 
             
             rigid.AddForce(new Vector2(moveX, 0));
-            anim.SetFloat("velocity", Mathf.Abs(moveX));
+            
         }
         if (delta2 > span2)
         {
-            anim.SetFloat("velocity", 0);
+            rigid.AddForce(new Vector2(0, 0));
             
         }
         if (delta2 > span2 + 5.0f)
@@ -99,7 +101,7 @@ public class ClearCheck : MonoBehaviour
         {
             //점프
             rigid.AddForce(new Vector2(0, jumpForce));
-            span = Random.Range(4.0f, 14.0f);
+            span = Random.Range(1.5f, 14.0f);
 
             delta = 0;
             anim.SetBool("jump", true);
@@ -143,6 +145,7 @@ public class ClearCheck : MonoBehaviour
         if (collision.tag == "Player")
         {
             sM.Play("Score");
+            
             uM.HideAll();
             uM.Show("UIClear", uM.uiList[3]);
             player.tag = "ClearPlayer";

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1289084032023715762}
   - component: {fileID: 1289084032023715761}
-  - component: {fileID: 887857093895881115}
   - component: {fileID: 176663536865939331}
   m_Layer: 0
   m_Name: rotateNemoTrap
@@ -47,22 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotate: 0
---- !u!114 &887857093895881115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289084032023715760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 0}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
+  speed: 1
 --- !u!61 &176663536865939331
 BoxCollider2D:
   m_ObjectHideFlags: 0

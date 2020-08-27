@@ -33,13 +33,15 @@ public class ClearClone : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         span = Random.Range(2.0f, 20.0f);
-        span2 = Random.Range(5.0f, 20.0f);
+        span2 = Random.Range(2.0f, 20.0f);
     }
 
     private void Update()
     {
         Vector2 pos = rigid.transform.localPosition;
         delta2 += Time.deltaTime;
+        
+        anim.SetFloat("velocity", Mathf.Abs(rigid.velocity.x));
         if (delta2 < span2)
         {
             float moveX = Time.deltaTime * _speedX;
@@ -75,11 +77,11 @@ public class ClearClone : MonoBehaviour
 
             
             rigid.AddForce(new Vector2(moveX, 0));
-            anim.SetFloat("velocity", Mathf.Abs(moveX));
+            
         }
         if (delta2 > span2)
         {
-            anim.SetFloat("velocity", 0);
+            rigid.AddForce(new Vector2(0, 0));
 
         }
         if (delta2 > span2 + 5.0f)

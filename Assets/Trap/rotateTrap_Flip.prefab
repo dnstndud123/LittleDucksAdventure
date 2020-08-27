@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8378193128731531943}
   - component: {fileID: 8378193128731531941}
-  - component: {fileID: 3620566272766346607}
+  - component: {fileID: 531730730062975635}
   m_Layer: 0
   m_Name: rotateTrap_Flip
   m_TagString: Untagged
@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotate: 0
---- !u!114 &3620566272766346607
+  speed: 1
+--- !u!114 &531730730062975635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,7 +73,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8378193129260091268}
   - component: {fileID: 8378193129260091264}
-  - component: {fileID: 8378193129260091271}
   - component: {fileID: 8378193129260091270}
   - component: {fileID: 8378193129260091269}
   m_Layer: 0
@@ -146,22 +146,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8378193129260091271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8378193129260091275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 0}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!58 &8378193129260091270
 CircleCollider2D:
   m_ObjectHideFlags: 0

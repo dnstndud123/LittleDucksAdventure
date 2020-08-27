@@ -5659,7 +5659,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 272715902}
         m_MethodName: OnSelect
         m_Mode: 1
         m_Arguments:
@@ -14772,12 +14772,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026554197}
   m_CullTransparentMesh: 0
---- !u!1 &2095654302 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 804096751357527789, guid: a8fac662968076f4cb8cd2e57ad48a44,
-    type: 3}
-  m_PrefabInstance: {fileID: 804096751955813235}
-  m_PrefabAsset: {fileID: 0}
 --- !u!61 &2095654303 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 804096751357527766, guid: a8fac662968076f4cb8cd2e57ad48a44,
@@ -15426,7 +15420,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gO
       value: 
-      objectReference: {fileID: 2095654302}
+      objectReference: {fileID: 0}
     - target: {fileID: 804096751357527789, guid: a8fac662968076f4cb8cd2e57ad48a44,
         type: 3}
       propertyPath: m_TagString
@@ -15507,6 +15501,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1940718279}
     m_Modifications:
+    - target: {fileID: 2254432925914023310, guid: cd3193726a3d83d4ab2a51b69675eb7f,
+        type: 3}
+      propertyPath: gO
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254432926541350356, guid: cd3193726a3d83d4ab2a51b69675eb7f,
+        type: 3}
+      propertyPath: gO
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2254432926541350359, guid: cd3193726a3d83d4ab2a51b69675eb7f,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -15581,6 +15585,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254432926836483883, guid: cd3193726a3d83d4ab2a51b69675eb7f,
+        type: 3}
+      propertyPath: gO
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254432927054106156, guid: cd3193726a3d83d4ab2a51b69675eb7f,
+        type: 3}
+      propertyPath: gO
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2254432927054106159, guid: cd3193726a3d83d4ab2a51b69675eb7f,
         type: 3}

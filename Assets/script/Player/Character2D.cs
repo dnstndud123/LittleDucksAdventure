@@ -61,6 +61,7 @@ public class Character2D : MonoBehaviour
             
             anim.SetBool("jump", false);
         }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -77,12 +78,15 @@ public class Character2D : MonoBehaviour
     private void Update()
     {
         delta += Time.deltaTime;
-        anim.SetFloat("velocity", Mathf.Abs(rigid.velocity.x));
-        
-        if (delta > 3.5f)
+        if (PC != null)
         {
-            rigid.simulated = true;
-            delta = 4;
+            anim.SetFloat("velocity", Mathf.Abs(rigid.velocity.x));
+
+            if (delta > 3.5f)
+            {
+                rigid.simulated = true;
+                delta = 4;
+            }
         }
     }
 

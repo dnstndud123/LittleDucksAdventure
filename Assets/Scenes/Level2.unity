@@ -7276,7 +7276,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 628007686}
         m_MethodName: OnSelect
         m_Mode: 1
         m_Arguments:

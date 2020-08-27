@@ -599,7 +599,6 @@ GameObject:
   - component: {fileID: 55584181}
   - component: {fileID: 55584180}
   - component: {fileID: 55584179}
-  - component: {fileID: 55584178}
   m_Layer: 0
   m_Name: spinSaw (51)
   m_TagString: trap
@@ -621,22 +620,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &55584178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55584176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 55584176}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &55584179
 Animator:
   serializedVersion: 3
@@ -816,7 +799,6 @@ GameObject:
   - component: {fileID: 61088192}
   - component: {fileID: 61088191}
   - component: {fileID: 61088190}
-  - component: {fileID: 61088189}
   m_Layer: 0
   m_Name: spinSaw (53)
   m_TagString: trap
@@ -838,22 +820,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &61088189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61088187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 61088187}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &61088190
 Animator:
   serializedVersion: 3
@@ -1138,7 +1104,6 @@ GameObject:
   - component: {fileID: 69496467}
   - component: {fileID: 69496466}
   - component: {fileID: 69496465}
-  - component: {fileID: 69496464}
   m_Layer: 0
   m_Name: spinSaw (57)
   m_TagString: trap
@@ -1160,22 +1125,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &69496464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69496462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 69496462}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &69496465
 Animator:
   serializedVersion: 3
@@ -2027,7 +1976,6 @@ GameObject:
   - component: {fileID: 101077196}
   - component: {fileID: 101077195}
   - component: {fileID: 101077194}
-  - component: {fileID: 101077193}
   m_Layer: 0
   m_Name: spinSaw (39)
   m_TagString: trap
@@ -2049,22 +1997,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &101077193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101077191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 101077191}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &101077194
 Animator:
   serializedVersion: 3
@@ -3075,10 +3007,7 @@ MonoBehaviour:
   soundMgr: {fileID: 0}
   CamFollow: {fileID: 0}
   fall: {fileID: 0}
-  traps:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  traps: []
   clear: {fileID: 0}
   trapList: {fileID: 0}
 --- !u!4 &168391511
@@ -3246,7 +3175,6 @@ GameObject:
   - component: {fileID: 196283068}
   - component: {fileID: 196283067}
   - component: {fileID: 196283066}
-  - component: {fileID: 196283065}
   m_Layer: 0
   m_Name: spinSaw (11)
   m_TagString: trap
@@ -3268,22 +3196,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &196283065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196283063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 196283063}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &196283066
 Animator:
   serializedVersion: 3
@@ -3382,7 +3294,6 @@ GameObject:
   - component: {fileID: 198411324}
   - component: {fileID: 198411323}
   - component: {fileID: 198411322}
-  - component: {fileID: 198411321}
   m_Layer: 0
   m_Name: spinSaw (25)
   m_TagString: trap
@@ -3404,22 +3315,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &198411321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198411319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 198411319}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &198411322
 Animator:
   serializedVersion: 3
@@ -4276,7 +4171,6 @@ GameObject:
   - component: {fileID: 309782846}
   - component: {fileID: 309782845}
   - component: {fileID: 309782844}
-  - component: {fileID: 309782843}
   m_Layer: 0
   m_Name: spinSaw (43)
   m_TagString: trap
@@ -4298,22 +4192,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &309782843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 309782841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 309782841}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &309782844
 Animator:
   serializedVersion: 3
@@ -4412,7 +4290,6 @@ GameObject:
   - component: {fileID: 335576123}
   - component: {fileID: 335576122}
   - component: {fileID: 335576121}
-  - component: {fileID: 335576120}
   m_Layer: 0
   m_Name: spinSaw (48)
   m_TagString: trap
@@ -4434,22 +4311,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &335576120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335576118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 335576118}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &335576121
 Animator:
   serializedVersion: 3
@@ -5106,7 +4967,6 @@ GameObject:
   - component: {fileID: 354194165}
   - component: {fileID: 354194164}
   - component: {fileID: 354194163}
-  - component: {fileID: 354194162}
   m_Layer: 0
   m_Name: spinSaw (20)
   m_TagString: trap
@@ -5128,22 +4988,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &354194162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354194160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 354194160}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &354194163
 Animator:
   serializedVersion: 3
@@ -5433,7 +5277,6 @@ GameObject:
   - component: {fileID: 367187238}
   - component: {fileID: 367187237}
   - component: {fileID: 367187236}
-  - component: {fileID: 367187235}
   m_Layer: 0
   m_Name: spinSaw (34)
   m_TagString: trap
@@ -5455,22 +5298,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &367187235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 367187233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 367187233}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &367187236
 Animator:
   serializedVersion: 3
@@ -5731,7 +5558,6 @@ GameObject:
   - component: {fileID: 388654568}
   - component: {fileID: 388654567}
   - component: {fileID: 388654566}
-  - component: {fileID: 388654565}
   m_Layer: 0
   m_Name: spinSaw (35)
   m_TagString: trap
@@ -5753,22 +5579,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &388654565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388654563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 388654563}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &388654566
 Animator:
   serializedVersion: 3
@@ -6064,7 +5874,6 @@ GameObject:
   - component: {fileID: 408461165}
   - component: {fileID: 408461164}
   - component: {fileID: 408461163}
-  - component: {fileID: 408461162}
   m_Layer: 0
   m_Name: spinSaw (28)
   m_TagString: trap
@@ -6086,22 +5895,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &408461162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408461160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 408461160}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &408461163
 Animator:
   serializedVersion: 3
@@ -6200,7 +5993,6 @@ GameObject:
   - component: {fileID: 412254309}
   - component: {fileID: 412254308}
   - component: {fileID: 412254307}
-  - component: {fileID: 412254306}
   m_Layer: 0
   m_Name: spinSaw (33)
   m_TagString: trap
@@ -6222,22 +6014,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &412254306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 412254304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 412254304}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &412254307
 Animator:
   serializedVersion: 3
@@ -6925,7 +6701,6 @@ GameObject:
   - component: {fileID: 480214166}
   - component: {fileID: 480214165}
   - component: {fileID: 480214164}
-  - component: {fileID: 480214163}
   m_Layer: 0
   m_Name: spinSaw (26)
   m_TagString: trap
@@ -6947,22 +6722,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &480214163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480214161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 480214161}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &480214164
 Animator:
   serializedVersion: 3
@@ -7223,7 +6982,6 @@ GameObject:
   - component: {fileID: 499996071}
   - component: {fileID: 499996070}
   - component: {fileID: 499996069}
-  - component: {fileID: 499996068}
   m_Layer: 0
   m_Name: spinSaw (59)
   m_TagString: trap
@@ -7245,22 +7003,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &499996068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499996066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 499996066}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &499996069
 Animator:
   serializedVersion: 3
@@ -7359,7 +7101,6 @@ GameObject:
   - component: {fileID: 504279895}
   - component: {fileID: 504279894}
   - component: {fileID: 504279893}
-  - component: {fileID: 504279892}
   m_Layer: 0
   m_Name: spinSaw (5)
   m_TagString: trap
@@ -7381,22 +7122,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &504279892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504279890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 504279890}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &504279893
 Animator:
   serializedVersion: 3
@@ -8305,7 +8030,6 @@ GameObject:
   - component: {fileID: 534718961}
   - component: {fileID: 534718960}
   - component: {fileID: 534718959}
-  - component: {fileID: 534718958}
   m_Layer: 0
   m_Name: spinSaw (31)
   m_TagString: trap
@@ -8327,22 +8051,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &534718958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534718956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 534718956}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &534718959
 Animator:
   serializedVersion: 3
@@ -8441,7 +8149,6 @@ GameObject:
   - component: {fileID: 543716208}
   - component: {fileID: 543716207}
   - component: {fileID: 543716206}
-  - component: {fileID: 543716205}
   m_Layer: 0
   m_Name: spinSaw (4)
   m_TagString: trap
@@ -8463,22 +8170,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &543716205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543716203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 543716203}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &543716206
 Animator:
   serializedVersion: 3
@@ -8974,7 +8665,6 @@ GameObject:
   - component: {fileID: 566733300}
   - component: {fileID: 566733299}
   - component: {fileID: 566733298}
-  - component: {fileID: 566733297}
   m_Layer: 0
   m_Name: spinSaw (62)
   m_TagString: trap
@@ -8996,22 +8686,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &566733297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566733295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 566733295}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &566733298
 Animator:
   serializedVersion: 3
@@ -9224,7 +8898,6 @@ GameObject:
   - component: {fileID: 592392090}
   - component: {fileID: 592392089}
   - component: {fileID: 592392088}
-  - component: {fileID: 592392087}
   m_Layer: 0
   m_Name: spinSaw (29)
   m_TagString: trap
@@ -9246,22 +8919,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &592392087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 592392085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 592392085}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &592392088
 Animator:
   serializedVersion: 3
@@ -9360,7 +9017,6 @@ GameObject:
   - component: {fileID: 593529257}
   - component: {fileID: 593529256}
   - component: {fileID: 593529255}
-  - component: {fileID: 593529254}
   m_Layer: 0
   m_Name: spinSaw (58)
   m_TagString: trap
@@ -9382,22 +9038,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &593529254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593529252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 593529252}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &593529255
 Animator:
   serializedVersion: 3
@@ -9496,7 +9136,6 @@ GameObject:
   - component: {fileID: 598241747}
   - component: {fileID: 598241746}
   - component: {fileID: 598241745}
-  - component: {fileID: 598241744}
   m_Layer: 0
   m_Name: spinSaw (56)
   m_TagString: trap
@@ -9518,22 +9157,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &598241744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598241742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 598241742}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &598241745
 Animator:
   serializedVersion: 3
@@ -11114,7 +10737,6 @@ GameObject:
   - component: {fileID: 715369148}
   - component: {fileID: 715369147}
   - component: {fileID: 715369146}
-  - component: {fileID: 715369145}
   m_Layer: 0
   m_Name: spinSaw (41)
   m_TagString: trap
@@ -11136,22 +10758,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &715369145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715369143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 715369143}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &715369146
 Animator:
   serializedVersion: 3
@@ -11476,7 +11082,6 @@ GameObject:
   - component: {fileID: 741243569}
   - component: {fileID: 741243568}
   - component: {fileID: 741243567}
-  - component: {fileID: 741243566}
   m_Layer: 0
   m_Name: spinSaw (24)
   m_TagString: trap
@@ -11498,22 +11103,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &741243566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741243564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 741243564}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &741243567
 Animator:
   serializedVersion: 3
@@ -12268,7 +11857,6 @@ GameObject:
   - component: {fileID: 841893811}
   - component: {fileID: 841893810}
   - component: {fileID: 841893809}
-  - component: {fileID: 841893808}
   m_Layer: 0
   m_Name: spinSaw (44)
   m_TagString: trap
@@ -12290,22 +11878,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &841893808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841893806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 841893806}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &841893809
 Animator:
   serializedVersion: 3
@@ -13127,7 +12699,6 @@ GameObject:
   - component: {fileID: 919938139}
   - component: {fileID: 919938138}
   - component: {fileID: 919938137}
-  - component: {fileID: 919938136}
   m_Layer: 0
   m_Name: spinSaw (49)
   m_TagString: trap
@@ -13149,22 +12720,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &919938136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919938134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 919938134}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &919938137
 Animator:
   serializedVersion: 3
@@ -13408,7 +12963,6 @@ GameObject:
   - component: {fileID: 930138939}
   - component: {fileID: 930138938}
   - component: {fileID: 930138937}
-  - component: {fileID: 930138936}
   m_Layer: 0
   m_Name: spinSaw (3)
   m_TagString: trap
@@ -13430,22 +12984,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &930138936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930138934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 930138934}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &930138937
 Animator:
   serializedVersion: 3
@@ -13706,7 +13244,6 @@ GameObject:
   - component: {fileID: 951594150}
   - component: {fileID: 951594149}
   - component: {fileID: 951594148}
-  - component: {fileID: 951594147}
   m_Layer: 0
   m_Name: spinSaw (66)
   m_TagString: trap
@@ -13728,22 +13265,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &951594147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951594145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 951594145}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &951594148
 Animator:
   serializedVersion: 3
@@ -14181,7 +13702,6 @@ GameObject:
   - component: {fileID: 966330865}
   - component: {fileID: 966330864}
   - component: {fileID: 966330863}
-  - component: {fileID: 966330862}
   m_Layer: 0
   m_Name: spinSaw (13)
   m_TagString: trap
@@ -14203,22 +13723,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &966330862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966330860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 966330860}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &966330863
 Animator:
   serializedVersion: 3
@@ -14736,7 +14240,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.1153228, y: 0}
+  m_Offset: {x: -0.6475748, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14747,7 +14251,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6306477, y: 1.9}
+  m_Size: {x: 1.6951516, y: 1.9}
   m_EdgeRadius: 0
 --- !u!1 &1003642343
 GameObject:
@@ -15197,7 +14701,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 955394047}
         m_MethodName: OnSelect
         m_Mode: 1
         m_Arguments:
@@ -15639,7 +15143,6 @@ GameObject:
   - component: {fileID: 1076947435}
   - component: {fileID: 1076947434}
   - component: {fileID: 1076947433}
-  - component: {fileID: 1076947432}
   m_Layer: 0
   m_Name: spinSaw (38)
   m_TagString: trap
@@ -15661,22 +15164,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1076947432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076947430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1076947430}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1076947433
 Animator:
   serializedVersion: 3
@@ -15856,7 +15343,6 @@ GameObject:
   - component: {fileID: 1094149366}
   - component: {fileID: 1094149365}
   - component: {fileID: 1094149364}
-  - component: {fileID: 1094149363}
   m_Layer: 0
   m_Name: spinSaw (2)
   m_TagString: trap
@@ -15878,22 +15364,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1094149363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094149361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1094149361}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1094149364
 Animator:
   serializedVersion: 3
@@ -15992,7 +15462,6 @@ GameObject:
   - component: {fileID: 1101027328}
   - component: {fileID: 1101027327}
   - component: {fileID: 1101027326}
-  - component: {fileID: 1101027325}
   m_Layer: 0
   m_Name: spinSaw (64)
   m_TagString: trap
@@ -16014,22 +15483,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1101027325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1101027323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1101027323}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1101027326
 Animator:
   serializedVersion: 3
@@ -16207,7 +15660,7 @@ PrefabInstance:
     - target: {fileID: 6842520046915673340, guid: 5d11311046aa8e84a969beee5671e59c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6842520047594602263, guid: 5d11311046aa8e84a969beee5671e59c,
         type: 3}
@@ -17494,7 +16947,6 @@ GameObject:
   - component: {fileID: 1209265389}
   - component: {fileID: 1209265388}
   - component: {fileID: 1209265387}
-  - component: {fileID: 1209265386}
   m_Layer: 0
   m_Name: spinSaw (46)
   m_TagString: trap
@@ -17516,22 +16968,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1209265386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1209265384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1209265384}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1209265387
 Animator:
   serializedVersion: 3
@@ -17630,7 +17066,6 @@ GameObject:
   - component: {fileID: 1223771431}
   - component: {fileID: 1223771430}
   - component: {fileID: 1223771429}
-  - component: {fileID: 1223771428}
   m_Layer: 0
   m_Name: spinSaw (15)
   m_TagString: trap
@@ -17652,22 +17087,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1223771428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223771426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1223771426}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1223771429
 Animator:
   serializedVersion: 3
@@ -19174,7 +18593,6 @@ GameObject:
   - component: {fileID: 1317375979}
   - component: {fileID: 1317375978}
   - component: {fileID: 1317375977}
-  - component: {fileID: 1317375976}
   m_Layer: 0
   m_Name: spinSaw (50)
   m_TagString: trap
@@ -19196,22 +18614,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1317375976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317375974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1317375974}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1317375977
 Animator:
   serializedVersion: 3
@@ -19391,7 +18793,6 @@ GameObject:
   - component: {fileID: 1327999050}
   - component: {fileID: 1327999049}
   - component: {fileID: 1327999048}
-  - component: {fileID: 1327999047}
   m_Layer: 0
   m_Name: spinSaw (8)
   m_TagString: trap
@@ -19413,22 +18814,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1327999047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327999045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1327999045}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1327999048
 Animator:
   serializedVersion: 3
@@ -19744,7 +19129,6 @@ GameObject:
   - component: {fileID: 1383325270}
   - component: {fileID: 1383325269}
   - component: {fileID: 1383325268}
-  - component: {fileID: 1383325267}
   m_Layer: 0
   m_Name: spinSaw (52)
   m_TagString: trap
@@ -19766,22 +19150,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1383325267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383325265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1383325265}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1383325268
 Animator:
   serializedVersion: 3
@@ -19880,7 +19248,6 @@ GameObject:
   - component: {fileID: 1391601587}
   - component: {fileID: 1391601586}
   - component: {fileID: 1391601585}
-  - component: {fileID: 1391601584}
   m_Layer: 0
   m_Name: spinSaw (60)
   m_TagString: trap
@@ -19902,22 +19269,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1391601584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391601582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1391601582}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1391601585
 Animator:
   serializedVersion: 3
@@ -20288,7 +19639,6 @@ GameObject:
   - component: {fileID: 1408844860}
   - component: {fileID: 1408844859}
   - component: {fileID: 1408844858}
-  - component: {fileID: 1408844857}
   m_Layer: 0
   m_Name: spinSaw (4)
   m_TagString: trap
@@ -20310,22 +19660,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1408844857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408844855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1408844855}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1408844858
 Animator:
   serializedVersion: 3
@@ -20536,7 +19870,6 @@ GameObject:
   - component: {fileID: 1412056168}
   - component: {fileID: 1412056167}
   - component: {fileID: 1412056166}
-  - component: {fileID: 1412056165}
   m_Layer: 0
   m_Name: spinSaw (22)
   m_TagString: trap
@@ -20558,22 +19891,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1412056165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412056163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1412056163}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1412056166
 Animator:
   serializedVersion: 3
@@ -20788,7 +20105,6 @@ GameObject:
   - component: {fileID: 1423192565}
   - component: {fileID: 1423192564}
   - component: {fileID: 1423192563}
-  - component: {fileID: 1423192562}
   m_Layer: 0
   m_Name: spinSaw (16)
   m_TagString: trap
@@ -20810,22 +20126,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1423192562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423192560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1423192560}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1423192563
 Animator:
   serializedVersion: 3
@@ -21167,7 +20467,6 @@ GameObject:
   - component: {fileID: 1459973492}
   - component: {fileID: 1459973491}
   - component: {fileID: 1459973490}
-  - component: {fileID: 1459973489}
   m_Layer: 0
   m_Name: spinSaw (23)
   m_TagString: trap
@@ -21189,22 +20488,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1459973489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459973487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1459973487}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1459973490
 Animator:
   serializedVersion: 3
@@ -21732,7 +21015,6 @@ GameObject:
   - component: {fileID: 1481478820}
   - component: {fileID: 1481478819}
   - component: {fileID: 1481478818}
-  - component: {fileID: 1481478817}
   m_Layer: 0
   m_Name: spinSaw (1)
   m_TagString: trap
@@ -21754,22 +21036,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1481478817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481478815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1481478815}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1481478818
 Animator:
   serializedVersion: 3
@@ -22331,7 +21597,6 @@ GameObject:
   - component: {fileID: 1523074705}
   - component: {fileID: 1523074704}
   - component: {fileID: 1523074703}
-  - component: {fileID: 1523074702}
   m_Layer: 0
   m_Name: spinSaw (67)
   m_TagString: fallen3
@@ -22353,22 +21618,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1523074702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523074700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1523074700}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1523074703
 Animator:
   serializedVersion: 3
@@ -22814,7 +22063,6 @@ GameObject:
   - component: {fileID: 1539018904}
   - component: {fileID: 1539018903}
   - component: {fileID: 1539018902}
-  - component: {fileID: 1539018901}
   m_Layer: 0
   m_Name: spinSaw (42)
   m_TagString: trap
@@ -22836,22 +22084,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1539018901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539018899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1539018899}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1539018902
 Animator:
   serializedVersion: 3
@@ -23887,7 +23119,6 @@ GameObject:
   - component: {fileID: 1625261575}
   - component: {fileID: 1625261574}
   - component: {fileID: 1625261573}
-  - component: {fileID: 1625261572}
   m_Layer: 0
   m_Name: spinSaw (10)
   m_TagString: trap
@@ -23909,22 +23140,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1625261572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625261570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1625261570}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1625261573
 Animator:
   serializedVersion: 3
@@ -24259,7 +23474,6 @@ GameObject:
   - component: {fileID: 1665143728}
   - component: {fileID: 1665143727}
   - component: {fileID: 1665143726}
-  - component: {fileID: 1665143725}
   m_Layer: 0
   m_Name: spinSaw (2)
   m_TagString: trap
@@ -24281,22 +23495,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1665143725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665143723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1665143723}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1665143726
 Animator:
   serializedVersion: 3
@@ -25722,7 +24920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  gO: {fileID: 1745700426}
+  gO: {fileID: 0}
   chr: {fileID: 0}
   rigid: {fileID: 0}
 --- !u!95 &1745700428
@@ -25916,7 +25114,7 @@ Transform:
   - {fileID: 951594146}
   - {fileID: 1523074701}
   m_Father: {fileID: 1855616030}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1761060251
 GameObject:
@@ -25930,7 +25128,6 @@ GameObject:
   - component: {fileID: 1761060256}
   - component: {fileID: 1761060255}
   - component: {fileID: 1761060254}
-  - component: {fileID: 1761060253}
   m_Layer: 0
   m_Name: spinSaw (47)
   m_TagString: trap
@@ -25952,22 +25149,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1761060253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761060251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1761060251}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1761060254
 Animator:
   serializedVersion: 3
@@ -26726,7 +25907,6 @@ GameObject:
   - component: {fileID: 1790093072}
   - component: {fileID: 1790093071}
   - component: {fileID: 1790093070}
-  - component: {fileID: 1790093069}
   m_Layer: 0
   m_Name: spinSaw (30)
   m_TagString: trap
@@ -26748,22 +25928,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1790093069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790093067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1790093067}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1790093070
 Animator:
   serializedVersion: 3
@@ -27065,7 +26229,6 @@ GameObject:
   - component: {fileID: 1802175704}
   - component: {fileID: 1802175703}
   - component: {fileID: 1802175702}
-  - component: {fileID: 1802175701}
   m_Layer: 0
   m_Name: spinSaw (3)
   m_TagString: trap
@@ -27087,22 +26250,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1802175701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802175699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1802175699}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1802175702
 Animator:
   serializedVersion: 3
@@ -27320,7 +26467,6 @@ GameObject:
   - component: {fileID: 1816674558}
   - component: {fileID: 1816674557}
   - component: {fileID: 1816674556}
-  - component: {fileID: 1816674555}
   m_Layer: 0
   m_Name: spinSaw (32)
   m_TagString: trap
@@ -27342,22 +26488,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1816674555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816674553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1816674553}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1816674556
 Animator:
   serializedVersion: 3
@@ -27748,7 +26878,6 @@ GameObject:
   - component: {fileID: 1833330602}
   - component: {fileID: 1833330601}
   - component: {fileID: 1833330600}
-  - component: {fileID: 1833330599}
   m_Layer: 0
   m_Name: spinSaw (21)
   m_TagString: trap
@@ -27770,22 +26899,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1833330599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1833330597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1833330597}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1833330600
 Animator:
   serializedVersion: 3
@@ -27965,7 +27078,6 @@ GameObject:
   - component: {fileID: 1840088263}
   - component: {fileID: 1840088262}
   - component: {fileID: 1840088261}
-  - component: {fileID: 1840088260}
   m_Layer: 0
   m_Name: spinSaw (55)
   m_TagString: trap
@@ -27987,22 +27099,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1840088260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840088258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1840088258}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1840088261
 Animator:
   serializedVersion: 3
@@ -28687,6 +27783,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1119630733}
+  - {fileID: 611596315405746506}
   - {fileID: 1745700432}
   - {fileID: 5090747236277089501}
   m_Father: {fileID: 0}
@@ -28889,7 +27986,6 @@ GameObject:
   - component: {fileID: 1897891923}
   - component: {fileID: 1897891922}
   - component: {fileID: 1897891921}
-  - component: {fileID: 1897891920}
   m_Layer: 0
   m_Name: spinSaw (6)
   m_TagString: trap
@@ -28911,22 +28007,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1897891920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897891918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1897891918}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1897891921
 Animator:
   serializedVersion: 3
@@ -29025,7 +28105,6 @@ GameObject:
   - component: {fileID: 1907587751}
   - component: {fileID: 1907587750}
   - component: {fileID: 1907587749}
-  - component: {fileID: 1907587748}
   m_Layer: 0
   m_Name: spinSaw (17)
   m_TagString: trap
@@ -29047,22 +28126,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1907587748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1907587746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1907587746}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1907587749
 Animator:
   serializedVersion: 3
@@ -29161,7 +28224,6 @@ GameObject:
   - component: {fileID: 1929336148}
   - component: {fileID: 1929336147}
   - component: {fileID: 1929336146}
-  - component: {fileID: 1929336145}
   m_Layer: 0
   m_Name: spinSaw (12)
   m_TagString: trap
@@ -29183,22 +28245,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1929336145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929336143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1929336143}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1929336146
 Animator:
   serializedVersion: 3
@@ -29297,7 +28343,6 @@ GameObject:
   - component: {fileID: 1939229194}
   - component: {fileID: 1939229193}
   - component: {fileID: 1939229192}
-  - component: {fileID: 1939229191}
   m_Layer: 0
   m_Name: spinSaw (40)
   m_TagString: trap
@@ -29319,22 +28364,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1939229191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939229189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1939229189}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1939229192
 Animator:
   serializedVersion: 3
@@ -29578,7 +28607,6 @@ GameObject:
   - component: {fileID: 1969793361}
   - component: {fileID: 1969793360}
   - component: {fileID: 1969793359}
-  - component: {fileID: 1969793358}
   m_Layer: 0
   m_Name: spinSaw (61)
   m_TagString: trap
@@ -29600,22 +28628,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1969793358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969793356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1969793356}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1969793359
 Animator:
   serializedVersion: 3
@@ -29841,7 +28853,6 @@ GameObject:
   - component: {fileID: 1972563031}
   - component: {fileID: 1972563030}
   - component: {fileID: 1972563029}
-  - component: {fileID: 1972563028}
   m_Layer: 0
   m_Name: spinSaw (1)
   m_TagString: trap
@@ -29863,22 +28874,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1972563028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972563026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1972563026}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1972563029
 Animator:
   serializedVersion: 3
@@ -30203,7 +29198,6 @@ GameObject:
   - component: {fileID: 1987344785}
   - component: {fileID: 1987344784}
   - component: {fileID: 1987344783}
-  - component: {fileID: 1987344782}
   m_Layer: 0
   m_Name: spinSaw (7)
   m_TagString: trap
@@ -30225,22 +29219,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1987344782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987344780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 1987344780}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &1987344783
 Animator:
   serializedVersion: 3
@@ -30530,7 +29508,6 @@ GameObject:
   - component: {fileID: 2019407727}
   - component: {fileID: 2019407726}
   - component: {fileID: 2019407725}
-  - component: {fileID: 2019407724}
   m_Layer: 0
   m_Name: spinSaw (37)
   m_TagString: trap
@@ -30552,22 +29529,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2019407724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019407722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 2019407722}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &2019407725
 Animator:
   serializedVersion: 3
@@ -30836,7 +29797,6 @@ GameObject:
   - component: {fileID: 2058036720}
   - component: {fileID: 2058036719}
   - component: {fileID: 2058036718}
-  - component: {fileID: 2058036717}
   m_Layer: 0
   m_Name: spinSaw (19)
   m_TagString: trap
@@ -30858,22 +29818,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2058036717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2058036715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 2058036715}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &2058036718
 Animator:
   serializedVersion: 3
@@ -31597,7 +30541,6 @@ GameObject:
   - component: {fileID: 2106348655}
   - component: {fileID: 2106348654}
   - component: {fileID: 2106348653}
-  - component: {fileID: 2106348652}
   m_Layer: 0
   m_Name: spinSaw (14)
   m_TagString: trap
@@ -31619,22 +30562,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2106348652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106348650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 2106348650}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &2106348653
 Animator:
   serializedVersion: 3
@@ -32014,7 +30941,6 @@ GameObject:
   - component: {fileID: 2118270307}
   - component: {fileID: 2118270306}
   - component: {fileID: 2118270305}
-  - component: {fileID: 2118270304}
   m_Layer: 0
   m_Name: spinSaw (65)
   m_TagString: trap
@@ -32036,22 +30962,6 @@ Transform:
   m_Father: {fileID: 1745700432}
   m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2118270304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118270302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2029cc448ed20244cbcbb80b3f05c5e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  gO: {fileID: 2118270302}
-  chr: {fileID: 0}
-  rigid: {fileID: 0}
 --- !u!95 &2118270305
 Animator:
   serializedVersion: 3
@@ -32657,12 +31567,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611596315405754036}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.043, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 519907637}
-  m_Father: {fileID: 5090747236277089501}
-  m_RootOrder: 0
+  m_Father: {fileID: 1855616030}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &611596315405754036
 GameObject:
@@ -32879,10 +31789,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.08600044, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children:
-  - {fileID: 611596315405746506}
+  m_Children: []
   m_Father: {fileID: 1855616030}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5090747236277089503
 GameObject:

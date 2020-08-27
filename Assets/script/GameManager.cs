@@ -11,21 +11,27 @@ public class GameManager : MonoBehaviour
     public GameObject clearSpawn;
     public GameObject clear;
     [SerializeField] private int currentPoint;
-    
+
 
 
     public void Init(GameObject player)
     {
-        
+
         camFollow = FindObjectOfType<Camera2DFollow>();
 
-        this.player = player;
-
-        Vector3 charPosition = player.transform.position;
-        player.transform.position = new Vector3(charPosition.x, charPosition.y, charPosition.z);
         clearSpawn = GameObject.Find("clearSpawn");
         clear = GameObject.Find("clear");
         ClearRespawn();
+
+
+        this.player = player;
+        if (camFollow != null)
+        {
+            Vector3 charPosition = player.transform.position;
+            player.transform.position = new Vector3(charPosition.x, charPosition.y, charPosition.z);
+        }
+        
+        
 
     }
    /* public  void NextStage(int stageNumber)

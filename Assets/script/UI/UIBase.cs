@@ -21,12 +21,15 @@ public class UIBase : MonoBehaviour
     public virtual void Init()
     {
         GameObject sMObj = GameObject.Find("SoundManager");
+        if (sMObj != null)
         sM = sMObj.GetComponent<SoundManager>();
 
         GameObject gMObj = GameObject.Find("GameManager");
+        if (gMObj != null)
         gM = gMObj.GetComponent<GameManager>();
 
         GameObject uMObj = GameObject.Find("UIManager");
+        if (uMObj != null)
         uM = uMObj.GetComponent<UIManager>();
 
 

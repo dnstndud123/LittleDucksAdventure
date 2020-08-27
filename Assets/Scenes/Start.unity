@@ -2973,7 +2973,6 @@ MonoBehaviour:
   player: {fileID: 0}
   startP: {fileID: 0}
   soundMgr: {fileID: 703664923}
-  select: {fileID: 0}
 --- !u!4 &456227922
 Transform:
   m_ObjectHideFlags: 0
@@ -3686,11 +3685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedX: 100
-  _speedY: 0
   desPointX: 9.73
   oriPointX: -9.83
-  desPointY: 0
-  oriPointY: 0
   span: 0
   span2: 0
   delta: 0
@@ -6151,7 +6147,6 @@ MonoBehaviour:
   sM: {fileID: 0}
   gM: {fileID: 0}
   uM: {fileID: 0}
-  rigid: {fileID: 0}
   anim: {fileID: 0}
 --- !u!224 &866243266
 RectTransform:
@@ -13935,7 +13930,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927230774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.99, y: 1.31, z: -10}
+  m_LocalPosition: {x: 0.27, y: 0.11, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

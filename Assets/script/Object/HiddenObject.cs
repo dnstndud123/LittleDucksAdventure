@@ -5,6 +5,7 @@ using UnityEngine;
 public class HiddenObject : MonoBehaviour
 {
     public GameObject obj;
+    
     private void Start()
     {
         if (obj != null)
@@ -19,5 +20,7 @@ public class HiddenObject : MonoBehaviour
             obj.SetActive(true);
         }
     }
+
+    
 
 }
