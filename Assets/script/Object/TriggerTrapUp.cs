@@ -5,6 +5,7 @@ using UnityEngine;
 public class TriggerTrapUp : MonoBehaviour
 {
     public GameObject obj;
+    public float forceX = 0;
     public float forceY = 0.2f;
     public Rigidbody2D rigid;
     public BoxCollider2D collider;
@@ -16,7 +17,7 @@ public class TriggerTrapUp : MonoBehaviour
             obj.SetActive(true);
             if (obj.activeSelf)
             {
-                rigid.AddForce(new Vector2(0, forceY));
+                rigid.AddForce(new Vector2(forceX, forceY));
             }
             collider.enabled = false;
         }
