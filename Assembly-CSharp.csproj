@@ -94,6 +94,7 @@
     <Compile Include="Assets\script\Object\HiddenObject.cs" />
     <Compile Include="Assets\script\Object\HiddenTrapFall.cs" />
     <Compile Include="Assets\script\Object\JumpTrap.cs" />
+    <Compile Include="Assets\script\Object\MoveTrap.cs" />
     <Compile Include="Assets\script\Object\Rotation.cs" />
     <Compile Include="Assets\script\Object\Rotation_F.cs" />
     <Compile Include="Assets\script\Object\Spring.cs" />

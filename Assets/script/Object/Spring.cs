@@ -16,13 +16,20 @@ public class Spring : MonoBehaviour
         spring.Play();
         StartCoroutine(Boing());
         Rigidbody2D rigid = collision.gameObject.GetComponent<Rigidbody2D>();
-        rigid.AddForce(new Vector2(0, 4000));
+        
         
         if (collision.gameObject.tag == "Player")
         {
+            rigid.AddForce(new Vector2(0, 4000));
             Camera2DFollow cam = Camera.main.GetComponent<Camera2DFollow>();
             cam.target = null;
         }
+        if (collision.gameObject.tag == "ground")
+        {
+            rigid.AddForce(new Vector2(0, 1000));
+        }
+
+
     }
 
     IEnumerator Boing()
