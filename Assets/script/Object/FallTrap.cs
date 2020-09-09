@@ -18,10 +18,18 @@ public class FallTrap : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            rigid.gravityScale = 1;
+            rigid.gravityScale = 3;
             box.isTrigger = true;
         }
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            rigid.gravityScale = 1;
+        }
+    }
+
+
 }
