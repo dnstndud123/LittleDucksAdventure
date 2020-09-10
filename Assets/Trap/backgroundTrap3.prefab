@@ -182,6 +182,7 @@ MonoBehaviour:
   player: {fileID: 0}
   gO: {fileID: 329722037491802844}
   chr: {fileID: 0}
+  rigid: {fileID: 0}
 --- !u!58 &-64116033310092619
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -192,7 +193,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.05742703, y: 0.097376905}
@@ -208,7 +209,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.10486667, y: -0.14481768}
@@ -224,7 +225,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

@@ -99,8 +99,9 @@
     <Compile Include="Assets\script\Object\Rotation.cs" />
     <Compile Include="Assets\script\Object\Rotation_F.cs" />
     <Compile Include="Assets\script\Object\Spring.cs" />
-    <Compile Include="Assets\script\Object\SwicthTrap.cs" />
-    <Compile Include="Assets\script\Object\Switch.cs" />
+    <Compile Include="Assets\script\Object\Switch\SwicthTrap.cs" />
+    <Compile Include="Assets\script\Object\Switch\Switch.cs" />
+    <Compile Include="Assets\script\Object\Switch\SwitchMove.cs" />
     <Compile Include="Assets\script\Object\Teleport\Teleport.cs" />
     <Compile Include="Assets\script\Object\Teleport\TrapTeleport.cs" />
     <Compile Include="Assets\script\Object\Trap.cs" />

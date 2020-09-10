@@ -467,6 +467,7 @@ MonoBehaviour:
   player: {fileID: 0}
   gO: {fileID: 3029272077863386760}
   chr: {fileID: 0}
+  rigid: {fileID: 0}
 --- !u!1 &3029272077603739434
 GameObject:
   m_ObjectHideFlags: 0
