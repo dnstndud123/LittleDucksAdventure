@@ -8,7 +8,7 @@ public class TriggerTrapUp : MonoBehaviour
     public float forceX = 0;
     public float forceY = 0.2f;
     public Rigidbody2D rigid;
-    public BoxCollider2D collider;
+    public BoxCollider2D col;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
@@ -19,7 +19,8 @@ public class TriggerTrapUp : MonoBehaviour
             {
                 rigid.AddForce(new Vector2(forceX, forceY));
             }
-            collider.enabled = false;
+            if (col != null)
+            col.enabled = false;
         }
     }
     

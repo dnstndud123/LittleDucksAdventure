@@ -9,7 +9,9 @@ public class SwitchMove : MonoBehaviour
     public Rigidbody2D rigid;
     public Animator anim;
 
-    public BoxCollider2D cloud;
+    public BoxCollider2D trigger;
+
+    
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -30,12 +32,14 @@ public class SwitchMove : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         rigid.AddForce(new Vector2(3000, 0));
+        trigger.enabled = false;
     }
     IEnumerator ChangeTrigger()
     {
         yield return new WaitForSeconds(10);
         rigid.gravityScale = 0;
         col.isTrigger = true;
-        cloud.enabled = true;
+        
+        
     }
 }
