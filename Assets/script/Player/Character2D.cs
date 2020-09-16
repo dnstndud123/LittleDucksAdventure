@@ -18,6 +18,24 @@ public class Character2D : MonoBehaviour
     public GameObject jumpCheck;
     public float delta;
 
+    [HideInInspector]
+    static Character2D instance;
+    public static Character2D ins
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<Character2D>();
+                if (null == instance)
+                {
+                    Debug.LogError("Character2D 인스턴스 가져오기 실패");
+                }
+            }
+            return instance;
+        }
+    }
+
     // Start is called before the first frame update
     public void Init()
     {

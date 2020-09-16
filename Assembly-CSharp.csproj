@@ -120,6 +120,7 @@
     <Compile Include="Assets\script\Scene\SelectScene.cs" />
     <Compile Include="Assets\script\Scene\StartScene.cs" />
     <Compile Include="Assets\script\TrapClone.cs" />
+    <Compile Include="Assets\script\UI\BtnUI.cs" />
     <Compile Include="Assets\script\UI\UIBase.cs" />
     <Compile Include="Assets\script\UI\UIClear.cs" />
     <Compile Include="Assets\script\UI\UIGameOver.cs" />

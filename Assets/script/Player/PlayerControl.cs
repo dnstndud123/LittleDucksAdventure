@@ -4,6 +4,24 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    [HideInInspector]
+    static PlayerControl instance;
+    public static PlayerControl ins
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<PlayerControl>();
+                if (null == instance)
+                {
+                    Debug.LogError("PlayerControl 인스턴스 가져오기 실패");
+                }
+
+            }
+            return instance;
+        }
+    }
     
     public float speedX;
     public float maxSpeed = 4;
@@ -12,6 +30,8 @@ public class PlayerControl : MonoBehaviour
 
     public Character2D char2D;
     public Rigidbody2D rigid;
+
+    //public GameObject[] btns;
     
 
     
@@ -27,33 +47,36 @@ public class PlayerControl : MonoBehaviour
 #endif
         if (char2D.hp == 0)
             return;
-        
-        
-      /*  if(Input.GetKey(KeyCode.DownArrow))
-        {
-            
-            char2D.Crouch(true);
-            
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                
-                char2D.Flip(false);
-            }
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-                
-                char2D.Flip(true);
-            }
-            
 
-                return;
 
-        }
-        if(Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            char2D.Crouch(false);
-        }
-      */
+        /*  if(Input.GetKey(KeyCode.DownArrow))
+          {
+
+              char2D.Crouch(true);
+
+              if (Input.GetKey(KeyCode.LeftArrow))
+              {
+
+                  char2D.Flip(false);
+              }
+              if (Input.GetKey(KeyCode.RightArrow))
+              {
+
+                  char2D.Flip(true);
+              }
+
+
+                  return;
+
+          }
+          if(Input.GetKeyUp(KeyCode.DownArrow))
+          {
+              char2D.Crouch(false);
+          }
+        */
+
+        
+
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             rigid.AddForce(new Vector2(-speedX, 0));
@@ -85,5 +108,15 @@ public class PlayerControl : MonoBehaviour
         
 
         
+    }
+    public void LeftMove()
+    {
+        rigid.AddForce(new Vector2(-speedX * 10, 0));
+        char2D.Flip(false);
+    }
+    public void RightMove()
+    {
+        rigid.AddForce(new Vector2(speedX * 10, 0));
+        char2D.Flip(true);
     }
 }
