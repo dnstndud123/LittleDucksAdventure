@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControlFlip : MonoBehaviour
 {   
     
     public float spd = 100;
     public float force = 5;
+    public Button left;
+    public Button right;
     private void OnTriggerStay2D(Collider2D collision)
     {
         PlayerControl pCon = collision.gameObject.GetComponent<PlayerControl>();
@@ -17,14 +20,16 @@ public class ControlFlip : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                pCon.rigid.AddForce(new Vector2(pCon.speedX + spd, 0));
-                
+                //pCon.rigid.AddForce(new Vector2(pCon.speedX + spd, 0));
+                PlayerControl.ins.LeftMove(false, spd);
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                pCon.rigid.AddForce(new Vector2(-pCon.speedX - spd, 0));
-                
+                //pCon.rigid.AddForce(new Vector2(-pCon.speedX - spd, 0));
+                PlayerControl.ins.RightMove(false, spd);
             }
+            left.gameObject.name = "Right";
+            right.gameObject.name = "Left";
 
 
             //if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))

@@ -79,13 +79,11 @@ public class PlayerControl : MonoBehaviour
 
         if(Input.GetKey(KeyCode.LeftArrow))
         {
-            rigid.AddForce(new Vector2(-speedX, 0));
-            char2D.Flip(false);
+            LeftMove(true, 0);
         }
         if(Input.GetKey(KeyCode.RightArrow))
         {
-            rigid.AddForce(new Vector2(speedX, 0));
-            char2D.Flip(true);
+            RightMove(true, 0);
         }
        //if (speedX > 0)
        //    char2D.Flip(true);
@@ -109,14 +107,30 @@ public class PlayerControl : MonoBehaviour
 
         
     }
-    public void LeftMove()
+    public void LeftMove(bool left,float spd)
     {
-        rigid.AddForce(new Vector2(-speedX * 10, 0));
-        char2D.Flip(false);
+        if (left == true)
+        {
+            rigid.AddForce(new Vector2(-speedX, 0));
+            char2D.Flip(false);
+        }
+        else
+        {
+            rigid.AddForce(new Vector2(speedX + spd, 0));
+            char2D.Flip(true);
+        }
     }
-    public void RightMove()
+    public void RightMove(bool right,float spd)
     {
-        rigid.AddForce(new Vector2(speedX * 10, 0));
-        char2D.Flip(true);
+        if (right == true)
+        {
+            rigid.AddForce(new Vector2(speedX, 0));
+            char2D.Flip(true);
+        }
+        else
+        {
+            rigid.AddForce(new Vector2(-speedX - spd, 0));
+            char2D.Flip(false);
+        }
     }
 }

@@ -25,29 +25,45 @@ public class BtnUI : MonoBehaviour
         }
     }
 
-    public Button[] btns;
+    //public Button[] btns;
+
+    bool _isMoving = false;
+    Button _pressedBtn = null;
 
     public void Update()
     {
+        if (_isMoving)
+            MoveButton(_pressedBtn);
 
-
-        
-        
     }
+
+    public void OnButtonDown(Button btn)
+    {
+        _isMoving = true;
+        _pressedBtn = btn;
+    }
+
+    public void OnButtonUp(Button btn)
+    {
+        _isMoving = false;
+        _pressedBtn = null; 
+    }
+
     public void MoveButton(Button btn)
     {
         if (btn.name == "Left")
         {
-            
-            PlayerControl.ins.LeftMove();
+
+            PlayerControl.ins.LeftMove(true, 0);
         }
         if (btn.name == "Right")
         {
-            PlayerControl.ins.RightMove();
+            PlayerControl.ins.RightMove(true, 0);
         }
 
         
     }
+    
 
     
     public void JumpButton()
