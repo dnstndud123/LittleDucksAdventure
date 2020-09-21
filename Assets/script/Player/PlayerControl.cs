@@ -32,9 +32,9 @@ public class PlayerControl : MonoBehaviour
     public Rigidbody2D rigid;
 
     //public GameObject[] btns;
-    
 
-    
+    public bool flip = true;
+      
 
     
 
@@ -75,20 +75,32 @@ public class PlayerControl : MonoBehaviour
           }
         */
 
-        
-
-        if(Input.GetKey(KeyCode.LeftArrow))
+        if (flip == true)
         {
-            LeftMove(true, 0);
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                LeftMove(true);
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                RightMove(true);
+            }
         }
-        if(Input.GetKey(KeyCode.RightArrow))
+        if (flip == false)
         {
-            RightMove(true, 0);
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                LeftMove(false);
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                RightMove(false);
+            }
         }
-       //if (speedX > 0)
-       //    char2D.Flip(true);
-       // if (speedX < 0)
-       //     char2D.Flip(false);
+        //if (speedX > 0)
+        //    char2D.Flip(true);
+        // if (speedX < 0)
+        //     char2D.Flip(false);
 
         Vector2 velX = rigid.velocity;
         float limitX = Mathf.Min(maxSpeed, velX.x);
@@ -107,7 +119,7 @@ public class PlayerControl : MonoBehaviour
 
         
     }
-    public void LeftMove(bool left,float spd)
+    public void LeftMove(bool left)
     {
         if (left == true)
         {
@@ -116,11 +128,11 @@ public class PlayerControl : MonoBehaviour
         }
         else
         {
-            rigid.AddForce(new Vector2(speedX + spd, 0));
+            rigid.AddForce(new Vector2(speedX, 0));
             char2D.Flip(true);
         }
     }
-    public void RightMove(bool right,float spd)
+    public void RightMove(bool right)
     {
         if (right == true)
         {
@@ -129,7 +141,7 @@ public class PlayerControl : MonoBehaviour
         }
         else
         {
-            rigid.AddForce(new Vector2(-speedX - spd, 0));
+            rigid.AddForce(new Vector2(-speedX, 0));
             char2D.Flip(false);
         }
     }

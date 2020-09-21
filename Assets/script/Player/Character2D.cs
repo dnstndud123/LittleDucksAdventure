@@ -17,6 +17,9 @@ public class Character2D : MonoBehaviour
     UIManager UM;
     public GameObject jumpCheck;
     public float delta;
+    
+    int saveDeathCnt = 0;
+    bool die = false;
 
     [HideInInspector]
     static Character2D instance;
@@ -55,6 +58,7 @@ public class Character2D : MonoBehaviour
     }
     public void OnDamage(int dmg)
     {
+        die = false;
         
         hp -= dmg;
         hp = Mathf.Max(0, hp);
@@ -68,7 +72,12 @@ public class Character2D : MonoBehaviour
             sM.Play("Fall");
             UM.HideAll();
             UM.Show("UIGameOver", UM.uiList[3]);
-            
+            die = true;
+        }
+
+        if (die == true)
+        {
+            DeathCountSave();
         }
     }
 
@@ -76,8 +85,8 @@ public class Character2D : MonoBehaviour
     {
         if (collision.tag == "ground" || collision.tag == "fall")
         {
-            
-            anim.SetBool("jump", false);
+            if (anim != null)
+                anim.SetBool("jump", false);
         }
         
     }
@@ -148,6 +157,21 @@ public class Character2D : MonoBehaviour
 
 
 
+    }
+    const string death_count = "DEATH_COUNT";
+
+    public void DeathCountSave()
+    {
+        int deathCnt = 0;
+        saveDeathCnt = PlayerPrefs.GetInt(death_count);
+
+        if (PlayerPrefs.HasKey(death_count))
+        {
+            deathCnt = saveDeathCnt;
+        }
+        deathCnt += 1;
+
+        PlayerPrefs.SetInt("DEATH_COUNT", deathCnt);
     }
     public void Crouch(bool isCrouch)
     {

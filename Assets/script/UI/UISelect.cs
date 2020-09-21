@@ -25,12 +25,15 @@ public class UISelect : UIBase
         }
         btn[0].gameObject.SetActive(true);
 
+        if (txt != null)    txt.text = PlayerPrefs.GetInt("DEATH_COUNT").ToString();
 
         stageNumber = PlayerPrefs.GetInt("LEVEL_DATA");
         for (int i = 0; i < stageNumber; i++)
         {
             btn[i].gameObject.SetActive(true);
         }
+
+
 
         
         
@@ -45,7 +48,7 @@ public class UISelect : UIBase
         }
         btn[0].gameObject.SetActive(true);
         PlayerPrefs.SetInt("LEVEL_DATA", 0);
-        
+        PlayerPrefs.SetInt("DEATH_COUNT", 0);
     }
     
 

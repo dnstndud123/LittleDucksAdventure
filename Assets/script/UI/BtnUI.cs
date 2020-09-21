@@ -54,11 +54,11 @@ public class BtnUI : MonoBehaviour
         if (btn.name == "Left")
         {
 
-            PlayerControl.ins.LeftMove(true, 0);
+            PlayerControl.ins.LeftMove(true);
         }
         if (btn.name == "Right")
         {
-            PlayerControl.ins.RightMove(true, 0);
+            PlayerControl.ins.RightMove(true);
         }
 
         

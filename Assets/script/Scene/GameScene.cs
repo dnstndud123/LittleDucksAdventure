@@ -19,7 +19,7 @@ public class GameScene : BaseScene
 
         base.Init();
 
-
+        PlayerControl.ins.flip = true;
         GameObject gameMgrObj = GameObject.Find("GameManager");
         GameManager gameMgr = gameMgrObj.GetComponent<GameManager>();
 

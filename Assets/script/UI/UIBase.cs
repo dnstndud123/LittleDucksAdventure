@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIBase : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class UIBase : MonoBehaviour
     //public Rigidbody2D rigid;
     protected Character2D player;
     public Animator anim;
-    
+    public Text txt;
     // Start is called before the first frame update
     void Start()
     {

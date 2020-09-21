@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
 
 
         this.player = player;
+        
         if (camFollow != null)
         {
             Vector3 charPosition = player.transform.position;

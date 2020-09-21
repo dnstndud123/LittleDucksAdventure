@@ -30,7 +30,7 @@ public class GameGlobal : MonoBehaviour
                 
                 bgmArray[(int)SCENE.SELECT].Play();
             }
-            if (scene.name == "level1" || scene.name == "Level2" || scene.name == "Level3" || scene.name == "Level4")
+            if (scene.name == "Level1" || scene.name == "Level2" || scene.name == "Level3" || scene.name == "Level4")
             {
                 
                 bgmArray[(int)SCENE.LEVEL1].Play();

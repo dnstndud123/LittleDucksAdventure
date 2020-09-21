@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ControlFlip : MonoBehaviour
 {   
     
-    public float spd = 100;
+    //public float spd = 100;
     public float force = 5;
     public Button left;
     public Button right;
@@ -17,17 +17,9 @@ public class ControlFlip : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             char2D.multiple = 2;
+            PlayerControl.ins.flip = false;
 
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                //pCon.rigid.AddForce(new Vector2(pCon.speedX + spd, 0));
-                PlayerControl.ins.LeftMove(false, spd);
-            }
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-                //pCon.rigid.AddForce(new Vector2(-pCon.speedX - spd, 0));
-                PlayerControl.ins.RightMove(false, spd);
-            }
+            
             left.gameObject.name = "Right";
             right.gameObject.name = "Left";
 
@@ -45,6 +37,8 @@ public class ControlFlip : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             char2D.multiple = 1;
+            PlayerControl.ins.flip = true;
+        
         }
     }
 
