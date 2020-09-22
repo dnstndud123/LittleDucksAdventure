@@ -6148,6 +6148,7 @@ MonoBehaviour:
   gM: {fileID: 0}
   uM: {fileID: 0}
   anim: {fileID: 0}
+  txt: {fileID: 0}
 --- !u!224 &866243266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11982,7 +11983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1704099277}
   m_Layer: 0
-  m_Name: cloud
+  m_Name: Cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

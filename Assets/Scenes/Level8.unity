@@ -1960,7 +1960,7 @@ MonoBehaviour:
   forceX: 100
   forceY: 2000
   rigid: {fileID: 1743591424}
-  col: {fileID: 0}
+  col: {fileID: 74639889}
 --- !u!61 &74639889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2558,7 +2558,7 @@ MonoBehaviour:
   forceX: 100
   forceY: 2000
   rigid: {fileID: 1086990529}
-  col: {fileID: 0}
+  col: {fileID: 109128138}
 --- !u!61 &109128138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14132,7 +14132,7 @@ MonoBehaviour:
   forceX: 1000
   forceY: 500
   rigid: {fileID: 604097565}
-  col: {fileID: 0}
+  col: {fileID: 629818542}
 --- !u!61 &629818542
 BoxCollider2D:
   m_ObjectHideFlags: 0
