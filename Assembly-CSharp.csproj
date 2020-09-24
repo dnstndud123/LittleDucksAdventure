@@ -114,6 +114,7 @@
     <Compile Include="Assets\script\Player\UIHp1.cs" />
     <Compile Include="Assets\script\Player\UIHp2.cs" />
     <Compile Include="Assets\script\Player\UIHp3.cs" />
+    <Compile Include="Assets\script\PositionFollow.cs" />
     <Compile Include="Assets\script\Scene\BaseScene.cs" />
     <Compile Include="Assets\script\Scene\Common.cs" />
     <Compile Include="Assets\script\Scene\GameScene.cs" />
@@ -128,6 +129,7 @@
     <Compile Include="Assets\script\UI\UIPlay.cs" />
     <Compile Include="Assets\script\UI\UISelect.cs" />
     <Compile Include="Assets\script\UI\UIStart.cs" />
+    <Compile Include="Assets\script\UI\Volume.cs" />
     <Compile Include="Assets\script\sound\GameGlobal.cs" />
     <Compile Include="Assets\script\sound\SoundManager.cs" />
     <None Include="Assets\Sprite Pack\Tap and Fly\Readme.txt" />

@@ -23,7 +23,11 @@ public class GameManager : MonoBehaviour
         clear = GameObject.Find("clear");
         ClearRespawn();
 
-
+        PositionFollow[] positionFollow = GetComponentsInChildren<PositionFollow>();
+        foreach (PositionFollow p in positionFollow)
+        {
+            p.Init();
+        }
         this.player = player;
         
         if (camFollow != null)

@@ -15,7 +15,8 @@ public class UIPlay : UIBase
         base.Init();
         int count = PlayerPrefs.GetInt("DEATH_COUNT");
         int lifeCount = 3 - count;
-        if (txt != null) txt.text = lifeCount.ToString(); 
+        if (txt != null) txt.text = lifeCount.ToString();
+        
     }
 
     public override void OnButtonClick(GameObject btn)

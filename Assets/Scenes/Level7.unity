@@ -3676,6 +3676,11 @@ MonoBehaviour:
   lookAheadFactor: 3
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.1
+  leftCam: {fileID: 0}
+  rightCam: {fileID: 0}
+  leftWallPos: {x: 0, y: 0}
+  rightWallPos: {x: 0, y: 0}
+  camRect: {x: 0, y: 0}
 --- !u!81 &370276500
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3735,7 +3740,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370276498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 200.3, y: 18.6, z: -10}
+  m_LocalPosition: {x: 203.91, y: 24.48, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9924,6 +9929,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.744858, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1005483150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1005483152}
+  - component: {fileID: 1005483151}
+  m_Layer: 0
+  m_Name: leftCamWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1005483151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005483150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b18a4bc8dc4034d9cd7cbec71ff620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  posY: 0
+--- !u!4 &1005483152
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005483150}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 84.84034, y: -8.579999, z: 37.005154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1909956407}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1009037623
 GameObject:
   m_ObjectHideFlags: 0
@@ -11407,6 +11457,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180389433}
   m_CullTransparentMesh: 0
+--- !u!1 &1182175476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1182175478}
+  - component: {fileID: 1182175477}
+  m_Layer: 0
+  m_Name: rightCamWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1182175477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182175476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b18a4bc8dc4034d9cd7cbec71ff620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  posY: 0
+--- !u!4 &1182175478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182175476}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 132.90033, y: -8.43365, z: 32.232662}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1909956407}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1184538166
 GameObject:
   m_ObjectHideFlags: 0
@@ -17731,7 +17826,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 102.36967, y: -10.686351, z: -52.01782}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1005483152}
+  - {fileID: 1182175478}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18977,7 +19074,7 @@ GameObject:
   - component: {fileID: 1994455367}
   - component: {fileID: 1994455366}
   m_Layer: 0
-  m_Name: Stage7 Camera
+  m_Name: CamWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19001,8 +19098,8 @@ EdgeCollider2D:
   m_Points:
   - {x: -27.48024, y: 40.940826}
   - {x: -27.779968, y: -25.74543}
-  - {x: 44.405075, y: -25.866077}
-  - {x: 43.474106, y: 40.2083}
+  - {x: 38.08925, y: -26.91872}
+  - {x: 38.210922, y: 44.76973}
   - {x: -29.024704, y: 42.447197}
 --- !u!4 &1994455367
 Transform:
