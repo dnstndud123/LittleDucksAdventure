@@ -2541,7 +2541,7 @@ GameObject:
   - component: {fileID: 214228050}
   - component: {fileID: 214228049}
   m_Layer: 5
-  m_Name: BGMText
+  m_Name: BGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7361,7 +7361,7 @@ GameObject:
   - component: {fileID: 689700105}
   - component: {fileID: 689700104}
   m_Layer: 5
-  m_Name: SEText
+  m_Name: SE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12427,7 +12427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f81c784f79a415b489edc3cf588f93bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SESlider: {fileID: 0}
+  SESlider: {fileID: 1342713873}
+  volume: {fileID: 2107053661}
   audioList:
   - {fileID: 197934716}
   - {fileID: 848945414}

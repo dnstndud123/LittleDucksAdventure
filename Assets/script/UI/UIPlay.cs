@@ -8,7 +8,7 @@ public class UIPlay : UIBase
 {
     public GameObject gObj;
     public GameObject level;
-
+    
 
     public override void Init()
     {
@@ -27,8 +27,10 @@ public class UIPlay : UIBase
         {
 
             gObj.SetActive(true);
+            SoundManager.ins.volume.SetActive(true);
             //일시 정지
             Time.timeScale = 0.0f;
+            
 
 
         }
@@ -36,12 +38,14 @@ public class UIPlay : UIBase
         {
 
             gObj.SetActive(false);
+            SoundManager.ins.volume.SetActive(false);
             Time.timeScale = 1.0f;
             //일시 정지 풀기
         }
         if (btn.name == "restart")
         {
-            gObj.SetActive(false);
+            //gObj.SetActive(false);
+            
             Time.timeScale = 1.0f;
 
             //현재 스테이지 다시 시작

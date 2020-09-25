@@ -21,7 +21,7 @@ public class BaseScene : MonoBehaviour
     public virtual void Init()
     {
         InitGameGlobal();
-        SoundManager.ins.Init();
+        
         if (this is StartScene || this is SelectScene)
         {
             //InitPlayer 스킵

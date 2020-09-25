@@ -11,6 +11,8 @@ public class GameGlobal : MonoBehaviour
 
     [SerializeField] Slider BGMSlider;
     float value = 50;
+
+    const string BGM_VOLUME_DATA = "BGM_DATA";
     public void Start()
     {
         DontDestroyOnLoad(this);
@@ -18,18 +20,37 @@ public class GameGlobal : MonoBehaviour
         bgmArray[(int)SCENE.START].Play();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
+        SoundManager.ins.Init();
 
-        BGMSlider = GameObject.Find("BGM").GetComponentInChildren<Slider>(true);
+
+
+        if (SoundManager.ins.volume != null)
+        {
+            BGMSlider = GameObject.Find("BGM").GetComponentInChildren<Slider>(true);
+            SoundManager.ins.volume.SetActive(false);
+        }
+
+        foreach (AudioSource a in bgmArray)
+        {
+            a.volume = PlayerPrefs.GetFloat(BGM_VOLUME_DATA) / 100;
+        }
+
+
     }
     public void Update()
     {
+        if (BGMSlider != null)
+        {
+            //PlayerPrefs.SetFloat(BGM_VOLUME_DATA, BGMSlider.value);
+            value = BGMSlider.value;
+            
+            BGM_Volume(value);
+        }
+            
         
-        value = BGMSlider.value;
-        BGM_Volume(value);
     }
     public void BGM_Volume(float value)
     {
-        
         
         float volume = value / 100;
         foreach (AudioSource a in bgmArray)
@@ -37,13 +58,26 @@ public class GameGlobal : MonoBehaviour
             a.volume = volume;
         }
         BGMSlider.value = volume * 100;
+        PlayerPrefs.SetFloat(BGM_VOLUME_DATA, BGMSlider.value);
+        
     }
+    
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (BGMSlider == null)
+        {
+            BGMSlider = GameObject.Find("BGM").GetComponentInChildren<Slider>(true);
+        }
+        if (scene.name != "LevelSelect")
+            SoundManager.ins.volume.SetActive(false);
+        BGMSlider.value = PlayerPrefs.GetFloat(BGM_VOLUME_DATA);
+        if (SoundManager.ins.SESlider != null)
+            SoundManager.ins.SESlider.value = PlayerPrefs.GetFloat("SE_DATA");
         foreach (AudioSource a in bgmArray)
         {
 
             a.Stop();
+            
             
             if (scene.name == "LevelSelect")
             {
@@ -78,6 +112,7 @@ public class GameGlobal : MonoBehaviour
             {
                 bgmArray[(int)SCENE.LEVEL6].Play();
             }*/
+            
         }
     }
 
