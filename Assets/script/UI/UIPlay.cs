@@ -14,7 +14,7 @@ public class UIPlay : UIBase
     {
         base.Init();
         int count = PlayerPrefs.GetInt("DEATH_COUNT");
-        int lifeCount = 3 - count;
+        int lifeCount = count;
         if (txt != null) txt.text = lifeCount.ToString();
         
     }
