@@ -30,7 +30,7 @@ public class GameScene : BaseScene
         CamFollow = Camera.main.GetComponent<Camera2DFollow>();
         clear = GameObject.Find("clear");
         ClearCheck clearCheck = clear.GetComponent<ClearCheck>();
-        trapList = GameObject.Find("trap");
+        trapList = GameObject.Find("Traps");
         
 
 

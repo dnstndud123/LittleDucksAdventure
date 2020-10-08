@@ -108,6 +108,10 @@ public class GameGlobal : MonoBehaviour
                 bgmArray[(int)SCENE.LEVEL5].Play();
 
             }
+            if (scene.name == "Level9")
+            {
+                bgmArray[(int)SCENE.LEVEL9].Play();
+            }
             /*if (scene.name == "Level6")
             {
                 bgmArray[(int)SCENE.LEVEL6].Play();

@@ -7068,7 +7068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632649818}
   m_Layer: 0
-  m_Name: trap
+  m_Name: Traps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17978,7 +17978,6 @@ MonoBehaviour:
   txt: {fileID: 175767194}
   gObj: {fileID: 1704773674}
   level: {fileID: 960433059}
-  volume: {fileID: 1117349806}
 --- !u!224 &1615702950
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22680,7 +22679,6 @@ MonoBehaviour:
   txt: {fileID: 0}
   gObj: {fileID: 0}
   level: {fileID: 0}
-  volume: {fileID: 0}
 --- !u!95 &1962919749
 Animator:
   serializedVersion: 3

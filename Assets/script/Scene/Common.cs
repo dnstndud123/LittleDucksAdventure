@@ -13,5 +13,6 @@ public enum SCENE
     LEVEL5,
     LEVEL6,
     LEVEL7,
-    LEVEL8
+    LEVEL8,
+    LEVEL9
 }

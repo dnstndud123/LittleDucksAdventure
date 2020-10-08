@@ -92,6 +92,8 @@
     <Compile Include="Assets\script\Object\EnableTrigger.cs" />
     <Compile Include="Assets\script\Object\FallTrap.cs" />
     <Compile Include="Assets\script\Object\FallenTrap.cs" />
+    <Compile Include="Assets\script\Object\FerrisWheel.cs" />
+    <Compile Include="Assets\script\Object\FerrisWire.cs" />
     <Compile Include="Assets\script\Object\HiddenObject.cs" />
     <Compile Include="Assets\script\Object\HiddenTrapFall.cs" />
     <Compile Include="Assets\script\Object\JumpTrap.cs" />
