@@ -33,7 +33,7 @@ public class SoundManager : MonoBehaviour
     public void Init()
     {
         //SESlider = GameObject.Find("SE").GetComponentInChildren<Slider>(true);
-
+        audioList = GetComponentsInChildren<AudioSource>(true);
             foreach (AudioSource a in audioList)
         {
             a.volume = PlayerPrefs.GetFloat(SE_VOLUME_DATA) / 100;

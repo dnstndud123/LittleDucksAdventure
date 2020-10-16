@@ -87,6 +87,7 @@ public class Character2D : MonoBehaviour
         {
             if (anim != null)
                 anim.SetBool("jump", false);
+            PlayerControl.ins.enabled = true;
         }
         
     }

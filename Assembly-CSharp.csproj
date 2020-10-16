@@ -100,6 +100,7 @@
     <Compile Include="Assets\script\Object\MoveTrap.cs" />
     <Compile Include="Assets\script\Object\Rotation.cs" />
     <Compile Include="Assets\script\Object\Rotation_F.cs" />
+    <Compile Include="Assets\script\Object\Spring\SafeSpring.cs" />
     <Compile Include="Assets\script\Object\Spring\Spring.cs" />
     <Compile Include="Assets\script\Object\Switch\SwicthTrap.cs" />
     <Compile Include="Assets\script\Object\Switch\Switch.cs" />
