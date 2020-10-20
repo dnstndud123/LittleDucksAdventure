@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PositionFollow : MonoBehaviour
+public class PositionFollowX : MonoBehaviour
 {
     [SerializeField] Transform player;
 

@@ -27,7 +27,16 @@ public class FallTrap : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            rigid.gravityScale = 1;
+            rigid.gravityScale = 0.5f;
+            collision.gameObject.transform.parent = transform;
+        }
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            
+            collision.gameObject.transform.parent = null;
         }
     }
 

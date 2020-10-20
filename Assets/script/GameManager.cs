@@ -23,8 +23,11 @@ public class GameManager : MonoBehaviour
         clear = GameObject.Find("clear");
         ClearRespawn();
 
-        PositionFollow[] positionFollow = GetComponentsInChildren<PositionFollow>();
-        foreach (PositionFollow p in positionFollow)
+        PositionFollowY folY = GetComponentInChildren<PositionFollowY>();
+
+        folY.Init();
+        PositionFollowX[] positionFollow = GetComponentsInChildren<PositionFollowX>();
+        foreach (PositionFollowX p in positionFollow)
         {
             p.Init();
         }

@@ -8,13 +8,16 @@ public class TriggerHiddenObject : MonoBehaviour
     public Rigidbody2D rigid;
     public float forceX = 0.1f;
     public BoxCollider2D col;
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
             obj.SetActive(true);
             rigid.gravityScale = 0;
-            
+            BoxCollider2D col = obj.GetComponent<BoxCollider2D>();
+            if (col != null)
+                col.enabled = false;
             
         }
         if (obj.activeSelf)

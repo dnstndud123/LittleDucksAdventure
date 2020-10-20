@@ -102,9 +102,9 @@
     <Compile Include="Assets\script\Object\Rotation_F.cs" />
     <Compile Include="Assets\script\Object\Spring\SafeSpring.cs" />
     <Compile Include="Assets\script\Object\Spring\Spring.cs" />
-    <Compile Include="Assets\script\Object\Switch\SwicthTrap.cs" />
     <Compile Include="Assets\script\Object\Switch\Switch.cs" />
     <Compile Include="Assets\script\Object\Switch\SwitchMove.cs" />
+    <Compile Include="Assets\script\Object\Switch\SwitchTrap.cs" />
     <Compile Include="Assets\script\Object\Teleport\Teleport.cs" />
     <Compile Include="Assets\script\Object\Teleport\TrapTeleport.cs" />
     <Compile Include="Assets\script\Object\Trap.cs" />
@@ -117,7 +117,8 @@
     <Compile Include="Assets\script\Player\UIHp1.cs" />
     <Compile Include="Assets\script\Player\UIHp2.cs" />
     <Compile Include="Assets\script\Player\UIHp3.cs" />
-    <Compile Include="Assets\script\PositionFollow.cs" />
+    <Compile Include="Assets\script\PositionFollowX.cs" />
+    <Compile Include="Assets\script\PositionFollowY.cs" />
     <Compile Include="Assets\script\Scene\BaseScene.cs" />
     <Compile Include="Assets\script\Scene\Common.cs" />
     <Compile Include="Assets\script\Scene\GameScene.cs" />

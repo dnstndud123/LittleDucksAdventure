@@ -16,6 +16,7 @@ public class Character2D : MonoBehaviour
     PlayerControl PC;
     UIManager UM;
     public GameObject jumpCheck;
+    public BoxCollider2D jumpCol;
     public float delta;
     
     int saveDeathCnt = 0;
@@ -48,6 +49,8 @@ public class Character2D : MonoBehaviour
         sM = FindObjectOfType<SoundManager>();
         PC = GetComponent<PlayerControl>();
         UM = FindObjectOfType<UIManager>();
+        jumpCol = jumpCheck.GetComponent<BoxCollider2D>();
+        jumpCol.enabled = false;
         hp = maxHp;
         anim.SetInteger("hp", hp);
 
@@ -80,13 +83,22 @@ public class Character2D : MonoBehaviour
             DeathCountSave();
         }
     }
-
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "ground" || collision.tag == "fall")
+        {
+            StopAllCoroutines();
+            jumpCol.enabled = false;
+            
+        }
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "ground" || collision.tag == "fall")
         {
             if (anim != null)
                 anim.SetBool("jump", false);
+            jumpCol.enabled = false;
             PlayerControl.ins.enabled = true;
         }
         
@@ -97,7 +109,7 @@ public class Character2D : MonoBehaviour
         if (collision.tag == "ground" || collision.tag == "fall")
         {
             anim.SetBool("jump", true);
-         
+            
                 
     
         }
@@ -146,7 +158,7 @@ public class Character2D : MonoBehaviour
         anim.SetBool("jump", true);
         rigid.AddForce(new Vector2(0, forceY * multiple));
 
-        jumpCheck.SetActive(true);
+        
 
         sM.Play("jump");
 

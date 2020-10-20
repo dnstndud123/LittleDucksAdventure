@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets._2D;
 
-public class SwicthTrap : MonoBehaviour
+public class SwitchTrap : MonoBehaviour
 {
     public Animator anim;
     public SoundManager sM;

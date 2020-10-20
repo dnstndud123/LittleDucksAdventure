@@ -11,8 +11,7 @@ public class GameScene : BaseScene
     public Trap[] traps;
     public GameObject clear;
     public GameObject trapList;
-    
-    
+    public Switch s;
     public override void Init()
     {
 
@@ -31,8 +30,8 @@ public class GameScene : BaseScene
         clear = GameObject.Find("clear");
         ClearCheck clearCheck = clear.GetComponent<ClearCheck>();
         trapList = GameObject.Find("Traps");
-        
 
+        
 
 
         clearCheck.Init();
@@ -43,6 +42,10 @@ public class GameScene : BaseScene
         foreach (Trap t in traps)
         {
             t.Init();
+        }
+        if (s != null)
+        {
+            s.Init();
         }
         /*
         for (int i = 0; i < traps.Length; i++)

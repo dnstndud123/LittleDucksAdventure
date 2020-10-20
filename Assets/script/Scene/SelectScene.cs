@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class SelectScene : BaseScene
 {
 
-    public GameManager gM;
+    //public GameManager gM;
     
 
     public ClearCheck clearCheck;
@@ -24,21 +24,18 @@ public class SelectScene : BaseScene
     {
         
         base.Init();
-        GameObject player = GameObject.Find("Player");
+        
         startP = GameObject.Find("StartPoint");
         soundMgr = GameObject.Find("SoundManager");
         Vector3 startPos = startP.transform.position;
-        player.transform.position = new Vector3(startPos.x, startPos.y, startPos.z);
-        gM.Init(player);
+        
+        //gM.Init(player);
 
-        GameObject clear = GameObject.Find("clear");
-         clearCheck = clear.GetComponent<ClearCheck>();
+        
+         clearCheck = GetComponentInChildren<ClearCheck>();
         clearList = GameObject.Find("clearList");
         clearArray = clearList.GetComponentsInChildren<ClearClone>();
-        foreach(ClearClone cc in clearArray)
-        {
-            cc.gameObject.SetActive(false);
-        }
+        
 
         stageNumber = PlayerPrefs.GetInt("LEVEL_DATA");
         sky = GameObject.Find("Sky").GetComponentsInChildren<SpriteRenderer>();
@@ -46,6 +43,12 @@ public class SelectScene : BaseScene
 
         cloud = GameObject.Find("Cloud").GetComponentsInChildren<SpriteRenderer>();
         cloudColor = GameObject.Find("CloudColor").GetComponentsInChildren<SpriteRenderer>();
+
+        foreach (ClearClone cc in clearArray)
+        {
+            cc.gameObject.SetActive(false);
+        }
+
         for (int i = 0; i < stageNumber; i++)
         {
             if (i == 0)

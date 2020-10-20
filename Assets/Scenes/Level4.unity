@@ -564,6 +564,7 @@ Transform:
   m_Children:
   - {fileID: 731000580}
   - {fileID: 1624966467}
+  - {fileID: 930476542}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3232,7 +3233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375016839}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 205.64, y: -19.89, z: 0}
+  m_LocalPosition: {x: 205.64, y: -20.13, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 885842463}
@@ -7619,6 +7620,7 @@ MonoBehaviour:
   - {fileID: 507047636}
   - {fileID: 1961189723}
   - {fileID: 582890643}
+  btnLock: []
   stageNumber: 0
 --- !u!224 &877250848
 RectTransform:
@@ -8056,6 +8058,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &930476541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 930476542}
+  - component: {fileID: 930476543}
+  m_Layer: 0
+  m_Name: fallCamWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &930476542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930476541}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 128.92, y: -9.79, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 34698337}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &930476543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930476541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca51d8d8cb7feb43b56d9777d4d6de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  posX: 0
 --- !u!1 &947331956
 GameObject:
   m_ObjectHideFlags: 0
@@ -9806,6 +9853,7 @@ MonoBehaviour:
   - {fileID: 0}
   clear: {fileID: 0}
   trapList: {fileID: 0}
+  s: {fileID: 0}
 --- !u!4 &1127779177
 Transform:
   m_ObjectHideFlags: 0
@@ -10135,7 +10183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1188110649}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 196.9, y: -18.41, z: 0}
+  m_LocalPosition: {x: 196.9, y: -19.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10166,7 +10214,7 @@ PrefabInstance:
     - target: {fileID: 8378161790076944974, guid: 1e539fcaf805d9b40959e11819f051be,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.27
+      value: -18.51
       objectReference: {fileID: 0}
     - target: {fileID: 8378161790076944974, guid: 1e539fcaf805d9b40959e11819f051be,
         type: 3}
@@ -10872,8 +10920,10 @@ MonoBehaviour:
   lookAheadMoveThreshold: 0.1
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  fallCam: {fileID: 0}
   leftWallPos: {x: 0, y: 0}
   rightWallPos: {x: 0, y: 0}
+  fallPos: {x: 0, y: 0}
   camRect: {x: 0, y: 0}
 --- !u!81 &1337744026
 AudioListener:
@@ -10934,7 +10984,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337744024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 199.5, y: 25.8, z: -10}
+  m_LocalPosition: {x: 212.87, y: 19.07, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14871,7 +14921,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720022933}
   m_LocalRotation: {x: -0, y: -0, z: -0.016183322, w: 0.99986905}
-  m_LocalPosition: {x: 194.03, y: -18.58, z: 1}
+  m_LocalPosition: {x: 194.03, y: -18.82, z: 1}
   m_LocalScale: {x: 3, y: 4.5, z: 1}
   m_Children:
   - {fileID: 721104171}
@@ -15642,7 +15692,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874137478}
   m_LocalRotation: {x: 0, y: 0, z: 0.9848078, w: 0.17364825}
-  m_LocalPosition: {x: 192.14, y: -18.16, z: 0}
+  m_LocalPosition: {x: 192.14, y: -18.4, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 751187422}
@@ -17720,7 +17770,7 @@ PrefabInstance:
     - target: {fileID: 2611038548731628487, guid: a8fac662968076f4cb8cd2e57ad48a44,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2019997
+      value: -3.4419994
       objectReference: {fileID: 0}
     - target: {fileID: 2611038548731628487, guid: a8fac662968076f4cb8cd2e57ad48a44,
         type: 3}

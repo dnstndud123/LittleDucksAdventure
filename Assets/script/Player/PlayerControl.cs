@@ -111,13 +111,19 @@ public class PlayerControl : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
         {
             char2D.Jump();
-            
+            StartCoroutine(JumpCheckEnabled());
 
         }
 
         
 
         
+    }
+    IEnumerator JumpCheckEnabled()
+    {
+        char2D.jumpCol.enabled = true;
+        yield return new WaitForSeconds(0.5f);
+        char2D.jumpCol.enabled = false;
     }
     public void LeftMove(bool left)
     {

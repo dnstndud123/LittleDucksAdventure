@@ -37,7 +37,8 @@ public class ClearCheck : MonoBehaviour
         sM = FindObjectOfType<SoundManager>();
 
         player = GameObject.Find("Player");
-        char2D = player.GetComponent<Character2D>();
+        if (player != null)
+            char2D = player.GetComponent<Character2D>();
         
         uM = FindObjectOfType<UIManager>();
         

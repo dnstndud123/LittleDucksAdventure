@@ -25,6 +25,7 @@ public class Spring : MonoBehaviour
             Camera2DFollow cam = Camera.main.GetComponent<Camera2DFollow>();
             cam.target = null;
             rigid.AddForce(new Vector2(diyong, trapForce));
+            PlayerControl.ins.enabled = false;
         }
     }
     protected virtual void OnTriggerStay2D(Collider2D collision)

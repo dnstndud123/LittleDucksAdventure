@@ -15,7 +15,12 @@ public class JumpTrap : MonoBehaviour
         {
             
             collider.enabled = false;
+            if (obj.activeSelf == false)
+            {
+                obj.SetActive(true);
+            }
             rigid.AddForce(new Vector2(0, forceY));
+
         }
     }
 }

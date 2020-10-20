@@ -2157,6 +2157,7 @@ MonoBehaviour:
   traps: []
   clear: {fileID: 0}
   trapList: {fileID: 0}
+  s: {fileID: 0}
 --- !u!4 &206650470
 Transform:
   m_ObjectHideFlags: 0
@@ -3796,8 +3797,10 @@ MonoBehaviour:
   lookAheadMoveThreshold: 0.1
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
+  fallCam: {fileID: 0}
   leftWallPos: {x: 0, y: 0}
   rightWallPos: {x: 0, y: 0}
+  fallPos: {x: 0, y: 0}
   camRect: {x: 0, y: 0}
 --- !u!81 &370276500
 AudioListener:
@@ -3858,7 +3861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370276498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 203.91, y: 24.48, z: -10}
+  m_LocalPosition: {x: 201.56, y: 16.48, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8243,7 +8246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726618008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 180.08, y: -18.5, z: 0}
+  m_LocalPosition: {x: 180.08, y: -19.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13944,6 +13947,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.6347704, y: 0.05689028}
   m_EdgeRadius: 0
+--- !u!1 &1338678880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1338678881}
+  - component: {fileID: 1338678882}
+  m_Layer: 0
+  m_Name: fallCamWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1338678881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338678880}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 115.8, y: -9.52, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1909956407}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1338678882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338678880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca51d8d8cb7feb43b56d9777d4d6de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  posX: 0
 --- !u!1 &1361095087
 GameObject:
   m_ObjectHideFlags: 0
@@ -19480,6 +19528,7 @@ Transform:
   m_Children:
   - {fileID: 1005483152}
   - {fileID: 1182175478}
+  - {fileID: 1338678881}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -20,28 +20,35 @@ namespace UnityStandardAssets._2D
 
         //[SerializeField] GameObject leftWall;
         //[SerializeField] GameObject rightWall;
-        [SerializeField] GameObject leftCam;
-        [SerializeField] GameObject rightCam;
+        [SerializeField] Transform leftCam;
+        [SerializeField] Transform rightCam;
+        [SerializeField] Transform fallCam;
+        [SerializeField] Vector2 AbsFallPos;
         //[SerializeField] BoxCollider2D col;
-        [SerializeField] Vector2 leftWallPos;
+        public Vector2 leftWallPos;
 
-        [SerializeField] Vector2 rightWallPos;
- 
-        [SerializeField] Vector2 camRect;
+        public Vector2 rightWallPos;
+
+        [SerializeField] Vector2 fallPos;
+
+        public Vector2 camRect;
         // Use this for initialization
         public void Init()
         {
             //leftWall = GameObject.Find("leftWall");
             //rightWall = GameObject.Find("rightWall");
-            leftCam = GameObject.Find("leftCamWall");
-            rightCam = GameObject.Find("rightCamWall");
+            leftCam = GameObject.Find("leftCamWall").GetComponent<Transform>();
+            rightCam = GameObject.Find("rightCamWall").GetComponent<Transform>();
+            fallCam = GameObject.Find("fallCamWall").GetComponent<Transform>();
             //col = GameObject.Find("CamWall").GetComponent<BoxCollider2D>();
             player = GameObject.Find("Player");
             target = player.GetComponent<Transform>();
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
-
-
+            fallPos = fallCam.position;
+            AbsFallPos = fallPos;
+            leftWallPos = leftCam.position;
+            rightWallPos = rightCam.position;
             //transform.parent = null;
         }
 
@@ -56,9 +63,12 @@ namespace UnityStandardAssets._2D
                 //leftWallPos = leftWall.transform.position;
                 //rightWallPos = rightWall.transform.position;
                 camRect = transform.position;
+                fallPos = fallCam.position; 
+                
 
 
                 xMoveDelta = (target.position - m_LastTargetPosition).x;
+                
 
                 bool updateLookAheadTarget = Mathf.Abs(xMoveDelta) > lookAheadMoveThreshold;
 
@@ -91,36 +101,93 @@ namespace UnityStandardAssets._2D
 
 
                 //if (camRect.x - leftWallPos.x >= 11 || camRect.x - rightWallPos.x <= -11)
-                if (camRect.x >= leftCam.transform.position.x || camRect.x <= rightCam.transform.position.x)
+                if (camRect.x >= leftCam.transform.position.x && camRect.x <= rightCam.transform.position.x)
                 {
                     target = player.transform;
+                    if (camRect.y < fallPos.y)
+                    {
+                        fallPos.x = player.transform.position.x;
+                        
+                        target = fallCam;
+                        if (player.transform.position.y > fallPos.y)
+                        {
+                            target = player.transform;
+                        }
+                    }
                     //pos.x = player.transform.position.x;
                 }
                 //if (camRect.x - leftWallPos.x < 11)
-                if (camRect.x < leftCam.transform.position.x)
+                else if (camRect.x < leftCam.position.x)
                 {
-
+                    
                     //camRect.x = leftWallPos.x + 10;
                     //pos.x = leftCam.transform.position.x;
-                    target = leftCam.transform;
-                    if (player.transform.position.x - target.position.x > 0)
+                    
+                    fallPos.x = leftWallPos.x;
+                    fallCam.position = fallPos;
+
+                    if (player.transform.position.y >= AbsFallPos.y)
                     {
+                        
+                        target = leftCam;
+                        
+                    }
+                    else if (player.transform.position.y < AbsFallPos.y)
+                    {
+                        
+                        target = fallCam;
+                        
+                    }
+
+
+                    
+                    
+
+                    if (player.transform.position.x > leftWallPos.x)
+                    {
+                        fallPos = AbsFallPos;
+                        fallCam.position = AbsFallPos;
                         target = player.transform;
                     }
                 }
                 //if (camRect.x - rightWallPos.x > -11)
-                if (camRect.x > rightCam.transform.position.x)
+                else if (camRect.x > rightCam.position.x)
                 {
+                    
                     //camRect.x = rightWallPos.x - 10;
                     //pos.x = rightCam.transform.position.x;
-                    target = rightCam.transform;
-                    if (player.transform.position.x - target.position.x < 0)
+                    
+                    fallPos.x = rightWallPos.x;
+                    fallCam.position = fallPos;
+
+
+                    if (player.transform.position.y >= AbsFallPos.y)
                     {
+                        
+                        target = rightCam;
+                        
+                    }
+                    else if (player.transform.position.y < AbsFallPos.y)
+                    {
+                        
+                        target = fallCam;
+                    }
+
+                    
+                    
+                    if (player.transform.position.x < rightWallPos.x)
+                    {
+                        fallPos = AbsFallPos;
+                        fallCam.position = AbsFallPos;
                         target = player.transform;
                     }
                 }
+
+                
                 m_LastTargetPosition = target.position;
                 m_OffsetZ = (transform.position - target.position).z;
+
+                
             }
 
 

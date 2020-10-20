@@ -5,22 +5,31 @@ using UnityEngine;
 public class Switch : MonoBehaviour
 {
     public Animator anim;
-    public SoundManager sM;
+    //public SoundManager sM;
     public GameObject floor;
     public GameObject trigger;
     public GameObject hideObj;
     public BoxCollider2D col;
 
     public bool turn = false;
+
+    public void Init()
+    {
+        if (trigger != null)
+        {
+            trigger.SetActive(false);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Vector3 floorPos = floor.transform.position;
+        
+            
 
         if (collision.tag == "JumpCheck" && turn == false)
         {
             
             anim.SetBool("TurnOn", true);
-            sM.Play("SwitchOn");
+            SoundManager.ins.Play("SwitchOn");
             StartCoroutine(TurnOn(true));
 
             if (hideObj != null)
@@ -28,6 +37,7 @@ public class Switch : MonoBehaviour
 
             if (floor != null)
             {
+                Vector3 floorPos = floor.transform.position;
                 floor.transform.position = new Vector3(floorPos.x, -22.4f, 0);
                 col.enabled = false;
             }
@@ -37,7 +47,7 @@ public class Switch : MonoBehaviour
         if (collision.tag == "JumpCheck" && turn == true)
         {
             anim.SetBool("TurnOn", false);
-            sM.Play("Select2");
+            SoundManager.ins.Play("Select2");
             StartCoroutine(TurnOn(false));
 
             if (hideObj != null)
@@ -45,6 +55,7 @@ public class Switch : MonoBehaviour
 
             if (floor != null)
             {
+                Vector3 floorPos = floor.transform.position;
                 floor.transform.position = new Vector3(floorPos.x, -34.72f, 0);
                 col.enabled = true;
             }
