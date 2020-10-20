@@ -2654,6 +2654,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  leftCam: {fileID: 0}
+  rightCam: {fileID: 0}
   posX: 0
 --- !u!1 &181044935
 GameObject:
@@ -10393,11 +10395,12 @@ MonoBehaviour:
   target: {fileID: 0}
   damping: 1
   lookAheadFactor: 3
-  lookAheadReturnSpeed: 0.5
+  lookAheadReturnSpeed: 0.7
   lookAheadMoveThreshold: 0.1
   leftCam: {fileID: 0}
   rightCam: {fileID: 0}
   fallCam: {fileID: 0}
+  AbsFallPos: {x: 0, y: 0}
   leftWallPos: {x: 0, y: 0}
   rightWallPos: {x: 0, y: 0}
   fallPos: {x: 0, y: 0}
