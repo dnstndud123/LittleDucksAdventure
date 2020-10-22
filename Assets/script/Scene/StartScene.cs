@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartScene : BaseScene
 {
@@ -9,6 +10,22 @@ public class StartScene : BaseScene
     {
         base.Init();
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(OnSelect());
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            
+        }
+    }
+    IEnumerator OnSelect()
+    {
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene("LevelSelect");
+    }
 
-    
+
 }

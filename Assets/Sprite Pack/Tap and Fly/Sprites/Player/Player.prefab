@@ -161,6 +161,7 @@ MonoBehaviour:
   forceY: 330
   multiple: 1
   jumpCheck: {fileID: 5897402327717066310}
+  jumpCol: {fileID: 0}
   delta: 0
 --- !u!114 &5897402326703881419
 MonoBehaviour:
@@ -174,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2280380b276044409426201407fcd9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: 10
+  speedX: 15
   maxSpeed: 4
   char2D: {fileID: 5897402326703881416}
   rigid: {fileID: 5897402326703881418}

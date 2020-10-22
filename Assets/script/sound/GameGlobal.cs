@@ -21,7 +21,7 @@ public class GameGlobal : MonoBehaviour
 
         SceneManager.sceneLoaded += OnSceneLoaded;
         SoundManager.ins.Init();
-
+        
 
 
         if (SoundManager.ins.volume != null)

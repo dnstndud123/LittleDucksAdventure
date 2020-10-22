@@ -9790,7 +9790,7 @@ GameObject:
   - component: {fileID: 410271744}
   - component: {fileID: 410271743}
   m_Layer: 0
-  m_Name: springSound
+  m_Name: spring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9899,9 +9899,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410271742}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -18.760406, y: -2901.1252, z: 0}
-  m_LocalScale: {x: 14.399148, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1144561027}
   m_RootOrder: 11
@@ -10613,8 +10613,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 449485786}
-  spring: {fileID: 410271743}
-  boing: {fileID: 1818804375}
   trapForce: 35
   diyong: 535
 --- !u!61 &449485785
@@ -27275,7 +27273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1263490885
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29751,7 +29749,7 @@ RectTransform:
   m_GameObject: {fileID: 1383833963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.38125, y: 0.38125, z: 0.38125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2132076174}
   m_RootOrder: 4
@@ -31649,7 +31647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4104413ced9e11948a01f8e2306b9e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speedX: 80
+  _speedX: 100
   desPointX: 226.41
   oriPointX: 222.92
   span: 0
@@ -36506,8 +36504,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1731782929}
-  spring: {fileID: 685656434}
-  boing: {fileID: 1634384324}
   trapForce: 4000
   diyong: 0
 --- !u!61 &1731782928
@@ -38592,9 +38588,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818804374}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -18.760406, y: -2901.1252, z: 0}
-  m_LocalScale: {x: 14.399148, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1144561027}
   m_RootOrder: 12
@@ -41253,8 +41249,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1940524268}
-  spring: {fileID: 410271743}
-  boing: {fileID: 1818804375}
   trapForce: 35
   diyong: -535
 --- !u!61 &1940524267
@@ -47152,8 +47146,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 7314980749839176965}
-  spring: {fileID: 410271743}
-  boing: {fileID: 1818804375}
   trapForce: 4000
   diyong: 0
 --- !u!212 &7314980749839176964

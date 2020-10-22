@@ -77,22 +77,22 @@ public class PlayerControl : MonoBehaviour
 
         if (flip == true)
         {
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 LeftMove(true);
             }
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.D))
             {
                 RightMove(true);
             }
         }
         if (flip == false)
         {
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow)|| Input.GetKey(KeyCode.A))
             {
                 LeftMove(false);
             }
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.D))
             {
                 RightMove(false);
             }
@@ -108,7 +108,7 @@ public class PlayerControl : MonoBehaviour
         rigid.velocity = new Vector2(limitX, velX.y);
 
         
-        if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)|| Input.GetKey(KeyCode.W))
         {
             char2D.Jump();
             StartCoroutine(JumpCheckEnabled());

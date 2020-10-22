@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class SelectScene : BaseScene
 {
@@ -27,7 +28,7 @@ public class SelectScene : BaseScene
         
         startP = GameObject.Find("StartPoint");
         soundMgr = GameObject.Find("SoundManager");
-        Vector3 startPos = startP.transform.position;
+        //Vector3 startPos = startP.transform.position;
         
         //gM.Init(player);
 
@@ -91,5 +92,11 @@ public class SelectScene : BaseScene
         
 
     }
-
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Start");
+        }
+    }
 }

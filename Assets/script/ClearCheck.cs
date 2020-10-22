@@ -11,7 +11,7 @@ public class ClearCheck : MonoBehaviour
     public float desPointX; //des 목적지
     public float oriPointX; //ori 시작점
 
-
+    int lastLevel = 0;
     public float span;
     public float span2;
     public float delta;
@@ -125,21 +125,30 @@ public class ClearCheck : MonoBehaviour
         }
     }
     
-    const string level_data = "LEVEL_DATA";
-    
+    public const string level_data = "LEVEL_DATA";
+    //const string Level = "LEVEL";
+
     public void LevelDataSave()
-    
+
     {
 
-        int lastLevel = 0;
+        lastLevel = PlayerPrefs.GetInt(level_data);
         if (PlayerPrefs.HasKey(level_data))
         {
-            lastLevel = stageNumber;   
-        }        
-        lastLevel += 1;
+            if (lastLevel == 0)
+            {
+                lastLevel += 1;
+            }
+            if (lastLevel == stageNumber)
+            {
+                lastLevel++;
+            }
+        }
 
-        PlayerPrefs.SetInt(level_data, lastLevel);    
+            PlayerPrefs.SetInt(level_data, lastLevel);
+
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
 

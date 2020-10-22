@@ -32,6 +32,7 @@ public class SoundManager : MonoBehaviour
     const string SE_VOLUME_DATA = "SE_DATA";
     public void Init()
     {
+        
         //SESlider = GameObject.Find("SE").GetComponentInChildren<Slider>(true);
         audioList = GetComponentsInChildren<AudioSource>(true);
             foreach (AudioSource a in audioList)

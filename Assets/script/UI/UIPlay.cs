@@ -8,7 +8,7 @@ public class UIPlay : UIBase
 {
     public GameObject gObj;
     public GameObject level;
-    
+    bool menu = false;
 
     public override void Init()
     {
@@ -17,6 +17,28 @@ public class UIPlay : UIBase
         int lifeCount = count;
         if (txt != null) txt.text = lifeCount.ToString();
         
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            sM.Play("Select");
+            if (menu == false)
+            {
+                gObj.SetActive(true);
+                SoundManager.ins.volume.SetActive(true);
+                //일시 정지
+                Time.timeScale = 0.0f;
+                menu = true;
+            }
+            else if (menu == true)
+            {
+                gObj.SetActive(false);
+                SoundManager.ins.volume.SetActive(false);
+                Time.timeScale = 1.0f;
+                menu = false;
+            }
+        }
     }
 
     public override void OnButtonClick(GameObject btn)
@@ -30,7 +52,7 @@ public class UIPlay : UIBase
             SoundManager.ins.volume.SetActive(true);
             //일시 정지
             Time.timeScale = 0.0f;
-            
+            menu = true;
 
 
         }
@@ -39,8 +61,9 @@ public class UIPlay : UIBase
 
             gObj.SetActive(false);
             SoundManager.ins.volume.SetActive(false);
-            Time.timeScale = 1.0f;
             //일시 정지 풀기
+            Time.timeScale = 1.0f;
+            menu = false;
         }
         if (btn.name == "restart")
         {
@@ -50,13 +73,14 @@ public class UIPlay : UIBase
 
             //현재 스테이지 다시 시작
             OnRestart(level);
+            menu = false;
 
 
         }
         if (btn.name == "LevelSelect")
         {
             Time.timeScale = 1.0f;
-
+            menu = false;
             StartCoroutine(OnPlay(btn.name));
             //SceneManager.LoadScene((int)SCENE.LEVEL_SELECT);
         }

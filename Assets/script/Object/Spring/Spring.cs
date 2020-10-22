@@ -6,8 +6,7 @@ using UnityStandardAssets._2D;
 public class Spring : MonoBehaviour
 {
     public Animator anim;
-    public AudioSource spring;
-    public AudioSource boing;
+    
     public float trapForce = 4000;
     public float diyong = 0;
     
@@ -15,7 +14,7 @@ public class Spring : MonoBehaviour
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         anim.SetTrigger("jump");
-        spring.Play();
+        SoundManager.ins.Play("spring");
         StartCoroutine(Boing());
         Rigidbody2D rigid = collision.gameObject.GetComponent<Rigidbody2D>();
 
@@ -30,8 +29,8 @@ public class Spring : MonoBehaviour
     }
     protected virtual void OnTriggerStay2D(Collider2D collision)
     {
-        
-        spring.Play();
+
+        SoundManager.ins.Play("spring");
         StartCoroutine(Boing());
         Rigidbody2D rigid = collision.gameObject.GetComponent<Rigidbody2D>();
         if (collision.gameObject.tag != "Player")
@@ -44,7 +43,8 @@ public class Spring : MonoBehaviour
     IEnumerator Boing()
     {
         yield return new WaitForSeconds(0.1f);
-        boing.Play();
+        SoundManager.ins.Play("boing");
+        StopCoroutine(Boing());
     }
 
 }
