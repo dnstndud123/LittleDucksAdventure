@@ -9,7 +9,7 @@ public class TriggerTrapUp : MonoBehaviour
     public float forceY = 0.2f;
     public Rigidbody2D rigid;
     public BoxCollider2D col;
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         
         if (collision.tag == "Player")

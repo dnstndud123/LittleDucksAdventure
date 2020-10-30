@@ -77,7 +77,11 @@ public class GameGlobal : MonoBehaviour
         {
 
             a.Stop();
-            
+
+            if (scene.name == "Start")
+            {
+                bgmArray[(int)SCENE.START].Play();
+            }
             
             if (scene.name == "LevelSelect")
             {
@@ -111,6 +115,10 @@ public class GameGlobal : MonoBehaviour
             if (scene.name == "Level9")
             {
                 bgmArray[(int)SCENE.LEVEL9].Play();
+            }
+            if (scene.name == "Level10")
+            {
+                bgmArray[(int)SCENE.LEVEL10].Play();
             }
             /*if (scene.name == "Level6")
             {

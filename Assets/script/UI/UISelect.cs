@@ -48,6 +48,14 @@ public class UISelect : UIBase
         
         
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            sM.Play("Select");
+            StartCoroutine(OnPlay("Start"));
+        }
+    }
 
     public void OnReset()
     {

@@ -29,7 +29,7 @@ public class BtnUI : MonoBehaviour
 
     bool _isMoving = false;
     Button _pressedBtn = null;
-
+    Button _jump = null;
     public void Update()
     {
         if (_isMoving)
@@ -66,8 +66,13 @@ public class BtnUI : MonoBehaviour
     
 
     
-    public void JumpButton()
+    public void JumpButtonDown(Button btn)
     {
         Character2D.ins.Jump();
+        _jump = btn;
+    }
+    public void JumpButtonUp(Button btn)
+    {
+        _jump = null;
     }
 }

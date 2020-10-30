@@ -9,14 +9,21 @@ public class UIPlay : UIBase
     public GameObject gObj;
     public GameObject level;
     bool menu = false;
-
+    [SerializeField] BtnUI btnUi;
     public override void Init()
-    {
+    {   
         base.Init();
+        btnUi = GetComponentInChildren<BtnUI>(true);
         int count = PlayerPrefs.GetInt("DEATH_COUNT");
         int lifeCount = count;
         if (txt != null) txt.text = lifeCount.ToString();
-        
+#if UNITY_IOS || UNITY_ANDROID
+        btnUi.gameObject.SetActive(true);
+#elif UNITY_STANDALONE_WIN
+        btnUi.gameObject.SetActive(false);
+#endif
+
+
     }
     void Update()
     {

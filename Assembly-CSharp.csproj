@@ -94,8 +94,10 @@
     <Compile Include="Assets\script\Object\FallenTrap.cs" />
     <Compile Include="Assets\script\Object\FerrisWheel.cs" />
     <Compile Include="Assets\script\Object\FerrisWire.cs" />
+    <Compile Include="Assets\script\Object\GlueTrap.cs" />
     <Compile Include="Assets\script\Object\HiddenObject.cs" />
     <Compile Include="Assets\script\Object\HiddenTrapFall.cs" />
+    <Compile Include="Assets\script\Object\HideTrapTrigger.cs" />
     <Compile Include="Assets\script\Object\JumpTrap.cs" />
     <Compile Include="Assets\script\Object\MoveTrap.cs" />
     <Compile Include="Assets\script\Object\Rotation.cs" />
@@ -801,6 +803,14 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{D6701070-CD0D-AF11-9958-0AF4EA02C3E2}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="GoogleMobileAds.csproj">
+      <Project>{1E4B3F01-3006-EB6E-BE2B-2F41DC737276}</Project>
+      <Name>GoogleMobileAds</Name>
+    </ProjectReference>
+    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
+      <Project>{633FF345-4551-B780-FEEE-06B3DDAC4D42}</Project>
+      <Name>GoogleMobileAds.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
