@@ -11,7 +11,8 @@ public class Teleport : MonoBehaviour
     void Update()
     {
         Transform player = Character2D.ins.gameObject.transform;
-        telp.transform.position = new Vector2(telp.transform.position.x, player.position.y);
+        if (fallCam == null)
+            telp.transform.position = new Vector2(telp.transform.position.x, player.position.y);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

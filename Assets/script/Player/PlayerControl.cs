@@ -119,7 +119,7 @@ public class PlayerControl : MonoBehaviour
 
         
     }
-    IEnumerator JumpCheckEnabled()
+    public IEnumerator JumpCheckEnabled()
     {
         char2D.jumpCol.enabled = true;
         yield return new WaitForSeconds(0.5f);

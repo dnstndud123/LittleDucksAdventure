@@ -135,9 +135,10 @@ public class ClearCheck : MonoBehaviour
         lastLevel = PlayerPrefs.GetInt(level_data);
         if (PlayerPrefs.HasKey(level_data))
         {
+
             if (lastLevel == 0)
             {
-                lastLevel += 1;
+                lastLevel = 2;
             }
             if (lastLevel == stageNumber)
             {

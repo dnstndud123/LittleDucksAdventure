@@ -69,6 +69,7 @@ public class BtnUI : MonoBehaviour
     public void JumpButtonDown(Button btn)
     {
         Character2D.ins.Jump();
+        StartCoroutine(PlayerControl.ins.JumpCheckEnabled());
         _jump = btn;
     }
     public void JumpButtonUp(Button btn)
