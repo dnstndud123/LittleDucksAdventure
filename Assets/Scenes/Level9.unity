@@ -292,6 +292,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &11022302
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &11248477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,6 +2013,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &92104523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,6 +3070,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!114 &147909790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3343,6 +3351,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!114 &168439466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5087,6 +5097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &260977801
 GameObject:
   m_ObjectHideFlags: 0
@@ -11553,6 +11565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &551074844
 GameObject:
   m_ObjectHideFlags: 0
@@ -14037,7 +14051,7 @@ MonoBehaviour:
   span2: 0
   delta: 0
   delta2: 0
-  stageNumber: 8
+  stageNumber: 9
   char2D: {fileID: 0}
   uM: {fileID: 0}
   rigid: {fileID: 0}
@@ -14151,6 +14165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &638043574
 GameObject:
   m_ObjectHideFlags: 0
@@ -17217,6 +17233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!114 &758083896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17591,6 +17609,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &772846313
 GameObject:
   m_ObjectHideFlags: 0
@@ -17862,7 +17882,7 @@ RectTransform:
   - {fileID: 674948072}
   - {fileID: 337779856}
   m_Father: {fileID: 807370553}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18581,8 +18601,8 @@ RectTransform:
   m_Children:
   - {fileID: 1992433256}
   - {fileID: 80257048}
-  - {fileID: 1388083684}
   - {fileID: 778885924}
+  - {fileID: 1388083684}
   - {fileID: 1830538620}
   m_Father: {fileID: 692016749}
   m_RootOrder: 1
@@ -19343,6 +19363,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &855203823
 GameObject:
   m_ObjectHideFlags: 0
@@ -24220,6 +24242,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &1094147492
 GameObject:
   m_ObjectHideFlags: 0
@@ -25397,6 +25421,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &1141399273
 GameObject:
   m_ObjectHideFlags: 0
@@ -26214,6 +26240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!114 &1174410177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29644,6 +29672,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!114 &1301336033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30314,6 +30344,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!114 &1325966995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30499,6 +30531,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!114 &1327588729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31792,7 +31826,7 @@ RectTransform:
   - {fileID: 1079934982}
   - {fileID: 1125198088}
   m_Father: {fileID: 807370553}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -32356,6 +32390,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!114 &1421165637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35258,6 +35294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &1517170974
 GameObject:
   m_ObjectHideFlags: 0
@@ -35428,6 +35466,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &1532234779
 GameObject:
   m_ObjectHideFlags: 0
@@ -35795,6 +35835,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &1557320262
 GameObject:
   m_ObjectHideFlags: 0
@@ -36101,6 +36143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &1573862457
 GameObject:
   m_ObjectHideFlags: 0
@@ -36462,6 +36506,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &1583221840
 GameObject:
   m_ObjectHideFlags: 0
@@ -40698,6 +40744,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &1784953048
 GameObject:
   m_ObjectHideFlags: 0
@@ -44534,6 +44582,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &2001274650
 GameObject:
   m_ObjectHideFlags: 0
@@ -44623,6 +44673,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &2006166376
 GameObject:
   m_ObjectHideFlags: 0
@@ -46560,6 +46612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!114 &2056361749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46784,6 +46838,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!1 &2060182359
 GameObject:
   m_ObjectHideFlags: 0
@@ -50812,6 +50868,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!212 &5740049466396756245
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52224,6 +52282,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate: 0
   speed: -0.1
+  mul: 0
+  pow: 1
 --- !u!114 &8601547691499366479
 MonoBehaviour:
   m_ObjectHideFlags: 0

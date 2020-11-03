@@ -37,7 +37,7 @@ public class GlueTrap : MonoBehaviour
             }
         }
         
-        plCol.enabled = true;
+        //plCol.enabled = true;
         
         
         

@@ -1316,7 +1316,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 4.231089}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1327,7 +1327,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 9.462178}
   m_EdgeRadius: 0
 --- !u!4 &71385512
 Transform:
@@ -1357,6 +1357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   telp: {fileID: 1815324896}
+  fallCam: {fileID: 0}
 --- !u!1 &75770235
 GameObject:
   m_ObjectHideFlags: 0
@@ -2775,7 +2776,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 3.0883865}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2786,7 +2787,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 7.176773}
   m_EdgeRadius: 0
 --- !u!4 &133513627
 Transform:
@@ -2816,6 +2817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   telp: {fileID: 853303346}
+  fallCam: {fileID: 0}
 --- !u!1 &144577639
 GameObject:
   m_ObjectHideFlags: 0
@@ -7802,7 +7804,7 @@ RectTransform:
   - {fileID: 1207736127}
   - {fileID: 38621769}
   m_Father: {fileID: 1535415088}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22745,7 +22747,7 @@ RectTransform:
   - {fileID: 2108099586}
   - {fileID: 1338252429}
   m_Father: {fileID: 1535415088}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -23874,8 +23876,8 @@ RectTransform:
   m_Children:
   - {fileID: 2142203465}
   - {fileID: 222817667}
-  - {fileID: 1477825983}
   - {fileID: 519050838}
+  - {fileID: 1477825983}
   - {fileID: 791831833}
   m_Father: {fileID: 1464011483}
   m_RootOrder: 1
