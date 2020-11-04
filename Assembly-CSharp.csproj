@@ -83,6 +83,7 @@
     <Compile Include="Assets\Samples\Cinemachine\2.6.0\Cinemachine Example Scenes\Shared\Scripts\PlayerMovePhysics.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.6.0\Cinemachine Example Scenes\Shared\Scripts\SpawnInCircle.cs" />
     <Compile Include="Assets\hurt.cs" />
+    <Compile Include="Assets\script\AdBanner.cs" />
     <Compile Include="Assets\script\ClearCheck.cs" />
     <Compile Include="Assets\script\ClearClone.cs" />
     <Compile Include="Assets\script\Fall.cs" />

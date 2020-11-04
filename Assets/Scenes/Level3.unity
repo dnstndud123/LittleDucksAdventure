@@ -8324,6 +8324,7 @@ MonoBehaviour:
   uM: {fileID: 0}
   anim: {fileID: 0}
   txt: {fileID: 572899255}
+  ad: {fileID: 0}
 --- !u!224 &1122625157
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8340,6 +8341,7 @@ RectTransform:
   - {fileID: 1385335174}
   - {fileID: 1241580683}
   - {fileID: 572899259}
+  - {fileID: 1259788014}
   m_Father: {fileID: 1343568601}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9780,6 +9782,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1259788013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259788014}
+  - component: {fileID: 1259788015}
+  m_Layer: 0
+  m_Name: AdBanner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1259788014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259788013}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -384.51797, y: -543.08997, z: -227.44574}
+  m_LocalScale: {x: 2.601626, y: 2.601626, z: 2.601626}
+  m_Children: []
+  m_Father: {fileID: 1122625157}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1259788015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259788013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ad1c815b99efe448ee9820dc7e15ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1268282257
 GameObject:
   m_ObjectHideFlags: 0
@@ -17676,6 +17721,7 @@ MonoBehaviour:
   - {fileID: 1242520493}
   - {fileID: 791104197}
   btnLock: []
+  clear: []
   stageNumber: 0
 --- !u!114 &2125948088
 MonoBehaviour:
