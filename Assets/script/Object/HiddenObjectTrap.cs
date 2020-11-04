@@ -23,12 +23,17 @@ public class HiddenObjectTrap : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            BoxCollider2D PilCol = Pillar.gameObject.GetComponent<BoxCollider2D>();
+            PilCol.enabled = true;
+            BoxCollider2D col = GetComponent<BoxCollider2D>();
+            col.enabled = false;
             Rigidbody2D pl = PlayerControl.ins.gameObject.GetComponent<Rigidbody2D>();
             if (trap != null)
             {
+                
                 pl.bodyType = RigidbodyType2D.Static;
                 pl.bodyType = RigidbodyType2D.Dynamic;
-                pl.gravityScale = 0.01f;
+                pl.gravityScale = 0.005f;
                 PlayerControl.ins.enabled = false;
             }
             StartCoroutine(AppearBlock());

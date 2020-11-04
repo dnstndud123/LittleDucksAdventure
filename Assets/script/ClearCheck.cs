@@ -138,7 +138,7 @@ public class ClearCheck : MonoBehaviour
 
             if (lastLevel == 0)
             {
-                lastLevel = 2;
+                lastLevel = 1;
             }
             if (lastLevel == stageNumber)
             {

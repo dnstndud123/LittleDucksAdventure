@@ -27,7 +27,7 @@ public class FallTrap : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            rigid.gravityScale = 0.5f;
+            rigid.gravityScale = 0f;
             collision.gameObject.transform.parent = transform;
         }
     }
@@ -35,7 +35,7 @@ public class FallTrap : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            
+            rigid.gravityScale = 1;
             collision.gameObject.transform.parent = null;
         }
     }

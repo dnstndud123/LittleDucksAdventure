@@ -49,14 +49,14 @@ public class SelectScene : BaseScene
         {
             cc.gameObject.SetActive(false);
         }
-
-        for (int i = 0; i < stageNumber; i++)
+        if (stageNumber == 0)
         {
-            if (i == 0)
-            {
-                clearArray[0].gameObject.SetActive(true);
-            }
-            else
+            stageNumber += 1;
+        }
+        for (int i = 1; i < stageNumber; i++)
+        {
+
+            if (stageNumber > 1)
                 clearArray[i - 1].gameObject.SetActive(true);
         }
         foreach (SpriteRenderer s in sky)
@@ -96,7 +96,12 @@ public class SelectScene : BaseScene
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Start");
+            StartCoroutine(StartScene());
         }
+    }
+    IEnumerator StartScene()
+    {
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene("Start");
     }
 }

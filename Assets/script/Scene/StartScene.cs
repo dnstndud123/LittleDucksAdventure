@@ -18,7 +18,7 @@ public class StartScene : BaseScene
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            
+            StartCoroutine(Quit());
         }
     }
     IEnumerator OnSelect()
@@ -26,6 +26,11 @@ public class StartScene : BaseScene
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene("LevelSelect");
     }
-
+    IEnumerator Quit()
+    {
+        SoundManager.ins.Play("Fall");
+        yield return new WaitForSeconds(1.0f);
+        Application.Quit();
+    }
 
 }

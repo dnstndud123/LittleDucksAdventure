@@ -24,15 +24,15 @@ public class SoundManager : MonoBehaviour
     }
 
     public Slider SESlider;
-    float value = 50;
     public GameObject volume;
 
     public AudioSource[] audioList;
 
     const string SE_VOLUME_DATA = "SE_DATA";
+    float value = 50;
     public void Init()
     {
-        
+        value = PlayerPrefs.GetInt(SE_VOLUME_DATA);
         //SESlider = GameObject.Find("SE").GetComponentInChildren<Slider>(true);
         audioList = GetComponentsInChildren<AudioSource>(true);
             foreach (AudioSource a in audioList)
