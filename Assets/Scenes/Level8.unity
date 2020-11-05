@@ -10036,7 +10036,7 @@ MonoBehaviour:
   forceX: 0
   forceY: 2000
   rigid: {fileID: 128231226}
-  col: {fileID: 0}
+  col: {fileID: 426083207}
 --- !u!61 &426083207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29700,7 +29700,7 @@ MonoBehaviour:
   forceX: 0
   forceY: 2000
   rigid: {fileID: 27277212}
-  col: {fileID: 0}
+  col: {fileID: 1376028444}
 --- !u!61 &1376028444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33949,7 +33949,7 @@ MonoBehaviour:
   forceX: 0
   forceY: 2000
   rigid: {fileID: 57956195}
-  col: {fileID: 0}
+  col: {fileID: 1609644544}
 --- !u!61 &1609644544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46240,7 +46240,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -28.185394, y: -1.6593204}
+  m_Offset: {x: -25.8022, y: -1.6593204}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -46251,7 +46251,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 13.81665, y: 6.231654}
+  m_Size: {x: 18.583038, y: 6.231654}
   m_EdgeRadius: 0
 --- !u!4 &2144903521
 Transform:
@@ -47096,7 +47096,7 @@ MonoBehaviour:
   forceX: 100
   forceY: 2000
   rigid: {fileID: 615688315}
-  col: {fileID: 0}
+  col: {fileID: 6499678281401482942}
 --- !u!212 &6543139770582225778
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -21,14 +21,14 @@ public class TriggerHiddenObject : MonoBehaviour
             
         }
         if (obj.activeSelf)
-            {
-                rigid.AddForce(new Vector2(forceX, 0));
-                col.enabled = false;
-                //if (obj.transform.position.x == 205.24f)
-                //{
+        {
+            rigid.AddForce(new Vector2(forceX, 0));
+            col.isTrigger = false;
+            //if (obj.transform.position.x == 205.24f)
+            //{
 
-                //}
-            }
+            //}
+        }
         
     }
     private void OnTriggerExit2D(Collider2D collision)

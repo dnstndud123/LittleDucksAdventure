@@ -61,6 +61,12 @@ public class AdBanner : MonoBehaviour
     }
     public void DestroyAd()
     {
+        StartCoroutine(Destroy());
+    }
+
+    IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(0.9f);
         banner.Destroy();
     }
 

@@ -58,6 +58,7 @@ public class SelectScene : BaseScene
 
             if (stageNumber > 1)
                 clearArray[i - 1].gameObject.SetActive(true);
+  
         }
         foreach (SpriteRenderer s in sky)
         {
@@ -73,12 +74,12 @@ public class SelectScene : BaseScene
                     s.sprite = skyColor[1].sprite;
                     c.sprite = cloudColor[1].sprite;
                 }
-                else if (stageNumber == 9)
+                else if (stageNumber >= 9 && stageNumber < 11)
                 {
                     s.sprite = skyColor[2].sprite;
                     c.sprite = cloudColor[2].sprite;
                 }
-                else if (stageNumber == 10)
+                else if (stageNumber >= 11)
                 {
                     s.sprite = skyColor[0].sprite;
                     c.sprite = cloudColor[0].sprite;

@@ -1682,7 +1682,7 @@ MonoBehaviour:
   forceX: 0
   forceY: 800
   rigid: {fileID: 914947801}
-  col: {fileID: 0}
+  col: {fileID: 64300596}
 --- !u!61 &64300596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1842,6 +1842,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc449d23e34ac84f958cdaa58baa962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  left: {fileID: 1708837831}
+  right: {fileID: 1298598667}
 --- !u!1 &83837870
 GameObject:
   m_ObjectHideFlags: 0
@@ -10119,6 +10121,8 @@ MonoBehaviour:
   anim: {fileID: 501322600}
   trapForce: 350
   diyong: 4000
+  left: {fileID: 0}
+  right: {fileID: 0}
 --- !u!61 &501322599
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21647,7 +21651,7 @@ MonoBehaviour:
   forceX: 0
   forceY: 1000
   rigid: {fileID: 775494610}
-  col: {fileID: 0}
+  col: {fileID: 995917576}
 --- !u!61 &995917576
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29999,7 +30003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305556139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 217.41, y: -23.68, z: 0}
+  m_LocalPosition: {x: 217.41, y: -23.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38549,7 +38553,7 @@ MonoBehaviour:
   forceX: 0
   forceY: 700
   rigid: {fileID: 1573862462}
-  col: {fileID: 0}
+  col: {fileID: 1665719111}
 --- !u!1 &1668486328
 GameObject:
   m_ObjectHideFlags: 0
@@ -52635,6 +52639,8 @@ MonoBehaviour:
   anim: {fileID: 8694613158104477563}
   trapForce: 4000
   diyong: 4000
+  left: {fileID: 1708837831}
+  right: {fileID: 1298598667}
 --- !u!4 &8694613158137893684
 Transform:
   m_ObjectHideFlags: 0

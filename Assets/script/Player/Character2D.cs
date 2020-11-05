@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character2D : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class Character2D : MonoBehaviour
     
     int saveDeathCnt = 0;
     bool die = false;
+
+    
 
     [HideInInspector]
     static Character2D instance;
@@ -54,9 +57,9 @@ public class Character2D : MonoBehaviour
         hp = maxHp;
         anim.SetInteger("hp", hp);
 
+        
         rigid.simulated = false;
-        
-        
+
 
     }
     public void OnDamage(int dmg)
@@ -81,7 +84,9 @@ public class Character2D : MonoBehaviour
         if (die == true)
         {
             DeathCountSave();
+            
         }
+
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -89,7 +94,8 @@ public class Character2D : MonoBehaviour
         {
             StopAllCoroutines();
             jumpCol.enabled = false;
-            
+            BtnUI.ins.left.gameObject.name = "Left";
+            BtnUI.ins.right.gameObject.name = "Right";
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -100,6 +106,8 @@ public class Character2D : MonoBehaviour
                 anim.SetBool("jump", false);
             jumpCol.enabled = false;
             PlayerControl.ins.enabled = true;
+            
+
         }
         
     }

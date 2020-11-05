@@ -30,6 +30,8 @@ public class BtnUI : MonoBehaviour
     bool _isMoving = false;
     Button _pressedBtn = null;
     Button _jump = null;
+    public Button left;
+    public Button right;
     public void Update()
     {
         if (_isMoving)

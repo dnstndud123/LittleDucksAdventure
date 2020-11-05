@@ -38,7 +38,9 @@ public class ControlFlip : MonoBehaviour
         {
             char2D.multiple = 1;
             PlayerControl.ins.flip = true;
-        
+            left.gameObject.name = "Left";
+            right.gameObject.name = "Right";
+
         }
     }
 

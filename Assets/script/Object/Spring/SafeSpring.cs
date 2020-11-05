@@ -29,9 +29,14 @@ public class SafeSpring : MonoBehaviour
         }
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "DiePlayer")
         {
-            
+
             rigid.AddForce(new Vector2(diyong, trapForce));
             PlayerControl.ins.enabled = false;
+            if (BtnUI.ins.left != null && BtnUI.ins.right != null)
+            {
+                BtnUI.ins.left.gameObject.name = "l";
+                BtnUI.ins.right.gameObject.name = "r";
+            }
         }
     }
     protected virtual void OnTriggerStay2D(Collider2D collision)

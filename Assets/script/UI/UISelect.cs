@@ -43,9 +43,19 @@ public class UISelect : UIBase
         
         for (int i = 1; i < stageNumber; i++)
         {
-            btn[i].gameObject.SetActive(true);
-            
-            if (stageNumber > 1)
+            if (stageNumber < 11)
+            {
+                btn[i].gameObject.SetActive(true);
+            }
+            else if (stageNumber == 11)
+            {
+                btn[i - 1].gameObject.SetActive(true);
+            }
+            if (stageNumber > 1 && stageNumber < 10)
+            {
+                btnLock[i - 1].gameObject.SetActive(false);
+            }
+            else if (stageNumber == 11)
             {
                 btnLock[i - 1].gameObject.SetActive(false);
             }
@@ -53,16 +63,24 @@ public class UISelect : UIBase
         for (int i = 0; i < stageNumber; i++)
         {
 
-            if (stageNumber > 1 && i > 0)
+            if (stageNumber > 1 && stageNumber < 11)
             {
-                clear[i - 1].enabled = true;
+                clear[i].enabled = true;
             }
+            else if (stageNumber == 11)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    clear[j].enabled = true;
+                }
+            }
+
         }
 
 
 
-        
-        
+
+
     }
     void Update()
     {

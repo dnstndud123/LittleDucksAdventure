@@ -14,13 +14,13 @@ public class TriggerTrapUp : MonoBehaviour
         
         if (collision.tag == "Player")
         {
+            if (col != null)
+                col.enabled = false;
             obj.SetActive(true);
             if (obj.activeSelf)
             {
                 rigid.AddForce(new Vector2(forceX, forceY));
             }
-            if (col != null)
-            col.enabled = false;
         }
     }
     

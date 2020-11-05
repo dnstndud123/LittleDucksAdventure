@@ -54,6 +54,11 @@ public class UIBase : MonoBehaviour
     }
     public virtual void OnButtonClick(GameObject btn)
     {
+        if (this is UIGameOver)
+        {
+            AdBanner ad = GetComponentInChildren<AdBanner>(true);
+            ad.DestroyAd();
+        }
         sM.Play("Select");
         if (btn.name == "Reset")
         {
@@ -68,6 +73,11 @@ public class UIBase : MonoBehaviour
     public void OnSelect()
     {
         
+        if (this is UIGameOver)
+        {
+            AdBanner ad = GetComponentInChildren<AdBanner>(true);
+            ad.DestroyAd();
+        }
         sM.Play("Select");
         StartCoroutine(OnPlay("LevelSelect"));
 

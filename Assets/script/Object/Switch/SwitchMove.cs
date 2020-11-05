@@ -31,7 +31,7 @@ public class SwitchMove : MonoBehaviour
     IEnumerator RightMove()
     {
         yield return new WaitForSeconds(2);
-        rigid.AddForce(new Vector2(3000, 0));
+        rigid.AddForce(new Vector2(4000, 0));
         trigger.enabled = false;
     }
     IEnumerator ChangeTrigger()

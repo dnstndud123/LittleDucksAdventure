@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets._2D;
 
 public class Spring : MonoBehaviour
@@ -9,7 +10,7 @@ public class Spring : MonoBehaviour
     
     public float trapForce = 4000;
     public float diyong = 0;
-    
+
 
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,6 +26,7 @@ public class Spring : MonoBehaviour
             cam.target = null;
             rigid.AddForce(new Vector2(diyong, trapForce));
             PlayerControl.ins.enabled = false;
+
         }
     }
     protected virtual void OnTriggerStay2D(Collider2D collision)
@@ -33,6 +35,7 @@ public class Spring : MonoBehaviour
         SoundManager.ins.Play("spring");
         StartCoroutine(Boing());
         Rigidbody2D rigid = collision.gameObject.GetComponent<Rigidbody2D>();
+        
         if (collision.gameObject.tag != "Player")
         {
             
