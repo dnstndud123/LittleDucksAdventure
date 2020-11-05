@@ -8,6 +8,9 @@ public class StartScene : BaseScene
     // Start is called before the first frame update
     public override void Init()
     {
+        
+        //PlayerPrefs.DeleteKey("SE_DATA");
+        //PlayerPrefs.DeleteKey("BGM_DATA");
         base.Init();
     }
     void Update()

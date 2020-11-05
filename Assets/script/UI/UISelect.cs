@@ -12,7 +12,8 @@ public class UISelect : UIBase
     public GameObject[] btn;
     public GameObject[] btnLock;
     public Image[] clear;
-    [SerializeField] int stageNumber = 0;
+    public int stageNumber = 0;
+    
     
     public override void Init()
     {
@@ -37,7 +38,9 @@ public class UISelect : UIBase
 
         if (txt != null)    txt.text = PlayerPrefs.GetInt("DEATH_COUNT").ToString();
 
-        stageNumber = PlayerPrefs.GetInt("LEVEL_DATA");
+            stageNumber = PlayerPrefs.GetInt("LEVEL_DATA");         
+
+        
         for (int i = 1; i < stageNumber; i++)
         {
             btn[i].gameObject.SetActive(true);
@@ -47,10 +50,10 @@ public class UISelect : UIBase
                 btnLock[i - 1].gameObject.SetActive(false);
             }
         }
-        for (int i = 1; i < stageNumber; i++)
+        for (int i = 0; i < stageNumber; i++)
         {
-            
-            if (stageNumber > 1)
+
+            if (stageNumber > 1 && i > 0)
             {
                 clear[i - 1].enabled = true;
             }
@@ -81,8 +84,13 @@ public class UISelect : UIBase
         {
             b.SetActive(true);
         }
+        foreach (Image i in clear)
+        {
+            i.enabled = false;
+        }
 
         btn[0].gameObject.SetActive(true);
+        //PlayerPrefs.DeleteKey("LEVEL_DATA");
         PlayerPrefs.SetInt("LEVEL_DATA", 0);
         PlayerPrefs.SetInt("DEATH_COUNT", 0);
     }

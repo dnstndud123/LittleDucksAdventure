@@ -48,6 +48,7 @@ public class BaseScene : MonoBehaviour
             global = Instantiate(globalPrefab);
             global.name = "GameGlobal";
         }
+ 
     }
     public void InitPlayer()
     {

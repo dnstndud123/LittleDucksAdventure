@@ -7624,7 +7624,7 @@ MonoBehaviour:
   - {fileID: 582890643}
   btnLock: []
   clear: []
-  stageNumber: 0
+  stageNumber: 4
 --- !u!224 &877250848
 RectTransform:
   m_ObjectHideFlags: 0

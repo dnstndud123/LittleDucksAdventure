@@ -4,6 +4,25 @@ using UnityEngine;
 
 public class ClearCheck : MonoBehaviour
 {
+    [HideInInspector]
+    static ClearCheck instance;
+    public static ClearCheck ins
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<ClearCheck>();
+                if (null == instance)
+                {
+                    Debug.LogError("ClearCheck 인스턴스 가져오기 실패");
+                }
+
+            }
+            return instance;
+        }
+    }
+
     public float _speedX;
  
     private bool right = true;
@@ -131,20 +150,21 @@ public class ClearCheck : MonoBehaviour
     public void LevelDataSave()
 
     {
+        
+        
 
-        lastLevel = PlayerPrefs.GetInt(level_data);
-        if (PlayerPrefs.HasKey(level_data))
-        {
-
-            if (lastLevel == 0)
+            lastLevel = PlayerPrefs.GetInt(level_data);
+            if (stageNumber == 1 && lastLevel < 1)
             {
-                lastLevel = 1;
-            }
+                PlayerPrefs.SetInt(level_data, stageNumber);
+                lastLevel = stageNumber;
+            }       
+
             if (lastLevel == stageNumber)
             {
                 lastLevel++;
             }
-        }
+
 
             PlayerPrefs.SetInt(level_data, lastLevel);
 

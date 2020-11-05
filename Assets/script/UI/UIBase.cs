@@ -67,7 +67,7 @@ public class UIBase : MonoBehaviour
     }
     public void OnSelect()
     {
-
+        
         sM.Play("Select");
         StartCoroutine(OnPlay("LevelSelect"));
 

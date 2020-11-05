@@ -17722,7 +17722,7 @@ MonoBehaviour:
   - {fileID: 791104197}
   btnLock: []
   clear: []
-  stageNumber: 0
+  stageNumber: 3
 --- !u!114 &2125948088
 MonoBehaviour:
   m_ObjectHideFlags: 0

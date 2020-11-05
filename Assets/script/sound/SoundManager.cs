@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
@@ -28,16 +29,23 @@ public class SoundManager : MonoBehaviour
 
     public AudioSource[] audioList;
 
-    const string SE_VOLUME_DATA = "SE_DATA";
+    public const string SE_VOLUME_DATA = "SE_DATA";
     float value = 50;
     public void Init()
     {
-        value = PlayerPrefs.GetInt(SE_VOLUME_DATA);
+
+            if (PlayerPrefs.HasKey(SE_VOLUME_DATA))
+            {
+                value = PlayerPrefs.GetInt(SE_VOLUME_DATA);
+            }
+        
+        PlayerPrefs.SetInt(SE_VOLUME_DATA, (int)value);
         //SESlider = GameObject.Find("SE").GetComponentInChildren<Slider>(true);
         audioList = GetComponentsInChildren<AudioSource>(true);
+        float volValue = PlayerPrefs.GetInt(SE_VOLUME_DATA);
             foreach (AudioSource a in audioList)
         {
-            a.volume = PlayerPrefs.GetFloat(SE_VOLUME_DATA) / 100;
+            a.volume = volValue / 100;
         }
         
         
@@ -56,7 +64,7 @@ public class SoundManager : MonoBehaviour
             {
                 snd.Play();
             }
-            snd.volume = PlayerPrefs.GetFloat(SE_VOLUME_DATA) / 100;
+            snd.volume = PlayerPrefs.GetInt(SE_VOLUME_DATA) / 100;
         }
         
     }
@@ -64,6 +72,7 @@ public class SoundManager : MonoBehaviour
     {
         if (SESlider != null)
         {
+            
             value = SESlider.value;
             SE_Volume(value);
             
@@ -81,7 +90,7 @@ public class SoundManager : MonoBehaviour
             
         }
         SESlider.value = volume * 100;
-        PlayerPrefs.SetFloat(SE_VOLUME_DATA, SESlider.value);
+        PlayerPrefs.SetInt(SE_VOLUME_DATA, (int)SESlider.value);
         
            
         

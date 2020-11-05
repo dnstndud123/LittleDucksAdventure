@@ -7,16 +7,43 @@ using UnityEngine.UI;
 
 public class GameGlobal : MonoBehaviour
 {
+    [HideInInspector]
+    static GameGlobal instance;
+    public static GameGlobal ins
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<GameGlobal>();
+                if (null == instance)
+                {
+                    Debug.LogError("GameGlobal를 가져올 수 없소.");
+                }
+            }
+            return instance;
+        }
+    }
+
     public AudioSource[] bgmArray;
 
     [SerializeField] Slider BGMSlider;
 
-    const string BGM_VOLUME_DATA = "BGM_DATA";
+    public const string BGM_VOLUME_DATA = "BGM_DATA";
     float value = 50;
     public void Start()
     {
+        
         DontDestroyOnLoad(this);
-        value = PlayerPrefs.GetInt(BGM_VOLUME_DATA);
+        if (SceneManager.sceneCount != (int)SCENE.START)
+        {
+            if (PlayerPrefs.HasKey(BGM_VOLUME_DATA))
+            {
+                value = PlayerPrefs.GetInt(BGM_VOLUME_DATA);
+            }
+        }
+        PlayerPrefs.SetInt(BGM_VOLUME_DATA, (int)value);
+        float volValue = PlayerPrefs.GetInt(BGM_VOLUME_DATA);
         bgmArray[(int)SCENE.START].Play();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -27,12 +54,13 @@ public class GameGlobal : MonoBehaviour
         if (SoundManager.ins.volume != null)
         {
             BGMSlider = GameObject.Find("BGM").GetComponentInChildren<Slider>(true);
-            SoundManager.ins.volume.SetActive(false);
+            if (SceneManager.sceneCount != (int)SCENE.SELECT)
+                SoundManager.ins.volume.SetActive(false);
         }
-
+        
         foreach (AudioSource a in bgmArray)
         {
-            a.volume = PlayerPrefs.GetFloat(BGM_VOLUME_DATA) / 100;
+            a.volume = volValue / 100;
         }
 
 
@@ -59,7 +87,7 @@ public class GameGlobal : MonoBehaviour
             a.volume = volume;
         }
         BGMSlider.value = volume * 100;
-        PlayerPrefs.SetFloat(BGM_VOLUME_DATA, BGMSlider.value);
+        PlayerPrefs.SetInt(BGM_VOLUME_DATA, (int)BGMSlider.value);
         
     }
     
@@ -74,16 +102,16 @@ public class GameGlobal : MonoBehaviour
         }
         foreach (AudioSource a in bgmArray)
         {
-            a.volume = PlayerPrefs.GetFloat(BGM_VOLUME_DATA) / 100;
+            a.volume = PlayerPrefs.GetInt(BGM_VOLUME_DATA) / 100;
         }
         if (scene.name != "LevelSelect")
             if (SoundManager.ins.volume != null)
                 SoundManager.ins.volume.SetActive(false);
 
         if (BGMSlider != null)
-            BGMSlider.value = PlayerPrefs.GetFloat(BGM_VOLUME_DATA);
+            BGMSlider.value = PlayerPrefs.GetInt(BGM_VOLUME_DATA);
         if (SoundManager.ins.SESlider != null)
-            SoundManager.ins.SESlider.value = PlayerPrefs.GetFloat("SE_DATA");
+            SoundManager.ins.SESlider.value = PlayerPrefs.GetInt("SE_DATA");
         foreach (AudioSource a in bgmArray)
         {
 
