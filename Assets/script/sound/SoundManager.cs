@@ -31,6 +31,7 @@ public class SoundManager : MonoBehaviour
 
     public const string SE_VOLUME_DATA = "SE_DATA";
     float value = 50;
+    
     public void Init()
     {
 
@@ -42,10 +43,10 @@ public class SoundManager : MonoBehaviour
         PlayerPrefs.SetInt(SE_VOLUME_DATA, (int)value);
         //SESlider = GameObject.Find("SE").GetComponentInChildren<Slider>(true);
         audioList = GetComponentsInChildren<AudioSource>(true);
-        float volValue = PlayerPrefs.GetInt(SE_VOLUME_DATA);
+         
             foreach (AudioSource a in audioList)
         {
-            a.volume = volValue / 100;
+            a.volume = value / 100;
         }
         
         
@@ -64,7 +65,8 @@ public class SoundManager : MonoBehaviour
             {
                 snd.Play();
             }
-            snd.volume = PlayerPrefs.GetInt(SE_VOLUME_DATA) / 100;
+            
+            snd.volume = value / 100;
         }
         
     }

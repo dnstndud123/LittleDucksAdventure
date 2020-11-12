@@ -233,6 +233,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3890302}
   m_CullTransparentMesh: 0
+--- !u!1 &22008259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 22008260}
+  - component: {fileID: 22008261}
+  m_Layer: 0
+  m_Name: AdBanner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &22008260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22008259}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 221.20097, y: -24.25022, z: -87.42445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 562796427}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &22008261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22008259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ad1c815b99efe448ee9820dc7e15ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &26290768
 GameObject:
   m_ObjectHideFlags: 0
@@ -3263,6 +3306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc449d23e34ac84f958cdaa58baa962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  left: {fileID: 0}
+  right: {fileID: 0}
 --- !u!1 &218430020
 GameObject:
   m_ObjectHideFlags: 0
@@ -6444,6 +6489,7 @@ RectTransform:
   - {fileID: 1033467534}
   - {fileID: 803475240}
   - {fileID: 620246123}
+  - {fileID: 22008260}
   m_Father: {fileID: 1259341404}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15400,7 +15446,6 @@ MonoBehaviour:
   uM: {fileID: 0}
   anim: {fileID: 0}
   txt: {fileID: 1362417078}
-  ad: {fileID: 0}
 --- !u!224 &1273265224
 RectTransform:
   m_ObjectHideFlags: 0

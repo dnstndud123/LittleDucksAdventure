@@ -6,8 +6,10 @@ using System;
 
 public class AdBanner : MonoBehaviour
 {
-    readonly string test_unitID = "ca-app-pub-3940256099942544/6300978111";
+    //readonly string test_unitID = "ca-app-pub-3940256099942544/6300978111";
     readonly string test_deviceID = "F9718320682BFCF6D67E941AFE01270D";
+
+    readonly string unitID = "ca-app-pub-1897076914961848/8036884490";
 
     BannerView banner;
 
@@ -20,7 +22,7 @@ public class AdBanner : MonoBehaviour
 
     void InitAd()
     {
-        banner = new BannerView(test_unitID, AdSize.Banner, AdPosition.Top);
+        banner = new BannerView(unitID, AdSize.Banner, AdPosition.Top);
 
         AdRequest.Builder builder = new AdRequest.Builder();
         builder.AddTestDevice(test_deviceID);

@@ -1103,6 +1103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc449d23e34ac84f958cdaa58baa962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  left: {fileID: 0}
+  right: {fileID: 0}
 --- !u!1 &123368831
 GameObject:
   m_ObjectHideFlags: 0
@@ -2610,6 +2612,7 @@ RectTransform:
   - {fileID: 1615236357}
   - {fileID: 569388229}
   - {fileID: 718883412}
+  - {fileID: 550094100}
   m_Father: {fileID: 1460871731}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4353,6 +4356,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535708843}
   m_CullTransparentMesh: 0
+--- !u!1 &550094099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 550094100}
+  - component: {fileID: 550094101}
+  m_Layer: 0
+  m_Name: AdBanner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &550094100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550094099}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 221.20091, y: -24.250204, z: -87.42445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 272715906}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &550094101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550094099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ad1c815b99efe448ee9820dc7e15ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &554013013
 GameObject:
   m_ObjectHideFlags: 0
@@ -17800,7 +17846,6 @@ MonoBehaviour:
   uM: {fileID: 0}
   anim: {fileID: 0}
   txt: {fileID: 1375788159}
-  ad: {fileID: 0}
 --- !u!224 &2128709958
 RectTransform:
   m_ObjectHideFlags: 0

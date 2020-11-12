@@ -9,6 +9,7 @@ public class UIBase : MonoBehaviour
     [SerializeField] protected SoundManager sM;
     [SerializeField] protected GameManager gM;
     [SerializeField] protected UIManager uM;
+    protected AdBanner ad;
     //public Rigidbody2D rigid;
     protected Character2D player;
     public Animator anim;
@@ -48,15 +49,20 @@ public class UIBase : MonoBehaviour
     }
     public void OnRestart(GameObject level)
     {
+        if (this is UIClear)
+        {
+            ad = GetComponentInChildren<AdBanner>();
+            ad.DestroyAd();
+        }
         sM.Play("Select");
         StartCoroutine(OnPlay(level.name));
 
     }
     public virtual void OnButtonClick(GameObject btn)
     {
-        if (this is UIGameOver)
+        if (this is UIGameOver || this is UIClear)
         {
-            AdBanner ad = GetComponentInChildren<AdBanner>(true);
+            ad = GetComponentInChildren<AdBanner>();
             ad.DestroyAd();
         }
         sM.Play("Select");
@@ -73,7 +79,7 @@ public class UIBase : MonoBehaviour
     public void OnSelect()
     {
         
-        if (this is UIGameOver)
+        if (this is UIGameOver || this is UIClear)
         {
             AdBanner ad = GetComponentInChildren<AdBanner>(true);
             ad.DestroyAd();

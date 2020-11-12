@@ -43,7 +43,7 @@ public class GameGlobal : MonoBehaviour
             }
         }
         PlayerPrefs.SetInt(BGM_VOLUME_DATA, (int)value);
-        float volValue = PlayerPrefs.GetInt(BGM_VOLUME_DATA);
+        
         bgmArray[(int)SCENE.START].Play();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -60,7 +60,7 @@ public class GameGlobal : MonoBehaviour
         
         foreach (AudioSource a in bgmArray)
         {
-            a.volume = volValue / 100;
+            a.volume = value / 100;
         }
 
 
@@ -102,7 +102,7 @@ public class GameGlobal : MonoBehaviour
         }
         foreach (AudioSource a in bgmArray)
         {
-            a.volume = PlayerPrefs.GetInt(BGM_VOLUME_DATA) / 100;
+            a.volume = value / 100;
         }
         if (scene.name != "LevelSelect")
             if (SoundManager.ins.volume != null)

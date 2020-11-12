@@ -10121,8 +10121,6 @@ MonoBehaviour:
   anim: {fileID: 501322600}
   trapForce: 350
   diyong: 4000
-  left: {fileID: 0}
-  right: {fileID: 0}
 --- !u!61 &501322599
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18125,7 +18123,6 @@ MonoBehaviour:
   uM: {fileID: 0}
   anim: {fileID: 0}
   txt: {fileID: 2122065090}
-  ad: {fileID: 0}
 --- !u!224 &785788357
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21113,6 +21110,7 @@ RectTransform:
   - {fileID: 707650290}
   - {fileID: 1994432751}
   - {fileID: 1894288005}
+  - {fileID: 1815879393}
   m_Father: {fileID: 692016749}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41384,6 +41382,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814791614}
   m_CullTransparentMesh: 0
+--- !u!1 &1815879392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1815879393}
+  - component: {fileID: 1815879394}
+  m_Layer: 0
+  m_Name: AdBanner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1815879393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815879392}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 221.20091, y: -24.250204, z: -87.42445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 948921397}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1815879394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815879392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ad1c815b99efe448ee9820dc7e15ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1815903865
 GameObject:
   m_ObjectHideFlags: 0
@@ -52639,8 +52680,6 @@ MonoBehaviour:
   anim: {fileID: 8694613158104477563}
   trapForce: 4000
   diyong: 4000
-  left: {fileID: 1708837831}
-  right: {fileID: 1298598667}
 --- !u!4 &8694613158137893684
 Transform:
   m_ObjectHideFlags: 0
