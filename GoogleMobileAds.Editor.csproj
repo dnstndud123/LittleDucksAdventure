@@ -68,6 +68,7 @@
     <Compile Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsSettingsEditor.cs" />
     <Compile Include="Assets\GoogleMobileAds\Editor\ManifestProcessor.cs" />
     <Compile Include="Assets\GoogleMobileAds\Editor\PListProcessor.cs" />
+    <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsSKAdNetworkItems.xml" />
     <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAds.Editor.asmdef" />
     <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsDependencies.xml" />
     <Reference Include="UnityEngine">
