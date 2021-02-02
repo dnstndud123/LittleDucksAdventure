@@ -9,7 +9,7 @@
   <projectSetting name="GooglePlayServices.AutoResolveOnBuild" value="True" />
   <projectSetting name="GooglePlayServices.AutoResolverEnabled" value="True" />
   <projectSetting name="GooglePlayServices.ExplodeAars" value="True" />
-  <projectSetting name="GooglePlayServices.LocalMavenRepoDir" value="Assets/GeneratedLocalRepo" />
+  <projectSetting name="GooglePlayServices.LocalMavenRepoDir" value="Assets" />
   <projectSetting name="GooglePlayServices.PatchAndroidManifest" value="True" />
   <projectSetting name="GooglePlayServices.PatchMainTemplateGradle" value="True" />
   <projectSetting name="GooglePlayServices.PatchPropertiesTemplateGradle" value="True" />

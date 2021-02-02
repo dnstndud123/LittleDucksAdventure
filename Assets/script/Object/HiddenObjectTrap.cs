@@ -35,6 +35,9 @@ public class HiddenObjectTrap : MonoBehaviour
                 pl.bodyType = RigidbodyType2D.Dynamic;
                 pl.gravityScale = 0.005f;
                 PlayerControl.ins.enabled = false;
+                BtnUI.ins.left.gameObject.SetActive(false);
+                BtnUI.ins.right.gameObject.SetActive(false);
+                
             }
             StartCoroutine(AppearBlock());
             

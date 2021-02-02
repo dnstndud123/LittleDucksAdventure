@@ -12,9 +12,13 @@ public class GameScene : BaseScene
     public GameObject clear;
     public GameObject trapList;
     public Switch s;
+    public AdBanner ad;
+    
     public override void Init()
     {
+        
 
+        
 
         base.Init();
 
@@ -30,13 +34,15 @@ public class GameScene : BaseScene
         clear = GameObject.Find("clear");
         ClearCheck clearCheck = clear.GetComponent<ClearCheck>();
         trapList = GameObject.Find("Traps");
-
+        
         
 
 
         clearCheck.Init();
         CamFollow.Init();
         falling.Init();
+        
+        
 
         traps = trapList.GetComponentsInChildren<Trap>();
         foreach (Trap t in traps)
@@ -54,7 +60,9 @@ public class GameScene : BaseScene
             trap.Init();
         }
         */
+        
     }
+    
     
 
 

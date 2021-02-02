@@ -9,7 +9,7 @@ public class UIBase : MonoBehaviour
     [SerializeField] protected SoundManager sM;
     [SerializeField] protected GameManager gM;
     [SerializeField] protected UIManager uM;
-    protected AdBanner ad;
+    public AdBanner ad;
     //public Rigidbody2D rigid;
     protected Character2D player;
     public Animator anim;
@@ -51,8 +51,9 @@ public class UIBase : MonoBehaviour
     {
         if (this is UIClear)
         {
-            ad = GetComponentInChildren<AdBanner>();
-            ad.DestroyAd();
+            //ad = GetComponentInChildren<AdBanner>();
+            //ad.DestroyAd();
+            OnAdDestroy();
         }
         sM.Play("Select");
         StartCoroutine(OnPlay(level.name));
@@ -62,8 +63,9 @@ public class UIBase : MonoBehaviour
     {
         if (this is UIGameOver || this is UIClear)
         {
-            ad = GetComponentInChildren<AdBanner>();
-            ad.DestroyAd();
+            //ad = GetComponentInChildren<AdBanner>();
+            //ad.DestroyAd();
+            OnAdDestroy();
         }
         sM.Play("Select");
         if (btn.name == "Reset")
@@ -81,8 +83,9 @@ public class UIBase : MonoBehaviour
         
         if (this is UIGameOver || this is UIClear)
         {
-            AdBanner ad = GetComponentInChildren<AdBanner>(true);
-            ad.DestroyAd();
+            //AdBanner ad = GetComponentInChildren<AdBanner>(true);
+            //ad.DestroyAd();
+            OnAdDestroy();
         }
         sM.Play("Select");
         StartCoroutine(OnPlay("LevelSelect"));
@@ -90,7 +93,14 @@ public class UIBase : MonoBehaviour
     }
     public void OnMain()
     {
+        OnAdDestroy();
         sM.Play("Select");
         StartCoroutine(OnPlay("Start"));
     }
+    public void OnAdDestroy()
+    {
+        ad.DestroyAd();
+    }
+
+
 }

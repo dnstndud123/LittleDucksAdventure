@@ -13,7 +13,8 @@ public class AdBanner : MonoBehaviour
 
     BannerView banner;
 
-
+    public const string AD_ON = "AD";
+    public int adOn;
     // Start is called before the first frame update
     public void Init()
     {
@@ -35,7 +36,9 @@ public class AdBanner : MonoBehaviour
         banner.OnAdLeavingApplication += OnAdLeavingApplication;
 
         banner.LoadAd(request);
-
+        adOn = 1;
+        PlayerPrefs.SetInt(AD_ON, adOn);
+        
 
     }
 
@@ -63,13 +66,13 @@ public class AdBanner : MonoBehaviour
     }
     public void DestroyAd()
     {
-        StartCoroutine(Destroy());
+        banner.Destroy();
+        adOn = 0;
+        PlayerPrefs.SetInt(AD_ON, adOn);
+        
+        Debug.Log("광고제거");
     }
 
-    IEnumerator Destroy()
-    {
-        yield return new WaitForSeconds(0.9f);
-        banner.Destroy();
-    }
+    
 
 }

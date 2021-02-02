@@ -56,7 +56,7 @@
     <setting name="gradlePropertiesTemplateEnabled" value="False" />
     <setting name="gradleTemplateEnabled" value="False" />
     <setting name="installAndroidPackages" value="True" />
-    <setting name="localMavenRepoDir" value="Assets/GeneratedLocalRepo" />
+    <setting name="localMavenRepoDir" value="Assets" />
     <setting name="packageDir" value="Assets/Plugins/Android" />
     <setting name="patchAndroidManifest" value="True" />
     <setting name="patchMainTemplateGradle" value="True" />

@@ -20,7 +20,7 @@ public class SelectScene : BaseScene
 
     [SerializeField] SpriteRenderer[] cloud;
     [SerializeField] SpriteRenderer[] cloudColor;
-
+    
     public override void Init()
     {
         
